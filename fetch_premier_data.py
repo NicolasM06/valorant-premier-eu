@@ -230,7 +230,7 @@ def resolve_roster(team: dict, api_key: str):
 def fetch_match(match_id: str, api_key: str, debug_match: bool = False):
     if match_id in _match_cache:
         return _match_cache[match_id]
-    payload = api_get(f"/valorant/v4/match/{REGION}/{PLATFORM}/{match_id}", api_key)
+    payload = api_get(f"/valorant/v4/match/{REGION}/{match_id}", api_key)
     if debug_match:
         print(json.dumps(payload, indent=2, ensure_ascii=False)[:6000])
     data = payload["data"] if payload and "data" in payload else None

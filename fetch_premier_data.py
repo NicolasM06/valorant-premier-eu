@@ -353,6 +353,7 @@ def aggregate_team_season(team: dict, api_key: str, player_agg: dict, debug_matc
                 entry = player_agg[puuid]
                 entry["name"] = name
                 entry["team"] = f"{team.get('name')} #{team.get('tag')}"
+                entry["division"] = extract_division_number(team)
                 entry.setdefault("agents", defaultdict(int))
                 if agent:
                     entry["agents"][agent] += 1
@@ -417,6 +418,7 @@ def finalize_player_stats(player_agg: dict):
             "puuid": puuid,
             "name": e["name"],
             "team": e["team"],
+            "division": e.get("division"),
             "matches": e["matches"],
             "agents": [a for a, _ in agents_sorted],
             "kills": e["kills"],
@@ -438,7 +440,7 @@ def finalize_player_stats(player_agg: dict):
 
 def new_player_entry():
     return {
-        "name": None, "team": None, "matches": 0,
+        "name": None, "team": None, "division": None, "matches": 0,
         "kills": 0, "deaths": 0, "assists": 0, "score": 0,
         "headshots": 0, "bodyshots": 0, "legshots": 0, "damage": 0, "rounds": 0,
         "kast_rounds": 0, "kast_total_rounds": 0, "first_kills": 0, "first_deaths": 0,

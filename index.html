@@ -97,6 +97,21 @@
   }
   .points{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:15px;}
 
+  #players-board{width:100%;border-collapse:collapse;font-size:13px;}
+  #players-board th{
+    text-align:center;font-family:'JetBrains Mono',monospace;font-size:10px;
+    letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted);
+    padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap;
+  }
+  #players-board th:nth-child(2),#players-board th:nth-child(3),#players-board th:nth-child(4){text-align:left;}
+  #players-board td{padding:10px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap;}
+  #players-board td:nth-child(2){text-align:left;font-weight:600;}
+  #players-board td:nth-child(3){text-align:left;color:var(--text-muted);font-size:12px;}
+  #players-board td:nth-child(4){text-align:left;color:var(--text-muted);font-size:11px;}
+  #players-board tbody tr:hover{background:var(--bg-panel);}
+  .rating-cell{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--teal);}
+  .na{color:var(--text-muted);opacity:0.5;}
+
   .empty, .error{
     padding:60px 20px;text-align:center;color:var(--text-muted);
     border:1px dashed var(--line);margin-top:20px;
@@ -124,20 +139,23 @@
 <body>
 <div class="wrap">
   <header class="hero">
-    <div class="eyebrow">Valorant Premier · Région EU</div>
+    <div class="eyebrow">Valorant Premier · Zone France</div>
     <h1>Classement <span>Contender</span> &amp; Invite</h1>
-    <p class="sub">Les deux plus hauts échelons du Path to Pro européen, toutes conférences confondues. Données récupérées automatiquement.</p>
+    <p class="sub">Stats de la saison en cours pour les équipes françaises. Données récupérées automatiquement.</p>
     <div class="meta" id="meta">Chargement…</div>
   </header>
 
   <div class="controls">
-    <div class="pill-group" id="conf-filters"></div>
+    <div class="pill-group" id="view-toggle">
+      <div class="pill active" data-view="teams">Équipes</div>
+      <div class="pill" data-view="players">Joueurs</div>
+    </div>
     <div class="pill-group" id="div-filters">
       <div class="pill active" data-div="all">Toutes</div>
       <div class="pill" data-div="invite">Invite</div>
       <div class="pill" data-div="contender">Contender</div>
     </div>
-    <input id="search" type="text" placeholder="Rechercher une équipe…">
+    <input id="search" type="text" placeholder="Rechercher...">
   </div>
 
   <table id="board" style="display:none">
@@ -145,13 +163,43 @@
       <tr>
         <th>#</th>
         <th>Équipe</th>
-        <th>Conférence</th>
         <th>Division</th>
         <th>Points</th>
       </tr>
     </thead>
     <tbody id="board-body"></tbody>
   </table>
+
+  <div id="players-wrap" style="display:none;overflow-x:auto">
+    <table id="players-board">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Joueur</th>
+          <th>Équipe</th>
+          <th title="Agents les plus joués">Agents</th>
+          <th>M</th>
+          <th title="Rating — estimation maison, pas le Rating officiel VLR">Rating*</th>
+          <th>ACS</th>
+          <th>K:D</th>
+          <th title="Kill/Assist/Survive/Trade %">KAST%</th>
+          <th>ADR</th>
+          <th title="First Kills / First Deaths">FK:FD</th>
+          <th>HS%</th>
+          <th>CL</th>
+          <th>K</th>
+          <th>D</th>
+          <th>A</th>
+        </tr>
+      </thead>
+      <tbody id="players-body"></tbody>
+    </table>
+    <p style="color:var(--text-muted);font-size:11px;font-family:'JetBrains Mono',monospace;margin-top:10px">
+      * Rating = estimation maison (ACS + KAST + impact KDA). Ce n'est PAS le Rating officiel de VLR.gg,
+      dont la formule exacte n'est pas publique. KAST%/CL/FK:FD affichent "—" quand l'API ne fournit pas
+      de détail round-par-round exploitable pour ce match.
+    </p>
+  </div>
 
   <div id="empty" class="empty" style="display:none">
     Aucune donnée pour l'instant.<br><br>
@@ -167,32 +215,34 @@
 </div>
 
 <script>
-let RAW = [];
-let activeConf = "all";
+let RAW_TEAMS = [];
+let RAW_PLAYERS = [];
+let activeView = "teams";
 let activeDiv = "all";
 
 function divisionLabel(team){
   const named = team.division_name || team.division_label || team.tier_name;
   if (named) return named.toLowerCase();
-  // repli : on ne connaît que le numéro -> on affiche tel quel
   return null;
 }
 
 function isInvite(team){
   const label = divisionLabel(team);
   if (label) return label.includes("invite");
-  // repli grossier : division numérique la plus haute vue dans le jeu de données
-  const maxDiv = Math.max(...RAW.map(t => t.division || 0));
+  const maxDiv = Math.max(...RAW_TEAMS.map(t => t.division || 0));
   return team.division === maxDiv;
 }
 
-function render(){
+function fmt(value, suffix = "") {
+  return (value === null || value === undefined) ? '<span class="na">—</span>' : `${value}${suffix}`;
+}
+
+function renderTeams(){
   const tbody = document.getElementById('board-body');
   tbody.innerHTML = "";
   const q = document.getElementById('search').value.trim().toLowerCase();
 
-  const filtered = RAW.filter(t => {
-    if (activeConf !== "all" && t.conference !== activeConf) return false;
+  const filtered = RAW_TEAMS.filter(t => {
     if (activeDiv === "invite" && !isInvite(t)) return false;
     if (activeDiv === "contender" && isInvite(t)) return false;
     if (q && !(`${t.name||''} ${t.tag||''}`.toLowerCase().includes(q))) return false;
@@ -205,7 +255,6 @@ function render(){
     tr.innerHTML = `
       <td><span class="rank-badge ${invite ? 'invite':'contender'}">${i+1}</span></td>
       <td><span class="team-name">${t.name || '—'}</span><span class="team-tag">#${t.tag || '?'}</span></td>
-      <td>${(t.conference||'').replaceAll('_',' ')}</td>
       <td><span class="div-tag">${invite ? 'Invite' : 'Contender'}</span></td>
       <td class="points">${t.points ?? t.ranking ?? '—'}</td>
     `;
@@ -213,44 +262,63 @@ function render(){
     tbody.appendChild(tr);
   });
 
-  document.getElementById('board').style.display = filtered.length ? '' : 'none';
-  document.getElementById('empty').style.display = filtered.length ? 'none' : (RAW.length ? 'none' : 'block');
+  document.getElementById('board').style.display = (activeView === 'teams' && filtered.length) ? '' : 'none';
+  document.getElementById('empty').style.display = (activeView === 'teams' && !filtered.length && !RAW_TEAMS.length) ? 'block' : 'none';
 }
 
-function toggleDetail(tr, team){
-  const existing = tr.nextElementSibling;
-  if (existing && existing.classList.contains('detail-row')){
-    existing.remove();
-    return;
-  }
-  document.querySelectorAll('.detail-row').forEach(r => r.remove());
+function renderPlayers(){
+  const tbody = document.getElementById('players-body');
+  tbody.innerHTML = "";
+  const q = document.getElementById('search').value.trim().toLowerCase();
 
-  const roster = (team.roster && team.roster.members) || [];
-  const matches = team.recent_matches || [];
+  const filtered = RAW_PLAYERS.filter(p => {
+    if (q && !(`${p.name||''} ${p.team||''}`.toLowerCase().includes(q))) return false;
+    return true;
+  });
 
-  const row = document.createElement('tr');
-  row.className = 'detail-row';
-  const td = document.createElement('td');
-  td.colSpan = 5;
-  td.innerHTML = `
-    <div class="detail-inner">
-      <div class="detail-block">
-        <h4>Roster (${roster.length || '?'})</h4>
-        <div>${roster.length ? roster.map(m => `<div>${m}</div>`).join('') : 'Non résolu — nécessite un appel supplémentaire par joueur.'}</div>
-      </div>
-      <div class="detail-block">
-        <h4>Forme récente</h4>
-        ${matches.length
-          ? `<div class="pip-row">${matches.slice(-10).map(m => `<div class="pip ${m.points_after >= m.points_before ? 'win':'loss'}"></div>`).join('')}</div>`
-          : '<div>Historique non chargé (lance le script avec --with-history).</div>'}
-      </div>
-    </div>
-  `;
-  row.appendChild(td);
-  tr.after(row);
+  filtered.forEach((p, i) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${i+1}</td>
+      <td>${p.name || '?'}</td>
+      <td>${p.team || '—'}</td>
+      <td>${(p.agents||[]).join(', ') || '—'}</td>
+      <td>${p.matches ?? '—'}</td>
+      <td class="rating-cell">${fmt(p.rating_estimate)}</td>
+      <td>${fmt(p.acs)}</td>
+      <td>${fmt(p.kd)}</td>
+      <td>${fmt(p.kast_pct, '%')}</td>
+      <td>${fmt(p.adr)}</td>
+      <td>${fmt(p.fk_fd)}</td>
+      <td>${fmt(p.hs_pct, '%')}</td>
+      <td>${fmt(p.clutches_won)}</td>
+      <td>${p.kills ?? '—'}</td>
+      <td>${p.deaths ?? '—'}</td>
+      <td>${p.assists ?? '—'}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById('players-wrap').style.display = (activeView === 'players' && filtered.length) ? '' : 'none';
+  document.getElementById('empty').style.display = (activeView === 'players' && !filtered.length && !RAW_PLAYERS.length) ? 'block' : 'none';
+}
+
+function render(){
+  document.getElementById('board').style.display = 'none';
+  document.getElementById('players-wrap').style.display = 'none';
+  if (activeView === 'teams') renderTeams(); else renderPlayers();
 }
 
 document.getElementById('search').addEventListener('input', render);
+document.getElementById('view-toggle').addEventListener('click', (e) => {
+  const pill = e.target.closest('.pill');
+  if (!pill) return;
+  document.querySelectorAll('#view-toggle .pill').forEach(p => p.classList.remove('active'));
+  pill.classList.add('active');
+  activeView = pill.dataset.view;
+  document.getElementById('div-filters').style.display = activeView === 'teams' ? '' : 'none';
+  render();
+});
 document.getElementById('div-filters').addEventListener('click', (e) => {
   const pill = e.target.closest('.pill');
   if (!pill) return;
@@ -264,31 +332,10 @@ document.getElementById('div-filters').addEventListener('click', (e) => {
 fetch('data/leaderboard.json?_=' + Date.now())
   .then(r => { if(!r.ok) throw new Error('fichier introuvable'); return r.json(); })
   .then(json => {
-    RAW = json.teams || [];
-    const confs = [...new Set(RAW.map(t => t.conference).filter(Boolean))];
-    const confBox = document.getElementById('conf-filters');
-    const allPill = document.createElement('div');
-    allPill.className = 'pill active';
-    allPill.textContent = 'Toutes conférences';
-    allPill.dataset.conf = 'all';
-    confBox.appendChild(allPill);
-    confs.forEach(c => {
-      const p = document.createElement('div');
-      p.className = 'pill';
-      p.textContent = c.replaceAll('_',' ');
-      p.dataset.conf = c;
-      confBox.appendChild(p);
-    });
-    confBox.addEventListener('click', (e) => {
-      const pill = e.target.closest('.pill');
-      if (!pill) return;
-      confBox.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
-      pill.classList.add('active');
-      activeConf = pill.dataset.conf;
-      render();
-    });
+    RAW_TEAMS = json.teams || [];
+    RAW_PLAYERS = json.players || [];
     document.getElementById('meta').textContent =
-      `${RAW.length} équipes · mis à jour le ${new Date(json.generated_at).toLocaleString('fr-FR')}`;
+      `${RAW_TEAMS.length} équipes · ${RAW_PLAYERS.length} joueurs · mis à jour le ${json.generated_at ? new Date(json.generated_at).toLocaleString('fr-FR') : '—'}`;
     render();
   })
   .catch(err => {

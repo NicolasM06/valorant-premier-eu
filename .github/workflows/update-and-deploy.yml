@@ -3,7 +3,12 @@ name: Update Premier data and deploy site
 on:
   schedule:
     - cron: "0 6,18 * * *"   # tous les jours à 06:00 et 18:00 UTC
-  workflow_dispatch: {}       # bouton "Run workflow" manuel dans l'onglet Actions
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Afficher la structure brute des équipes dans les logs (diagnostic)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -27,7 +32,12 @@ jobs:
       - name: Fetch latest Premier leaderboard
         env:
           HENRIKDEV_API_KEY: ${{ secrets.HENRIKDEV_API_KEY }}
-        run: python3 fetch_premier_data.py
+        run: |
+          if [ "${{ inputs.debug }}" = "true" ]; then
+            python3 fetch_premier_data.py --debug
+          else
+            python3 fetch_premier_data.py
+          fi
 
       - name: Commit updated data
         run: |

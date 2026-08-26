@@ -296,6 +296,21 @@ def extract_round_level_stats(match_data: dict, puuid: str):
     return result
 
 
+def extract_damage_made(s: dict):
+    """Le champ dégâts peut être un nombre brut ('damage_made') ou un objet
+    imbriqué ('damage': {'made': X, 'received': Y}) selon la forme exacte
+    renvoyée par l'API pour ce match."""
+    dm = s.get("damage_made")
+    if isinstance(dm, (int, float)):
+        return dm
+    dmg = s.get("damage")
+    if isinstance(dmg, dict):
+        return dmg.get("made") or dmg.get("dealt") or dmg.get("done") or 0
+    if isinstance(dmg, (int, float)):
+        return dmg
+    return 0
+
+
 def rounds_played_in_match(match_data: dict) -> int:
     teams = match_data.get("teams") or {}
     if isinstance(teams, dict):
@@ -327,38 +342,45 @@ def aggregate_team_season(team: dict, api_key: str, player_agg: dict, debug_matc
             continue
         rounds_total = rounds_played_in_match(data)
         for p in extract_players(data):
-            puuid = p.get("puuid")
-            if roster_puuids and puuid not in roster_puuids:
-                continue  # on ne compte que les joueurs de CETTE équipe pour éviter les doublons adverses
-            name = f"{p.get('name')}#{p.get('tag')}" if p.get("name") else puuid
-            s = p.get("stats", p)
-            agent = (p.get("agent") or {}).get("name") if isinstance(p.get("agent"), dict) else p.get("agent")
+            try:
+                puuid = p.get("puuid")
+                if roster_puuids and puuid not in roster_puuids:
+                    continue  # on ne compte que les joueurs de CETTE équipe pour éviter les doublons adverses
+                name = f"{p.get('name')}#{p.get('tag')}" if p.get("name") else puuid
+                s = p.get("stats", p)
+                agent = (p.get("agent") or {}).get("name") if isinstance(p.get("agent"), dict) else p.get("agent")
 
-            entry = player_agg[puuid]
-            entry["name"] = name
-            entry["team"] = f"{team.get('name')} #{team.get('tag')}"
-            entry.setdefault("agents", defaultdict(int))
-            if agent:
-                entry["agents"][agent] += 1
-            entry["matches"] += 1
-            entry["kills"] += s.get("kills") or 0
-            entry["deaths"] += s.get("deaths") or 0
-            entry["assists"] += s.get("assists") or 0
-            entry["score"] += s.get("score") or 0
-            entry["headshots"] += s.get("headshots") or 0
-            entry["bodyshots"] += s.get("bodyshots") or 0
-            entry["legshots"] += s.get("legshots") or 0
-            entry["damage"] += s.get("damage_made") or s.get("damage") or 0
-            entry["rounds"] += rounds_total
+                entry = player_agg[puuid]
+                entry["name"] = name
+                entry["team"] = f"{team.get('name')} #{team.get('tag')}"
+                entry.setdefault("agents", defaultdict(int))
+                if agent:
+                    entry["agents"][agent] += 1
+                entry["matches"] += 1
+                entry["kills"] += s.get("kills") or 0
+                entry["deaths"] += s.get("deaths") or 0
+                entry["assists"] += s.get("assists") or 0
+                entry["score"] += s.get("score") or 0
+                entry["headshots"] += s.get("headshots") or 0
+                entry["bodyshots"] += s.get("bodyshots") or 0
+                entry["legshots"] += s.get("legshots") or 0
+                entry["damage"] += extract_damage_made(s)
+                entry["rounds"] += rounds_total
 
-            rl = extract_round_level_stats(data, puuid)
-            if rl["kast_rounds"] is not None:
-                entry["kast_rounds"] += rl["kast_rounds"]
-                entry["kast_total_rounds"] += rl.get("total_rounds_for_kast", rounds_total)
-                entry["first_kills"] += rl["first_kills"] or 0
-                entry["first_deaths"] += rl["first_deaths"] or 0
-                entry["clutches_won"] += rl["clutches_won"] or 0
-                entry["round_level_available"] = True
+                rl = extract_round_level_stats(data, puuid)
+                if rl["kast_rounds"] is not None:
+                    entry["kast_rounds"] += rl["kast_rounds"]
+                    entry["kast_total_rounds"] += rl.get("total_rounds_for_kast", rounds_total)
+                    entry["first_kills"] += rl["first_kills"] or 0
+                    entry["first_deaths"] += rl["first_deaths"] or 0
+                    entry["clutches_won"] += rl["clutches_won"] or 0
+                    entry["round_level_available"] = True
+            except Exception as e:
+                # Une anomalie sur UN joueur/UN match ne doit jamais faire perdre
+                # tout le run (potentiellement 30-90 min de travail). On logue et
+                # on continue avec le joueur suivant.
+                print(f"  ⚠️  joueur ignoré (match {match_id}, puuid {p.get('puuid')}) : {e}", file=sys.stderr)
+                continue
 
 
 def finalize_player_stats(player_agg: dict):
@@ -453,8 +475,12 @@ def main():
     print(f"\n{len(teams)} équipes françaises Contender/Invite. Résolution rosters + agrégation saison...")
     for i, team in enumerate(teams, 1):
         print(f"  [{i}/{len(teams)}] {team.get('name', '?')}")
-        resolve_roster(team, api_key)
-        aggregate_team_season(team, api_key, player_agg)
+        try:
+            resolve_roster(team, api_key)
+            aggregate_team_season(team, api_key, player_agg)
+        except Exception as e:
+            print(f"  ⚠️  équipe ignorée après erreur ({team.get('name', '?')}) : {e}", file=sys.stderr)
+            continue
 
     players = finalize_player_stats(player_agg)
 

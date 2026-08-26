@@ -9,6 +9,10 @@ on:
         description: "Afficher la structure brute des équipes dans les logs (diagnostic)"
         type: boolean
         default: false
+      debug_match:
+        description: "Diagnostic rapide (~10s) : dump la structure brute d'1 seul match puis s'arrête, sans mettre à jour le site"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -33,7 +37,9 @@ jobs:
         env:
           HENRIKDEV_API_KEY: ${{ secrets.HENRIKDEV_API_KEY }}
         run: |
-          if [ "${{ inputs.debug }}" = "true" ]; then
+          if [ "${{ inputs.debug_match }}" = "true" ]; then
+            python3 fetch_premier_data.py --debug-match
+          elif [ "${{ inputs.debug }}" = "true" ]; then
             python3 fetch_premier_data.py --debug
           else
             python3 fetch_premier_data.py

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EU Premier — Contender &amp; Invite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-void:#0f1923;
+    --bg-panel:#151f29;
+    --bg-panel-2:#1c2836;
+    --line:#26323f;
+    --red:#ff4655;
+    --teal:#4ce0d2;
+    --text:#ece8e1;
+    --text-muted:#7c8894;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg-void);
+    background-image:
+      linear-gradient(180deg, rgba(255,70,85,0.06), transparent 300px),
+      repeating-linear-gradient(115deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 64px);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px 80px;}
+
+  header.hero{padding:48px 0 28px;border-bottom:1px solid var(--line);}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;letter-spacing:0.18em;color:var(--teal);
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  h1{
+    font-family:'Rajdhani',sans-serif;font-weight:700;
+    font-size:clamp(34px,6vw,56px);letter-spacing:0.01em;
+    margin:0 0 10px;text-transform:uppercase;line-height:1.02;
+  }
+  h1 span{color:var(--red);}
+  .sub{color:var(--text-muted);font-size:15px;max-width:560px;line-height:1.55;}
+  .meta{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-muted);}
+
+  .controls{
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+    margin:26px 0 22px;
+  }
+  .pill-group{display:flex;gap:6px;flex-wrap:wrap;}
+  .pill{
+    font-family:'Rajdhani',sans-serif;font-weight:600;font-size:14px;
+    letter-spacing:0.04em;text-transform:uppercase;
+    padding:8px 16px;border:1px solid var(--line);background:var(--bg-panel);
+    color:var(--text-muted);cursor:pointer;
+    clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px);
+    transition:all .15s ease;
+  }
+  .pill:hover{color:var(--text);border-color:#3a4a5a;}
+  .pill.active{background:var(--red);color:#1a0d0f;border-color:var(--red);}
+  .pill.active.teal{background:var(--teal);border-color:var(--teal);}
+
+  input#search{
+    margin-left:auto;background:var(--bg-panel);border:1px solid var(--line);
+    color:var(--text);font-family:'Inter',sans-serif;font-size:14px;
+    padding:9px 14px;min-width:220px;
+  }
+  input#search::placeholder{color:var(--text-muted);}
+
+  table{width:100%;border-collapse:collapse;}
+  thead th{
+    text-align:left;font-family:'JetBrains Mono',monospace;font-size:11px;
+    letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);
+    padding:10px 12px;border-bottom:1px solid var(--line);
+  }
+  tbody tr{border-bottom:1px solid var(--line);cursor:pointer;transition:background .12s ease;}
+  tbody tr:hover{background:var(--bg-panel);}
+  tbody td{padding:14px 12px;font-size:14px;vertical-align:middle;}
+
+  .rank-badge{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:34px;height:30px;font-family:'Rajdhani',sans-serif;font-weight:700;
+    font-size:15px;background:var(--bg-panel-2);color:var(--text-muted);
+    clip-path:polygon(6px 0,100% 0,100% 100%,0 100%,0 6px);
+  }
+  .rank-badge.invite{background:rgba(255,70,85,0.18);color:var(--red);}
+  .rank-badge.contender{background:rgba(76,224,210,0.15);color:var(--teal);}
+
+  .team-name{font-weight:600;font-size:15px;}
+  .team-tag{font-family:'JetBrains Mono',monospace;color:var(--text-muted);font-size:12px;margin-left:6px;}
+  .div-tag{
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;
+    text-transform:uppercase;padding:3px 8px;border:1px solid var(--line);color:var(--text-muted);
+  }
+  .points{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:15px;}
+
+  .empty, .error{
+    padding:60px 20px;text-align:center;color:var(--text-muted);
+    border:1px dashed var(--line);margin-top:20px;
+  }
+  .empty code, .error code{
+    background:var(--bg-panel-2);padding:2px 6px;border-radius:3px;color:var(--teal);
+    font-family:'JetBrains Mono',monospace;font-size:12.5px;
+  }
+
+  .detail-row td{background:var(--bg-panel);padding:18px 12px 22px;}
+  .detail-inner{display:flex;gap:40px;flex-wrap:wrap;}
+  .detail-block h4{
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;
+    text-transform:uppercase;color:var(--text-muted);margin:0 0 10px;
+  }
+  .pip-row{display:flex;gap:4px;}
+  .pip{width:16px;height:16px;background:var(--bg-panel-2);}
+  .pip.win{background:var(--teal);}
+  .pip.loss{background:var(--red);}
+
+  footer{margin-top:60px;color:var(--text-muted);font-size:12px;text-align:center;}
+  footer a{color:var(--text-muted);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Valorant Premier · Région EU</div>
+    <h1>Classement <span>Contender</span> &amp; Invite</h1>
+    <p class="sub">Les deux plus hauts échelons du Path to Pro européen, toutes conférences confondues. Données récupérées automatiquement.</p>
+    <div class="meta" id="meta">Chargement…</div>
+  </header>
+
+  <div class="controls">
+    <div class="pill-group" id="conf-filters"></div>
+    <div class="pill-group" id="div-filters">
+      <div class="pill active" data-div="all">Toutes</div>
+      <div class="pill" data-div="invite">Invite</div>
+      <div class="pill" data-div="contender">Contender</div>
+    </div>
+    <input id="search" type="text" placeholder="Rechercher une équipe…">
+  </div>
+
+  <table id="board" style="display:none">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Équipe</th>
+        <th>Conférence</th>
+        <th>Division</th>
+        <th>Points</th>
+      </tr>
+    </thead>
+    <tbody id="board-body"></tbody>
+  </table>
+
+  <div id="empty" class="empty" style="display:none">
+    Aucune donnée pour l'instant.<br><br>
+    Lance <code>HENRIKDEV_API_KEY=ta_clé python3 fetch_premier_data.py</code> une première fois
+    (ou attends le prochain passage du workflow GitHub Actions) pour générer <code>data/leaderboard.json</code>.
+  </div>
+
+  <div id="error" class="error" style="display:none"></div>
+
+  <footer>
+    Données via l'API non-officielle <a href="https://docs.henrikdev.xyz" target="_blank">HenrikDev</a>, non affiliée à Riot Games.
+  </footer>
+</div>
+
+<script>
+let RAW = [];
+let activeConf = "all";
+let activeDiv = "all";
+
+function divisionLabel(team){
+  const named = team.division_name || team.division_label || team.tier_name;
+  if (named) return named.toLowerCase();
+  // repli : on ne connaît que le numéro -> on affiche tel quel
+  return null;
+}
+
+function isInvite(team){
+  const label = divisionLabel(team);
+  if (label) return label.includes("invite");
+  // repli grossier : division numérique la plus haute vue dans le jeu de données
+  const maxDiv = Math.max(...RAW.map(t => t.division || 0));
+  return team.division === maxDiv;
+}
+
+function render(){
+  const tbody = document.getElementById('board-body');
+  tbody.innerHTML = "";
+  const q = document.getElementById('search').value.trim().toLowerCase();
+
+  const filtered = RAW.filter(t => {
+    if (activeConf !== "all" && t.conference !== activeConf) return false;
+    if (activeDiv === "invite" && !isInvite(t)) return false;
+    if (activeDiv === "contender" && isInvite(t)) return false;
+    if (q && !(`${t.name||''} ${t.tag||''}`.toLowerCase().includes(q))) return false;
+    return true;
+  });
+
+  filtered.forEach((t, i) => {
+    const invite = isInvite(t);
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><span class="rank-badge ${invite ? 'invite':'contender'}">${i+1}</span></td>
+      <td><span class="team-name">${t.name || '—'}</span><span class="team-tag">#${t.tag || '?'}</span></td>
+      <td>${(t.conference||'').replaceAll('_',' ')}</td>
+      <td><span class="div-tag">${invite ? 'Invite' : 'Contender'}</span></td>
+      <td class="points">${t.points ?? t.ranking ?? '—'}</td>
+    `;
+    tr.addEventListener('click', () => toggleDetail(tr, t));
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById('board').style.display = filtered.length ? '' : 'none';
+  document.getElementById('empty').style.display = filtered.length ? 'none' : (RAW.length ? 'none' : 'block');
+}
+
+function toggleDetail(tr, team){
+  const existing = tr.nextElementSibling;
+  if (existing && existing.classList.contains('detail-row')){
+    existing.remove();
+    return;
+  }
+  document.querySelectorAll('.detail-row').forEach(r => r.remove());
+
+  const roster = (team.roster && team.roster.members) || [];
+  const matches = team.recent_matches || [];
+
+  const row = document.createElement('tr');
+  row.className = 'detail-row';
+  const td = document.createElement('td');
+  td.colSpan = 5;
+  td.innerHTML = `
+    <div class="detail-inner">
+      <div class="detail-block">
+        <h4>Roster (${roster.length || '?'})</h4>
+        <div>${roster.length ? roster.map(m => `<div>${m}</div>`).join('') : 'Non résolu — nécessite un appel supplémentaire par joueur.'}</div>
+      </div>
+      <div class="detail-block">
+        <h4>Forme récente</h4>
+        ${matches.length
+          ? `<div class="pip-row">${matches.slice(-10).map(m => `<div class="pip ${m.points_after >= m.points_before ? 'win':'loss'}"></div>`).join('')}</div>`
+          : '<div>Historique non chargé (lance le script avec --with-history).</div>'}
+      </div>
+    </div>
+  `;
+  row.appendChild(td);
+  tr.after(row);
+}
+
+document.getElementById('search').addEventListener('input', render);
+document.getElementById('div-filters').addEventListener('click', (e) => {
+  const pill = e.target.closest('.pill');
+  if (!pill) return;
+  document.querySelectorAll('#div-filters .pill').forEach(p => p.classList.remove('active','teal'));
+  pill.classList.add('active');
+  if (pill.dataset.div === 'contender') pill.classList.add('teal');
+  activeDiv = pill.dataset.div;
+  render();
+});
+
+fetch('data/leaderboard.json?_=' + Date.now())
+  .then(r => { if(!r.ok) throw new Error('fichier introuvable'); return r.json(); })
+  .then(json => {
+    RAW = json.teams || [];
+    const confs = [...new Set(RAW.map(t => t.conference).filter(Boolean))];
+    const confBox = document.getElementById('conf-filters');
+    const allPill = document.createElement('div');
+    allPill.className = 'pill active';
+    allPill.textContent = 'Toutes conférences';
+    allPill.dataset.conf = 'all';
+    confBox.appendChild(allPill);
+    confs.forEach(c => {
+      const p = document.createElement('div');
+      p.className = 'pill';
+      p.textContent = c.replaceAll('_',' ');
+      p.dataset.conf = c;
+      confBox.appendChild(p);
+    });
+    confBox.addEventListener('click', (e) => {
+      const pill = e.target.closest('.pill');
+      if (!pill) return;
+      confBox.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeConf = pill.dataset.conf;
+      render();
+    });
+    document.getElementById('meta').textContent =
+      `${RAW.length} équipes · mis à jour le ${new Date(json.generated_at).toLocaleString('fr-FR')}`;
+    render();
+  })
+  .catch(err => {
+    document.getElementById('meta').textContent = '';
+    document.getElementById('error').style.display = 'block';
+    document.getElementById('error').innerHTML =
+      `Impossible de charger <code>data/leaderboard.json</code> (${err.message}).<br><br>
+       Génère-le d'abord avec le script Python, ou attends le premier passage du workflow automatique.`;
+  });
+</script>
+</body>
+</html>

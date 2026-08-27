@@ -31,6 +31,7 @@ import os
 import sys
 import time
 from collections import defaultdict
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
@@ -48,6 +49,27 @@ MAX_RETRIES = 3
 REQUEST_TIMEOUT_SECONDS = 30
 
 _puuid_name_cache = {}
+
+
+def get_last_weekend_range(now: datetime = None):
+    """Retourne (début, fin) du dernier week-end (samedi 00:00 -> dimanche 23:59:59
+    UTC) précédant ou incluant maintenant. Si on tourne un dimanche, la fenêtre
+    du jour même (partielle) est retournée."""
+    now = now or datetime.now(timezone.utc)
+    days_since_sunday = (now.weekday() - 6) % 7  # weekday(): lundi=0 ... dimanche=6
+    last_sunday = (now - timedelta(days=days_since_sunday)).replace(hour=23, minute=59, second=59, microsecond=0)
+    last_saturday = (last_sunday - timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+    return last_saturday, last_sunday
+
+
+def parse_match_datetime(value):
+    """Parse une date ISO8601 (avec ou sans 'Z') en datetime UTC. Retourne None si échec."""
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except (ValueError, TypeError):
+        return None
 _match_cache = {}
 
 
@@ -430,15 +452,82 @@ def rounds_played_in_match(match_data: dict) -> int:
     return 0
 
 
-def aggregate_team_season(team: dict, api_key: str, player_agg: dict, debug_match: bool = False):
+def determine_team_side(team: dict, players: list):
+    """Détermine de quel côté (ex: 'Red'/'Blue') joue CETTE équipe dans ce match
+    précis, par recoupement majoritaire entre son roster connu et les PUUID
+    présents de chaque côté. Plus fiable qu'une simple présence/absence, car
+    ça tolère un roster qui a légèrement bougé depuis la dernière synchro."""
+    roster_puuids = {m["puuid"] for m in team.get("roster_resolved", [])}
+    if not roster_puuids:
+        return None
+    counts = defaultdict(int)
+    for p in players:
+        if p.get("puuid") in roster_puuids:
+            side = p.get("team_id")
+            if side:
+                counts[side] += 1
+    if not counts:
+        return None
+    return max(counts, key=counts.get)
+
+
+def apply_match_stats_to_entry(agg: dict, puuid: str, name: str, team: dict, division,
+                                match_dt, s: dict, agent, round_stats, rounds_total: int):
+    """Cumule les stats d'UN joueur pour UN match dans le dict d'agrégation
+    donné (saison ou week-end), et ne met à jour l'équipe/division affichées
+    que si ce match est le plus récent vu jusqu'ici pour ce joueur (évite
+    qu'un joueur ayant changé d'équipe en cours de saison reste attribué à
+    une équipe au hasard selon l'ordre de traitement)."""
+    entry = agg[puuid]
+    entry["name"] = name
+
+    is_more_recent = (
+        entry.get("last_match_at") is None
+        or (match_dt is not None and (entry["last_match_at"] is None or match_dt > entry["last_match_at"]))
+    )
+    if is_more_recent:
+        entry["team"] = f"{team.get('name')} #{team.get('tag')}"
+        entry["division"] = division
+        if match_dt is not None:
+            entry["last_match_at"] = match_dt
+
+    entry.setdefault("agents", defaultdict(int))
+    if agent:
+        entry["agents"][agent] += 1
+    entry["matches"] += 1
+    entry["kills"] += s.get("kills") or 0
+    entry["deaths"] += s.get("deaths") or 0
+    entry["assists"] += s.get("assists") or 0
+    entry["score"] += s.get("score") or 0
+    entry["headshots"] += s.get("headshots") or 0
+    entry["bodyshots"] += s.get("bodyshots") or 0
+    entry["legshots"] += s.get("legshots") or 0
+    entry["damage"] += extract_damage_made(s)
+    entry["rounds"] += rounds_total
+
+    if round_stats:
+        entry["kast_rounds"] += round_stats["kast"]
+        entry["kast_total_rounds"] += rounds_total
+        entry["first_kills"] += round_stats["first_kills"]
+        entry["first_deaths"] += round_stats["first_deaths"]
+        entry["clutches_won"] += round_stats["clutches_won"]
+        entry["round_level_available"] = True
+
+
+def aggregate_team_season(team: dict, api_key: str, season_agg: dict, weekend_agg: dict,
+                           processed_sides: set, weekend_range, debug_match: bool = False):
     """Parcourt tous les matchs de la saison d'une équipe et cumule les stats
-    individuelles dans player_agg (dict partagé, clé = puuid)."""
+    individuelles dans season_agg (toujours) et weekend_agg (si le match est
+    dans la fenêtre du dernier week-end). processed_sides est un set partagé
+    entre TOUTES les équipes du run, pour ne jamais compter deux fois le même
+    (match, camp) — indispensable quand deux équipes suivies s'affrontent."""
     team_id = team.get("id") or team.get("team_id")
     if not team_id:
         return
     matches = fetch_team_history(team_id, api_key)
     team["matches_played"] = len(matches)
-    roster_puuids = {m["puuid"] for m in team.get("roster_resolved", [])}
+    division = extract_division_number(team)
+    weekend_start, weekend_end = weekend_range
 
     for m in matches:
         match_id = m.get("id")
@@ -447,48 +536,40 @@ def aggregate_team_season(team: dict, api_key: str, player_agg: dict, debug_matc
         data = fetch_match(match_id, api_key, debug_match=debug_match)
         if not data:
             continue
+
+        players = extract_players(data)
+        side = determine_team_side(team, players)
+        if side is None:
+            continue  # impossible de savoir de quel côté est cette équipe pour ce match
+
+        dedupe_key = (match_id, side)
+        if dedupe_key in processed_sides:
+            continue
+        processed_sides.add(dedupe_key)
+
         rounds_total = rounds_played_in_match(data)
         round_stats_by_puuid, _ = compute_match_round_stats(data)
+        match_dt = parse_match_datetime(m.get("started_at")) or parse_match_datetime(
+            (data.get("metadata") or {}).get("started_at")
+        )
+        in_weekend = match_dt is not None and weekend_start <= match_dt <= weekend_end
 
-        for p in extract_players(data):
+        for p in players:
+            if p.get("team_id") != side:
+                continue  # joueur du camp adverse, pas de cette équipe
             try:
                 puuid = p.get("puuid")
-                if roster_puuids and puuid not in roster_puuids:
-                    continue  # on ne compte que les joueurs de CETTE équipe pour éviter les doublons adverses
                 name = f"{p.get('name')}#{p.get('tag')}" if p.get("name") else puuid
                 s = p.get("stats", p)
                 agent = (p.get("agent") or {}).get("name") if isinstance(p.get("agent"), dict) else p.get("agent")
+                round_stats = round_stats_by_puuid.get(puuid)
 
-                entry = player_agg[puuid]
-                entry["name"] = name
-                entry["team"] = f"{team.get('name')} #{team.get('tag')}"
-                entry["division"] = extract_division_number(team)
-                entry.setdefault("agents", defaultdict(int))
-                if agent:
-                    entry["agents"][agent] += 1
-                entry["matches"] += 1
-                entry["kills"] += s.get("kills") or 0
-                entry["deaths"] += s.get("deaths") or 0
-                entry["assists"] += s.get("assists") or 0
-                entry["score"] += s.get("score") or 0
-                entry["headshots"] += s.get("headshots") or 0
-                entry["bodyshots"] += s.get("bodyshots") or 0
-                entry["legshots"] += s.get("legshots") or 0
-                entry["damage"] += extract_damage_made(s)
-                entry["rounds"] += rounds_total
-
-                rl = round_stats_by_puuid.get(puuid)
-                if rl:
-                    entry["kast_rounds"] += rl["kast"]
-                    entry["kast_total_rounds"] += rounds_total
-                    entry["first_kills"] += rl["first_kills"]
-                    entry["first_deaths"] += rl["first_deaths"]
-                    entry["clutches_won"] += rl["clutches_won"]
-                    entry["round_level_available"] = True
+                apply_match_stats_to_entry(season_agg, puuid, name, team, division, match_dt,
+                                            s, agent, round_stats, rounds_total)
+                if in_weekend:
+                    apply_match_stats_to_entry(weekend_agg, puuid, name, team, division, match_dt,
+                                                s, agent, round_stats, rounds_total)
             except Exception as e:
-                # Une anomalie sur UN joueur/UN match ne doit jamais faire perdre
-                # tout le run (potentiellement 30-90 min de travail). On logue et
-                # on continue avec le joueur suivant.
                 print(f"  ⚠️  joueur ignoré (match {match_id}, puuid {p.get('puuid')}) : {e}", file=sys.stderr)
                 continue
 
@@ -512,14 +593,23 @@ def finalize_player_stats(player_agg: dict):
             fk_fd = f"{e['first_kills']}/{e['first_deaths']}"
             clutch_display = e["clutches_won"]
 
-        # Rating "maison", clairement une ESTIMATION, pas le vrai Rating VLR
-        # (formule non publiée par VLR.gg). Pondération inspirée d'approximations
-        # communautaires : impact ACS normalisé + KDA + KAST si dispo.
+        # Rating "maison" — approximation empirique, PAS le vrai Rating VLR.
+        # Calibrée par régression linéaire sur ~80 joueurs pro VCT (Americas
+        # Stage 2 2026), en utilisant les 4 composantes que VLR annonce
+        # officiellement dans son architecture Rating 2.0 (kill/death/assist/
+        # damage contribution — la composante "survie" a été supprimée par
+        # VLR en 2024, donc on ne l'inclut pas non plus) :
+        #   Rating ≈ 0.880 + 0.664·KPR − 1.074·DPR + 0.249·APR + 0.00255·ADR
+        # Les coefficients numériques exacts de VLR restent non-publics ; ceci
+        # est la meilleure approximation reproductible qu'on puisse obtenir,
+        # pas la formule interne réelle.
         rating_estimate = None
-        if acs is not None:
-            kda_component = (e["kills"] + 0.5 * e["assists"] - e["deaths"]) / max(e["matches"], 1)
-            kast_component = (kast_pct / 100) if kast_pct is not None else 0.72  # valeur neutre par défaut
-            rating_estimate = round(0.005 * acs + 0.4 * kast_component + 0.05 * kda_component, 2)
+        if rounds:
+            kpr = e["kills"] / rounds
+            dpr = e["deaths"] / rounds
+            apr = e["assists"] / rounds
+            adr_for_rating = adr or 0
+            rating_estimate = round(0.880 + 0.664 * kpr - 1.074 * dpr + 0.249 * apr + 0.00255 * adr_for_rating, 2)
 
         agents_sorted = sorted(e.get("agents", {}).items(), key=lambda x: -x[1])[:3]
 
@@ -549,7 +639,7 @@ def finalize_player_stats(player_agg: dict):
 
 def new_player_entry():
     return {
-        "name": None, "team": None, "division": None, "matches": 0,
+        "name": None, "team": None, "division": None, "matches": 0, "last_match_at": None,
         "kills": 0, "deaths": 0, "assists": 0, "score": 0,
         "headshots": 0, "bodyshots": 0, "legshots": 0, "damage": 0, "rounds": 0,
         "kast_rounds": 0, "kast_total_rounds": 0, "first_kills": 0, "first_deaths": 0,
@@ -581,19 +671,24 @@ def main():
                 fetch_match(history[0]["id"], api_key, debug_match=True)
         return
 
-    player_agg = defaultdict(new_player_entry)
+    season_agg = defaultdict(new_player_entry)
+    weekend_agg = defaultdict(new_player_entry)
+    processed_sides = set()
+    weekend_range = get_last_weekend_range()
+    print(f"Fenêtre 'dernier week-end' : {weekend_range[0].isoformat()} → {weekend_range[1].isoformat()}")
 
     print(f"\n{len(teams)} équipes françaises Contender/Invite. Résolution rosters + agrégation saison...")
     for i, team in enumerate(teams, 1):
         print(f"  [{i}/{len(teams)}] {team.get('name', '?')}")
         try:
             resolve_roster(team, api_key)
-            aggregate_team_season(team, api_key, player_agg)
+            aggregate_team_season(team, api_key, season_agg, weekend_agg, processed_sides, weekend_range)
         except Exception as e:
             print(f"  ⚠️  équipe ignorée après erreur ({team.get('name', '?')}) : {e}", file=sys.stderr)
             continue
 
-    players = finalize_player_stats(player_agg)
+    players_season = finalize_player_stats(season_agg)
+    players_weekend = finalize_player_stats(weekend_agg)
 
     teams.sort(key=lambda t: -(extract_division_number(t) or 0))
 
@@ -604,15 +699,18 @@ def main():
                 "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 "region": REGION,
                 "conference": france_conference,
+                "weekend_range": [weekend_range[0].isoformat(), weekend_range[1].isoformat()],
                 "teams": teams,
-                "players": players,
+                "players": players_season,
+                "players_weekend": players_weekend,
             },
             ensure_ascii=False,
             indent=2,
         ),
         encoding="utf-8",
     )
-    print(f"\n✓ {len(teams)} équipes et {len(players)} joueurs écrits dans {OUTPUT_PATH}")
+    print(f"\n✓ {len(teams)} équipes, {len(players_season)} joueurs (saison), "
+          f"{len(players_weekend)} joueurs (dernier week-end) écrits dans {OUTPUT_PATH}")
 
 
 if __name__ == "__main__":

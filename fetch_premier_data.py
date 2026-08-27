@@ -182,6 +182,16 @@ def filter_top_divisions(teams: list, debug: bool = False):
         print("  [debug] clés de premier niveau d'une équipe :", list(teams[0].keys()))
         for path, value in _find_division_value(teams[0]):
             print(f"  [debug] {path} = {value!r}")
+        # Histogramme complet des valeurs de division vues, AVANT filtrage.
+        # Sert à vérifier si notre hypothèse "les 2 plus hauts numéros =
+        # Contender+Invite" est correcte, ou si le numérotage est différent
+        # (plus de 2 niveaux, numérotation par conférence, etc.)
+        histogram = defaultdict(int)
+        for t in teams:
+            histogram[extract_division_number(t)] += 1
+        print(f"  [debug] histogramme des divisions ({len(teams)} équipes au total) :")
+        for div_value in sorted(histogram.keys(), key=lambda x: (x is None, x), reverse=True):
+            print(f"    division={div_value!r} : {histogram[div_value]} équipe(s)")
 
     named = [t for t in teams if (extract_division_label(t) or "").lower() in TARGET_DIVISION_NAMES]
     if named:

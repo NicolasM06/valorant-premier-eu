@@ -127,6 +127,46 @@ def _flatten_strings(obj):
     return out
 
 
+def fetch_current_season_window(api_key: str, conference: str):
+    """Interroge /premier/seasons/{region} pour trouver la fenêtre de dates exacte
+    de la Stage EN COURS pour la conférence donnée. Sans ça, /premier/{id}/history
+    renvoie TOUT l'historique de l'équipe, y compris les Stages précédentes déjà
+    terminées — ce qui explique pourquoi des joueurs ayant quitté ou n'ayant pas
+    joué ce week-end apparaissaient quand même dans nos stats 'saison'."""
+    payload = api_get(f"/valorant/v1/premier/seasons/{REGION}", api_key)
+    if not payload or "data" not in payload:
+        print("  ⚠️  Impossible de récupérer /premier/seasons — pas de filtrage "
+              "par Stage, l'historique complet sera utilisé (risque de mélanger "
+              "plusieurs Stages passées).")
+        return None
+
+    now = datetime.now(timezone.utc)
+    seasons = payload["data"] if isinstance(payload["data"], list) else [payload["data"]]
+
+    for season in seasons:
+        starts = parse_match_datetime(season.get("starts_at"))
+        ends = parse_match_datetime(season.get("ends_at"))
+        if not (starts and ends and starts <= now <= ends):
+            continue  # pas la saison active
+
+        for event in season.get("events", []) or []:
+            for cs in event.get("conference_schedules", []) or []:
+                if cs.get("conference") == conference:
+                    cs_start = parse_match_datetime(cs.get("starts_at"))
+                    cs_end = parse_match_datetime(cs.get("ends_at"))
+                    if cs_start and cs_end:
+                        print(f"✓ Stage en cours pour {conference} : {cs_start.isoformat()} → {cs_end.isoformat()}")
+                        return cs_start, cs_end
+
+        print(f"✓ Saison active trouvée, mais pas de planning spécifique à {conference} — "
+              f"repli sur la fenêtre globale de la saison : {starts.isoformat()} → {ends.isoformat()}")
+        return starts, ends
+
+    print("  ⚠️  Aucune saison active trouvée pour la date du jour — pas de filtrage "
+          "par Stage, l'historique complet sera utilisé.")
+    return None
+
+
 def discover_france_conference(api_key: str):
     """Interroge /premier/conferences pour trouver le code de zone actuel de la France,
     plutôt que de se fier à un nom codé en dur qui peut devenir obsolète (Riot a déjà
@@ -374,7 +414,7 @@ def compute_match_round_stats(match_data: dict):
     for k in kills:
         kills_by_round[k.get("round")].append(k)
 
-    result = defaultdict(lambda: {"kast": 0, "first_kills": 0, "first_deaths": 0, "clutches_won": 0})
+    result = defaultdict(lambda: {"kast": 0, "first_kills": 0, "first_deaths": 0, "clutches_won": 0, "eligible_rounds": 0})
 
     def puuid_of(obj):
         if isinstance(obj, dict):
@@ -385,11 +425,14 @@ def compute_match_round_stats(match_data: dict):
         round_kills = sorted(kills_by_round.get(idx, []), key=lambda k: k.get("time_in_round_in_ms", 0))
 
         participants = {}  # puuid -> team
+        afk_puuids = set()
         for s in (rnd.get("stats") or []):
             p = s.get("player") or {}
             pu = p.get("puuid")
             if pu:
                 participants[pu] = p.get("team")
+                if s.get("was_afk"):
+                    afk_puuids.add(pu)
 
         alive = {pu: True for pu in participants}
         team_alive = defaultdict(int)
@@ -459,6 +502,9 @@ def compute_match_round_stats(match_data: dict):
                 result[fd]["first_deaths"] += 1
 
         for pu in participants:
+            if pu in afk_puuids:
+                continue  # round exclu du calcul KAST pour ce joueur (ni pour, ni contre)
+            result[pu]["eligible_rounds"] += 1
             credited = (pu in got_kill_set) or (pu in assisted_set) or (pu not in killed_set) or (pu in traded_set)
             if credited:
                 result[pu]["kast"] += 1
@@ -554,7 +600,7 @@ def apply_match_stats_to_entry(agg: dict, puuid: str, name: str, team: dict, div
 
     if round_stats:
         entry["kast_rounds"] += round_stats["kast"]
-        entry["kast_total_rounds"] += rounds_total
+        entry["kast_total_rounds"] += round_stats["eligible_rounds"]
         entry["first_kills"] += round_stats["first_kills"]
         entry["first_deaths"] += round_stats["first_deaths"]
         entry["clutches_won"] += round_stats["clutches_won"]
@@ -562,8 +608,9 @@ def apply_match_stats_to_entry(agg: dict, puuid: str, name: str, team: dict, div
 
 
 def aggregate_team_season(team: dict, api_key: str, season_agg: dict, weekend_agg: dict,
-                           processed_sides: set, weekend_range, debug_match: bool = False):
-    """Parcourt tous les matchs de la saison d'une équipe et cumule les stats
+                           processed_sides: set, weekend_range, stage_window, debug_match: bool = False):
+    """Parcourt tous les matchs de la Stage EN COURS d'une équipe (filtré via
+    stage_window, pour ne pas mélanger d'anciennes Stages) et cumule les stats
     individuelles dans season_agg (toujours) et weekend_agg (si le match est
     dans la fenêtre du dernier week-end). processed_sides est un set partagé
     entre TOUTES les équipes du run, pour ne jamais compter deux fois le même
@@ -571,7 +618,17 @@ def aggregate_team_season(team: dict, api_key: str, season_agg: dict, weekend_ag
     team_id = team.get("id") or team.get("team_id")
     if not team_id:
         return
-    matches = fetch_team_history(team_id, api_key)
+    all_matches = fetch_team_history(team_id, api_key)
+
+    if stage_window:
+        stage_start, stage_end = stage_window
+        matches = [
+            m for m in all_matches
+            if (dt := parse_match_datetime(m.get("started_at"))) and stage_start <= dt <= stage_end
+        ]
+    else:
+        matches = all_matches  # pas de fenêtre connue -> on garde tout (avec le risque documenté)
+
     team["matches_played"] = len(matches)
     division = extract_division_number(team)
     weekend_start, weekend_end = weekend_range
@@ -723,6 +780,7 @@ def main():
     processed_sides = set()
     weekend_range = get_last_weekend_range()
     print(f"Fenêtre 'dernier week-end' : {weekend_range[0].isoformat()} → {weekend_range[1].isoformat()}")
+    stage_window = fetch_current_season_window(api_key, france_conference)
 
     print(f"\n{len(teams)} équipes françaises Contender/Invite. Résolution rosters + agrégation saison...")
     for i, team in enumerate(teams, 1):
@@ -734,7 +792,7 @@ def main():
             resolve_roster(team, api_key)
             if debug and i == 1:
                 print(f"  [debug] roster résolu : {team.get('roster_resolved')}")
-            aggregate_team_season(team, api_key, season_agg, weekend_agg, processed_sides, weekend_range)
+            aggregate_team_season(team, api_key, season_agg, weekend_agg, processed_sides, weekend_range, stage_window)
         except Exception as e:
             print(f"  ⚠️  équipe ignorée après erreur ({team.get('name', '?')}) : {e}", file=sys.stderr)
             continue

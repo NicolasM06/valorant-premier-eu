@@ -394,11 +394,10 @@ def extract_players(match_data: dict):
     return players or []
 
 
-TRADE_WINDOW_MS = 3000  # fenêtre communément utilisée par les trackers pour créditer un "trade"
-# Plusieurs fenêtres candidates calculées en une seule passe (pas besoin de relancer
-# un run par valeur testée) — pour comparer avec Tracker.gg, dont la fenêtre exacte
-# n'est publiée nulle part (même leurs propres utilisateurs ne l'ont jamais obtenue).
-TRADE_WINDOW_CANDIDATES_MS = [3000, 4000, 5000, 6000, 8000, 10000]
+TRADE_WINDOW_MS = 5000  # confirmé empiriquement (comparaison à Tracker.gg sur données réelles) comme la
+# valeur la plus proche parmi 3s/4s/5s/6s/8s/10s testées — VLR et Tracker ne publient jamais leur
+# fenêtre exacte, donc ceci reste une estimation calibrée, pas une certitude absolue.
+TRADE_WINDOW_CANDIDATES_MS = [5000]  # on ne recalcule plus que la fenêtre retenue, pour alléger les runs
 
 
 _debug_assist_stats = {"total_kills": 0, "kills_with_assistants": 0}

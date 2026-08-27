@@ -285,52 +285,122 @@ def extract_players(match_data: dict):
     return players or []
 
 
-def extract_round_level_stats(match_data: dict, puuid: str):
-    """Tentative d'extraction de KAST / Clutch / FK-FD à partir des données round-
-    par-round, si l'API les expose. Retourne un dict avec des None si la structure
-    round-level n'est pas dans la forme attendue — ce n'est PAS garanti de fonctionner
-    tel quel, à vérifier avec --debug-match sur ton propre jeu de données."""
-    result = {"kast_rounds": None, "clutches_won": None, "first_kills": None, "first_deaths": None}
-    rounds = match_data.get("rounds")
-    if not isinstance(rounds, list) or not rounds:
-        return result
+TRADE_WINDOW_MS = 3000  # fenêtre communément utilisée par les trackers pour créditer un "trade"
 
-    kast_rounds = 0
+
+def compute_match_round_stats(match_data: dict):
+    """Calcule KAST / First Kill / First Death / Clutch pour TOUS les joueurs
+    d'un match, en une seule passe, à partir de la structure confirmée :
+    - match_data['rounds'][i]['stats'][j'] = {'player': {...}, ...}
+    - match_data['kills'] = liste globale avec 'round', 'killer', 'victim',
+      'assistants', 'time_in_round_in_ms'
+    - match_data['rounds'][i]['winning_team']
+    Retourne (dict puuid -> {kast, first_kills, first_deaths, clutches_won}, total_rounds)
+    """
+    rounds = match_data.get("rounds") or []
+    kills = match_data.get("kills") or []
     total_rounds = len(rounds)
-    first_kills = 0
-    first_deaths = 0
-    clutches_won = 0
 
-    for rnd in rounds:
-        player_stats_list = rnd.get("player_stats") or rnd.get("stats") or []
-        this_round_contributed = False
-        for ps in player_stats_list:
-            if ps.get("player_puuid") != puuid:
+    kills_by_round = defaultdict(list)
+    for k in kills:
+        kills_by_round[k.get("round")].append(k)
+
+    result = defaultdict(lambda: {"kast": 0, "first_kills": 0, "first_deaths": 0, "clutches_won": 0})
+
+    def puuid_of(obj):
+        if isinstance(obj, dict):
+            return obj.get("puuid")
+        return obj  # au cas où ce serait déjà une simple chaîne
+
+    for idx, rnd in enumerate(rounds):
+        round_kills = sorted(kills_by_round.get(idx, []), key=lambda k: k.get("time_in_round_in_ms", 0))
+
+        participants = {}  # puuid -> team
+        for s in (rnd.get("stats") or []):
+            p = s.get("player") or {}
+            pu = p.get("puuid")
+            if pu:
+                participants[pu] = p.get("team")
+
+        alive = {pu: True for pu in participants}
+        team_alive = defaultdict(int)
+        for pu, team in participants.items():
+            team_alive[team] += 1
+
+        killed_set, assisted_set, got_kill_set = set(), set(), set()
+        death_events = []  # (time_ms, victim, killer)
+        clutch_candidate = None  # (puuid_seul, nb_adversaires_restants)
+
+        for k in round_kills:
+            killer = puuid_of(k.get("killer"))
+            victim = puuid_of(k.get("victim"))
+            t = k.get("time_in_round_in_ms", 0)
+
+            if killer:
+                got_kill_set.add(killer)
+            if victim:
+                killed_set.add(victim)
+            for a in (k.get("assistants") or []):
+                au = puuid_of(a)
+                if au:
+                    assisted_set.add(au)
+
+            death_events.append((t, victim, killer))
+
+            if victim in alive and alive[victim]:
+                alive[victim] = False
+                vteam = participants.get(victim)
+                if vteam is not None:
+                    team_alive[vteam] -= 1
+
+            teams_present = [tm for tm in team_alive if tm is not None]
+            if len(teams_present) == 2 and clutch_candidate is None:
+                t1, t2 = teams_present
+                c1, c2 = team_alive[t1], team_alive[t2]
+                if c1 == 1 and c2 >= 1:
+                    lone = next((pu for pu, al in alive.items() if al and participants.get(pu) == t1), None)
+                    if lone:
+                        clutch_candidate = (lone, c2)
+                elif c2 == 1 and c1 >= 1:
+                    lone = next((pu for pu, al in alive.items() if al and participants.get(pu) == t2), None)
+                    if lone:
+                        clutch_candidate = (lone, c1)
+
+        # Détection des trades : une mort est "vengée" si un coéquipier tue
+        # l'auteur du kill (le tueur d'origine se fait tuer à son tour) dans
+        # la fenêtre de temps suivante, ce même round.
+        traded_set = set()
+        for i, (t, victim, killer) in enumerate(death_events):
+            if not victim or not killer:
                 continue
-            kills = ps.get("kills") or []
-            was_killed = ps.get("was_killed", ps.get("died", False))
-            assists_count = len(ps.get("assists", []) or [])
-            if kills or assists_count or not was_killed:
-                this_round_contributed = True
-            for k in kills if isinstance(kills, list) else []:
-                if k.get("first_kill") or k.get("is_first_kill"):
-                    first_kills += 1
-            if ps.get("first_death") or ps.get("is_first_death"):
-                first_deaths += 1
-            if ps.get("clutch_won") or ps.get("won_clutch"):
-                clutches_won += 1
-        if this_round_contributed:
-            kast_rounds += 1
+            vteam = participants.get(victim)
+            for t2, victim2, killer2 in death_events[i + 1:]:
+                if t2 - t > TRADE_WINDOW_MS:
+                    break
+                if victim2 == killer and participants.get(killer2) == vteam:
+                    traded_set.add(victim)
+                    break
 
-    if kast_rounds == 0 and first_kills == 0 and first_deaths == 0 and clutches_won == 0:
-        return result
+        if round_kills:
+            fk = puuid_of(round_kills[0].get("killer"))
+            fd = puuid_of(round_kills[0].get("victim"))
+            if fk:
+                result[fk]["first_kills"] += 1
+            if fd:
+                result[fd]["first_deaths"] += 1
 
-    result["kast_rounds"] = kast_rounds
-    result["total_rounds_for_kast"] = total_rounds
-    result["first_kills"] = first_kills
-    result["first_deaths"] = first_deaths
-    result["clutches_won"] = clutches_won
-    return result
+        for pu in participants:
+            credited = (pu in got_kill_set) or (pu in assisted_set) or (pu not in killed_set) or (pu in traded_set)
+            if credited:
+                result[pu]["kast"] += 1
+
+        if clutch_candidate:
+            lone_puuid, _deficit = clutch_candidate
+            lone_team = participants.get(lone_puuid)
+            if rnd.get("winning_team") == lone_team:
+                result[lone_puuid]["clutches_won"] += 1
+
+    return result, total_rounds
 
 
 def extract_damage_made(s: dict):
@@ -378,6 +448,8 @@ def aggregate_team_season(team: dict, api_key: str, player_agg: dict, debug_matc
         if not data:
             continue
         rounds_total = rounds_played_in_match(data)
+        round_stats_by_puuid, _ = compute_match_round_stats(data)
+
         for p in extract_players(data):
             try:
                 puuid = p.get("puuid")
@@ -405,13 +477,13 @@ def aggregate_team_season(team: dict, api_key: str, player_agg: dict, debug_matc
                 entry["damage"] += extract_damage_made(s)
                 entry["rounds"] += rounds_total
 
-                rl = extract_round_level_stats(data, puuid)
-                if rl["kast_rounds"] is not None:
-                    entry["kast_rounds"] += rl["kast_rounds"]
-                    entry["kast_total_rounds"] += rl.get("total_rounds_for_kast", rounds_total)
-                    entry["first_kills"] += rl["first_kills"] or 0
-                    entry["first_deaths"] += rl["first_deaths"] or 0
-                    entry["clutches_won"] += rl["clutches_won"] or 0
+                rl = round_stats_by_puuid.get(puuid)
+                if rl:
+                    entry["kast_rounds"] += rl["kast"]
+                    entry["kast_total_rounds"] += rounds_total
+                    entry["first_kills"] += rl["first_kills"]
+                    entry["first_deaths"] += rl["first_deaths"]
+                    entry["clutches_won"] += rl["clutches_won"]
                     entry["round_level_available"] = True
             except Exception as e:
                 # Une anomalie sur UN joueur/UN match ne doit jamais faire perdre

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T14:06:57Z",
+  "generated_at": "2026-08-27T15:11:06Z",
   "region": "eu",
   "conference": "EU_FRANCE",
   "weekend_range": [
@@ -439,7 +439,7 @@
         },
         {
           "puuid": "23110f61-4fcf-576e-83a4-8de4f82e1741",
-          "name": "Born To Mog#KCORP"
+          "name": "Kozzy fan acc#TSK"
         },
         {
           "puuid": "149fae8e-02b1-56c8-bcd1-5f60b323e93c",
@@ -4447,7 +4447,7 @@
     },
     {
       "puuid": "23110f61-4fcf-576e-83a4-8de4f82e1741",
-      "name": "Born To Mog#KCORP",
+      "name": "Kozzy fan acc#TSK",
       "team": "TSK LOKI #TSK",
       "division": 21,
       "matches": 2,
@@ -10553,7 +10553,7 @@
     },
     {
       "puuid": "23110f61-4fcf-576e-83a4-8de4f82e1741",
-      "name": "Born To Mog#KCORP",
+      "name": "Kozzy fan acc#TSK",
       "team": "TSK LOKI #TSK",
       "division": 21,
       "matches": 2,

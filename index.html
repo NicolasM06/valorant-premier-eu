@@ -102,13 +102,41 @@
     text-align:center;font-family:'JetBrains Mono',monospace;font-size:10px;
     letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted);
     padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap;
+    cursor:pointer;user-select:none;position:relative;
   }
+  #players-board th:hover{color:var(--text);}
+  #players-board th.sorted{color:var(--teal);}
+  #players-board th .arrow{font-size:9px;margin-left:2px;opacity:0.7;}
   #players-board th:nth-child(2),#players-board th:nth-child(3),#players-board th:nth-child(4){text-align:left;}
-  #players-board td{padding:10px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap;}
+  #players-board td{padding:8px 10px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap;}
   #players-board td:nth-child(2){text-align:left;font-weight:600;}
   #players-board td:nth-child(3){text-align:left;color:var(--text-muted);font-size:12px;}
-  #players-board td:nth-child(4){text-align:left;color:var(--text-muted);font-size:11px;}
-  #players-board tbody tr:hover{background:var(--bg-panel);}
+  #players-board td:nth-child(4){text-align:left;}
+  #players-board tbody tr:hover td{filter:brightness(1.15);}
+
+  /* Case cellule "heatmap" — la couleur de fond est posée inline en JS selon le percentile */
+  .heat-cell{font-family:'JetBrains Mono',monospace;font-weight:600;}
+
+  .agent-badges{display:flex;gap:4px;align-items:center;}
+  .agent-badge{
+    width:22px;height:22px;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;
+    font-family:'Rajdhani',sans-serif;font-weight:700;font-size:10px;color:#0f1923;
+    background:var(--teal);flex-shrink:0;
+  }
+  .agent-badge:nth-child(2){background:var(--red);color:#fff;}
+  .agent-badge:nth-child(3){background:#d095ff;}
+
+  /* Colonnes masquées via les cases à cocher */
+  #players-board td.col-hidden, #players-board th.col-hidden{display:none;}
+
+  .col-toggle-bar{
+    display:flex;flex-wrap:wrap;gap:4px 14px;padding:12px 14px;
+    background:var(--bg-panel);border:1px solid var(--line);border-bottom:none;
+    font-family:'JetBrains Mono',monospace;font-size:11px;
+  }
+  .col-toggle-bar label{display:flex;align-items:center;gap:5px;color:var(--text-muted);cursor:pointer;white-space:nowrap;}
+  .col-toggle-bar label:hover{color:var(--text);}
+  .col-toggle-bar input{accent-color:var(--red);cursor:pointer;}
   .rating-cell{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--teal);}
   .na{color:var(--text-muted);opacity:0.5;}
 
@@ -175,26 +203,26 @@
   </table>
 
   <div id="players-wrap" style="display:none;overflow-x:auto">
+    <div class="col-toggle-bar" id="col-toggle-bar"></div>
     <table id="players-board">
       <thead>
         <tr>
-          <th>#</th>
-          <th>Joueur</th>
-          <th>Équipe</th>
-          <th>Div.</th>
-          <th title="Agents les plus joués">Agents</th>
-          <th>M</th>
-          <th title="Rating — estimation maison, pas le Rating officiel VLR">Rating*</th>
-          <th>ACS</th>
-          <th>K:D</th>
-          <th title="Kill/Assist/Survive/Trade %">KAST%</th>
-          <th>ADR</th>
-          <th title="First Kills / First Deaths">FK:FD</th>
-          <th>HS%</th>
-          <th>CL</th>
-          <th>K</th>
-          <th>D</th>
-          <th>A</th>
+          <th data-key="rank" data-nosort="1">#</th>
+          <th data-key="name" data-nosort="1">Joueur</th>
+          <th data-key="team" data-nosort="1">Équipe</th>
+          <th data-key="agents" data-nosort="1" data-col="agents">Agents</th>
+          <th data-key="matches" data-col="matches">M</th>
+          <th data-key="rating_estimate" data-col="rating" title="Rating — estimation maison, pas le Rating officiel VLR">Rating*</th>
+          <th data-key="acs" data-col="acs">ACS</th>
+          <th data-key="kd" data-col="kd">K:D</th>
+          <th data-key="kast_pct" data-col="kast" title="Kill/Assist/Survive/Trade %, fenêtre de trade 5s">KAST%</th>
+          <th data-key="adr" data-col="adr">ADR</th>
+          <th data-key="fk_fd_sort" data-col="fkfd" title="First Kills / First Deaths">FK:FD</th>
+          <th data-key="hs_pct" data-col="hs">HS%</th>
+          <th data-key="clutches_won" data-col="cl">CL</th>
+          <th data-key="kills" data-col="k">K</th>
+          <th data-key="deaths" data-col="d">D</th>
+          <th data-key="assists" data-col="a">A</th>
         </tr>
       </thead>
       <tbody id="players-body"></tbody>
@@ -207,7 +235,8 @@
       KAST% utilise une fenêtre de trade de 5s, calibrée par comparaison directe avec
       Tracker.gg sur des matchs réels (ni VLR ni Tracker ne publient leur fenêtre exacte).
       CL/FK:FD affichent "—" quand l'API ne fournit pas de détail round-par-round
-      exploitable pour ce match.
+      exploitable pour ce match. Les couleurs de fond indiquent la position relative
+      dans le classement actuellement affiché (vert = meilleur, rouge = plus faible).
     </p>
   </div>
 
@@ -279,49 +308,157 @@ function renderTeams(){
   document.getElementById('empty').style.display = (activeView === 'teams' && !filtered.length && !RAW_TEAMS.length) ? 'block' : 'none';
 }
 
+let sortKey = "rating_estimate";
+let sortDir = "desc";
+let hiddenCols = new Set();
+
+const AGENT_COLORS = {}; // rempli dynamiquement, couleur stable par agent (hash simple)
+function agentColor(name){
+  if (!name) return "#7c8894";
+  if (!AGENT_COLORS[name]){
+    let hash = 0;
+    for (let i=0;i<name.length;i++) hash = name.charCodeAt(i) + ((hash << 5) - hash);
+    const palette = ["#4ce0d2","#ff4655","#d095ff","#f4d433","#297dbb","#ff98ef","#41c6ba","#f66386"];
+    AGENT_COLORS[name] = palette[Math.abs(hash) % palette.length];
+  }
+  return AGENT_COLORS[name];
+}
+
+function initColumnToggles(){
+  const bar = document.getElementById('col-toggle-bar');
+  if (bar.dataset.built) return;
+  bar.dataset.built = "1";
+  const headers = document.querySelectorAll('#players-board th[data-col]');
+  headers.forEach(th => {
+    const col = th.dataset.col;
+    const label = document.createElement('label');
+    label.innerHTML = `<input type="checkbox" checked data-col-toggle="${col}"> ${th.textContent}`;
+    bar.appendChild(label);
+  });
+  bar.addEventListener('change', (e) => {
+    const cb = e.target.closest('[data-col-toggle]');
+    if (!cb) return;
+    const col = cb.dataset.colToggle;
+    if (cb.checked) hiddenCols.delete(col); else hiddenCols.add(col);
+    applyColumnVisibility();
+  });
+}
+
+function applyColumnVisibility(){
+  document.querySelectorAll('#players-board [data-col]').forEach(el => {
+    el.classList.toggle('col-hidden', hiddenCols.has(el.dataset.col));
+  });
+}
+
+function initSorting(){
+  const ths = document.querySelectorAll('#players-board th[data-key]');
+  ths.forEach(th => {
+    if (th.dataset.nosort) return;
+    th.addEventListener('click', () => {
+      const key = th.dataset.key;
+      if (sortKey === key) sortDir = sortDir === 'desc' ? 'asc' : 'desc';
+      else { sortKey = key; sortDir = 'desc'; }
+      render();
+    });
+  });
+}
+
+function updateSortHeaderStyles(){
+  document.querySelectorAll('#players-board th[data-key]').forEach(th => {
+    th.classList.toggle('sorted', th.dataset.key === sortKey);
+    th.innerHTML = th.innerHTML.replace(/ <span class="arrow">.*<\/span>$/, '');
+    if (th.dataset.key === sortKey){
+      th.innerHTML += ` <span class="arrow">${sortDir === 'desc' ? '▼' : '▲'}</span>`;
+    }
+  });
+}
+
+function heatColor(value, allValues){
+  const nums = allValues.filter(v => typeof v === 'number' && !isNaN(v));
+  if (!nums.length || typeof value !== 'number' || isNaN(value)) return null;
+  const min = Math.min(...nums), max = Math.max(...nums);
+  if (min === max) return null;
+  const pct = (value - min) / (max - min); // 0 = pire, 1 = meilleur
+  // Rouge (mauvais) -> jaune -> vert (bon), à la façon d'une heatmap VLR
+  const hue = 4 + pct * (152 - 4); // 4=rouge, 152=vert
+  return `hsla(${hue}, 70%, 45%, 0.32)`;
+}
+
 function isInvitePlayer(division){
   // Seuils fixes officiels : Contender=21, Invite=22 (voir fetch_premier_data.py)
   return division === 22;
 }
 
 function renderPlayers(){
+  initColumnToggles();
+  initSorting();
+
   const tbody = document.getElementById('players-body');
   tbody.innerHTML = "";
   const q = document.getElementById('search').value.trim().toLowerCase();
 
-  const filtered = RAW_PLAYERS.filter(p => {
+  let filtered = RAW_PLAYERS.filter(p => {
     const invite = isInvitePlayer(p.division);
     if (activeDiv === "invite" && !invite) return false;
     if (activeDiv === "contender" && invite) return false;
     if (q && !(`${p.name||''} ${p.team||''}`.toLowerCase().includes(q))) return false;
     return true;
+  }).map(p => ({...p, fk_fd_sort: (p.fk_fd ? parseInt(p.fk_fd.split('/')[0]) - parseInt(p.fk_fd.split('/')[1]) : null)}));
+
+  filtered.sort((a, b) => {
+    const va = a[sortKey], vb = b[sortKey];
+    if (va === null || va === undefined) return 1;
+    if (vb === null || vb === undefined) return -1;
+    const cmp = typeof va === 'string' ? va.localeCompare(vb) : va - vb;
+    return sortDir === 'desc' ? -cmp : cmp;
   });
+
+  // Colonnes numériques pour lesquelles on calcule un dégradé de couleur relatif
+  const heatCols = {
+    rating_estimate: filtered.map(p => p.rating_estimate),
+    acs: filtered.map(p => p.acs),
+    kd: filtered.map(p => p.kd),
+    kast_pct: filtered.map(p => p.kast_pct),
+    adr: filtered.map(p => p.adr),
+    hs_pct: filtered.map(p => p.hs_pct),
+  };
 
   filtered.forEach((p, i) => {
     const invite = isInvitePlayer(p.division);
+    const agentBadges = (p.agents||[]).map(a =>
+      `<span class="agent-badge" style="background:${agentColor(a)}" title="${a}">${a.slice(0,2).toUpperCase()}</span>`
+    ).join('');
+
+    const cell = (col, value, display, colored) => {
+      const bg = colored ? heatColor(value, heatCols[col]) : null;
+      const style = bg ? ` style="background:${bg}"` : '';
+      return `<td data-col="${col}" class="heat-cell"${style}>${display}</td>`;
+    };
+
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td>${i+1}</td>
-      <td>${p.name || '?'}</td>
+      <td>${p.name || '?'}<span class="div-tag" style="margin-left:6px">${invite?'INV':'CONT'}</span></td>
       <td>${p.team || '—'}</td>
-      <td><span class="div-tag">${invite ? 'Invite' : 'Contender'}</span></td>
-      <td>${(p.agents||[]).join(', ') || '—'}</td>
-      <td>${p.matches ?? '—'}</td>
-      <td class="rating-cell">${fmt(p.rating_estimate)}</td>
-      <td>${fmt(p.acs)}</td>
-      <td>${fmt(p.kd)}</td>
-      <td>${fmt(p.kast_pct, '%')}</td>
-      <td>${fmt(p.adr)}</td>
-      <td>${fmt(p.fk_fd)}</td>
-      <td>${fmt(p.hs_pct, '%')}</td>
-      <td>${fmt(p.clutches_won)}</td>
-      <td>${p.kills ?? '—'}</td>
-      <td>${p.deaths ?? '—'}</td>
-      <td>${p.assists ?? '—'}</td>
+      <td data-col="agents"><div class="agent-badges">${agentBadges || '—'}</div></td>
+      <td data-col="matches">${p.matches ?? '—'}</td>
+      ${cell('rating', p.rating_estimate, fmt(p.rating_estimate), true)}
+      ${cell('acs', p.acs, fmt(p.acs), true)}
+      ${cell('kd', p.kd, fmt(p.kd), true)}
+      ${cell('kast', p.kast_pct, fmt(p.kast_pct,'%'), true)}
+      ${cell('adr', p.adr, fmt(p.adr), true)}
+      <td data-col="fkfd">${fmt(p.fk_fd)}</td>
+      ${cell('hs', p.hs_pct, fmt(p.hs_pct,'%'), true)}
+      <td data-col="cl">${fmt(p.clutches_won)}</td>
+      <td data-col="k">${p.kills ?? '—'}</td>
+      <td data-col="d">${p.deaths ?? '—'}</td>
+      <td data-col="a">${p.assists ?? '—'}</td>
     `;
     tbody.appendChild(tr);
   });
 
+  updateSortHeaderStyles();
+  applyColumnVisibility();
   document.getElementById('players-wrap').style.display = (activeView === 'players' && filtered.length) ? '' : 'none';
   document.getElementById('empty').style.display = (activeView === 'players' && !filtered.length && !RAW_PLAYERS.length) ? 'block' : 'none';
 }

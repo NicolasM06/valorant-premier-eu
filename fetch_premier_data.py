@@ -40,8 +40,14 @@ API_BASE = "https://api.henrikdev.xyz"
 REGION = "eu"
 PLATFORM = "pc"
 
+# Numérotation officielle des divisions Premier (confirmée via le wiki Valorant +
+# une URL Tracker.gg référençant explicitement "Division 22" pour l'EU France) :
+# Ouvert(1-5) / Intermédiaire(6-10) / Avancé(11-15) / Élite(16-20) / Contender(21) / Invite(22).
+# On utilise ces seuils fixes plutôt que "les 2 plus hauts numéros vus", qui mélangeait
+# à tort Contender avec le haut d'Élite quand aucune équipe française n'était en Invite.
+CONTENDER_DIVISION_NUMBER = 21
+INVITE_DIVISION_NUMBER = 22
 TARGET_DIVISION_NAMES = {"contender", "invite"}
-FALLBACK_TOP_N_DIVISIONS = 2
 
 OUTPUT_PATH = Path(__file__).parent / "data" / "leaderboard.json"
 REQUEST_DELAY_SECONDS = 2.0
@@ -197,16 +203,14 @@ def filter_top_divisions(teams: list, debug: bool = False):
     if named:
         return named
 
-    numeric_divisions = sorted(
-        {extract_division_number(t) for t in teams if extract_division_number(t) is not None},
-        reverse=True,
-    )
-    if not numeric_divisions:
-        print("  ⚠️  Aucun champ de division exploitable — aucune équipe retenue. "
-              "Relance avec --debug pour inspecter la structure brute.")
-        return []
-    top_divisions = set(numeric_divisions[:FALLBACK_TOP_N_DIVISIONS])
-    return [t for t in teams if extract_division_number(t) in top_divisions]
+    # Repli : seuils fixes 21 (Contender) et 22 (Invite) plutôt que "les 2 plus
+    # hauts numéros vus", qui incluait à tort le haut d'Élite (division 20)
+    # quand aucune équipe française n'était en Invite (22) cette Stage.
+    filtered = [t for t in teams if extract_division_number(t) in (CONTENDER_DIVISION_NUMBER, INVITE_DIVISION_NUMBER)]
+    if not filtered:
+        print("  ⚠️  Aucune équipe en division 21 (Contender) ou 22 (Invite) trouvée pour "
+              "cette conférence — vérifie avec --debug si ça semble anormal.")
+    return filtered
 
 
 def fetch_conference_leaderboard(conference: str, api_key: str, debug: bool = False):

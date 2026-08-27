@@ -231,9 +231,33 @@ def fetch_match(match_id: str, api_key: str, debug_match: bool = False):
     if match_id in _match_cache:
         return _match_cache[match_id]
     payload = api_get(f"/valorant/v4/match/{REGION}/{match_id}", api_key)
-    if debug_match:
-        print(json.dumps(payload, indent=2, ensure_ascii=False)[:6000])
     data = payload["data"] if payload and "data" in payload else None
+    if debug_match:
+        print(f"\n=== DIAGNOSTIC MATCH {match_id} ===")
+        if not data:
+            print("Aucune donnée reçue.")
+        else:
+            print(f"Clés de premier niveau : {list(data.keys())}")
+            players = extract_players(data)
+            if players:
+                print(f"\nClés d'un joueur : {list(players[0].keys())}")
+                stats_obj = players[0].get("stats", players[0])
+                print(f"Clés de 'stats' (ou du joueur si pas de sous-objet) : {list(stats_obj.keys()) if isinstance(stats_obj, dict) else stats_obj}")
+            rounds = data.get("rounds")
+            if isinstance(rounds, list) and rounds:
+                print(f"\n'rounds' est présent : {len(rounds)} rounds.")
+                print(f"Clés d'un round : {list(rounds[0].keys())}")
+                # On cherche la sous-structure qui contiendrait les stats par joueur du round
+                for key, value in rounds[0].items():
+                    if isinstance(value, list) and value and isinstance(value[0], dict):
+                        print(f"  → 'rounds[0].{key}' est une liste d'objets, clés du premier élément : {list(value[0].keys())}")
+                    elif isinstance(value, dict):
+                        print(f"  → 'rounds[0].{key}' est un objet, clés : {list(value.keys())}")
+            else:
+                print("\n⚠️  Pas de champ 'rounds' exploitable au niveau racine du match — "
+                      "les données round-par-round (KAST/Clutch/FK:FD) ne semblent pas "
+                      "exposées par cet endpoint pour ce match.")
+        print("=== FIN DIAGNOSTIC ===\n")
     _match_cache[match_id] = data
     return data
 

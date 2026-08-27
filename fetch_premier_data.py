@@ -247,16 +247,29 @@ def fetch_match(match_id: str, api_key: str, debug_match: bool = False):
             if isinstance(rounds, list) and rounds:
                 print(f"\n'rounds' est présent : {len(rounds)} rounds.")
                 print(f"Clés d'un round : {list(rounds[0].keys())}")
-                # On cherche la sous-structure qui contiendrait les stats par joueur du round
                 for key, value in rounds[0].items():
                     if isinstance(value, list) and value and isinstance(value[0], dict):
                         print(f"  → 'rounds[0].{key}' est une liste d'objets, clés du premier élément : {list(value[0].keys())}")
+                        # Un niveau de plus si on trouve un sous-objet 'stats' imbriqué
+                        nested_stats = value[0].get("stats")
+                        if isinstance(nested_stats, dict):
+                            print(f"    → 'rounds[0].{key}[0].stats' clés : {list(nested_stats.keys())}")
+                        player_field = value[0].get("player")
+                        print(f"    → 'rounds[0].{key}[0].player' = {player_field!r} (type: {type(player_field).__name__})")
                     elif isinstance(value, dict):
                         print(f"  → 'rounds[0].{key}' est un objet, clés : {list(value.keys())}")
             else:
                 print("\n⚠️  Pas de champ 'rounds' exploitable au niveau racine du match — "
                       "les données round-par-round (KAST/Clutch/FK:FD) ne semblent pas "
                       "exposées par cet endpoint pour ce match.")
+
+            kills = data.get("kills")
+            if isinstance(kills, list) and kills:
+                print(f"\n'kills' (liste globale) est présent : {len(kills)} kills.")
+                print(f"Clés d'un kill : {list(kills[0].keys())}")
+                print(f"Exemple complet du premier kill : {json.dumps(kills[0], indent=2, ensure_ascii=False)}")
+            else:
+                print("\n⚠️  Pas de champ 'kills' global exploitable.")
         print("=== FIN DIAGNOSTIC ===\n")
     _match_cache[match_id] = data
     return data

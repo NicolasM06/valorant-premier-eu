@@ -240,8 +240,8 @@ function divisionLabel(team){
 function isInvite(team){
   const label = divisionLabel(team);
   if (label) return label.includes("invite");
-  const maxDiv = Math.max(...RAW_TEAMS.map(t => t.division || 0));
-  return team.division === maxDiv;
+  // Seuils fixes officiels : Contender=21, Invite=22 (voir fetch_premier_data.py)
+  return team.division === 22;
 }
 
 function fmt(value, suffix = "") {
@@ -278,9 +278,8 @@ function renderTeams(){
 }
 
 function isInvitePlayer(division){
-  if (division === null || division === undefined) return false;
-  const maxDiv = Math.max(...RAW_TEAMS.map(t => t.division || 0));
-  return division === maxDiv;
+  // Seuils fixes officiels : Contender=21, Invite=22 (voir fetch_premier_data.py)
+  return division === 22;
 }
 
 function renderPlayers(){

@@ -223,6 +223,36 @@ def fetch_team_history(team_id: str, api_key: str):
     return payload["data"].get("league_matches", [])
 
 
+def fetch_team_details(team_id: str, api_key: str):
+    """Le classement (/premier/leaderboard/...) ne contient PAS le roster —
+    confirmé par diagnostic. Il faut interroger le détail de l'équipe."""
+    return api_get(f"/valorant/v1/premier/{team_id}", api_key)
+
+
+def extract_roster_puuids(team_detail_payload: dict):
+    """Cherche récursivement toute occurrence de 'puuid' dans la réponse de
+    détail d'équipe, quelle que soit la profondeur/nom exact du champ parent
+    (roster/members/players...). Retourne une liste de puuids uniques."""
+    found = []
+    seen = set()
+
+    def walk(obj):
+        if isinstance(obj, dict):
+            pu = obj.get("puuid")
+            if isinstance(pu, str) and pu not in seen:
+                seen.add(pu)
+                found.append(pu)
+            for v in obj.values():
+                walk(v)
+        elif isinstance(obj, list):
+            for v in obj:
+                walk(v)
+
+    if team_detail_payload:
+        walk(team_detail_payload.get("data", team_detail_payload))
+    return found
+
+
 def resolve_player_name(puuid: str, api_key: str):
     if puuid in _puuid_name_cache:
         return _puuid_name_cache[puuid]
@@ -237,11 +267,14 @@ def resolve_player_name(puuid: str, api_key: str):
 
 
 def resolve_roster(team: dict, api_key: str):
-    roster = team.get("roster") or {}
-    members = roster.get("members") or []
+    detail = fetch_team_details(team.get("id") or team.get("team_id"), api_key)
+    puuids = extract_roster_puuids(detail)
+    if not puuids:
+        print(f"  ⚠️  roster introuvable pour {team.get('name', '?')} "
+              f"(vérifier la structure de /premier/{{id}} avec --debug si ça persiste)")
     team["roster_resolved"] = [
         {"puuid": p, "name": resolve_player_name(p, api_key) or "(pseudo non résolu)"}
-        for p in members
+        for p in puuids
     ]
 
 
@@ -681,7 +714,12 @@ def main():
     for i, team in enumerate(teams, 1):
         print(f"  [{i}/{len(teams)}] {team.get('name', '?')}")
         try:
+            if debug and i == 1:
+                detail = fetch_team_details(team.get("id") or team.get("team_id"), api_key)
+                print(f"  [debug] clés de /premier/{{id}} : {list((detail or {}).get('data', detail or {}).keys())}")
             resolve_roster(team, api_key)
+            if debug and i == 1:
+                print(f"  [debug] roster résolu : {team.get('roster_resolved')}")
             aggregate_team_season(team, api_key, season_agg, weekend_agg, processed_sides, weekend_range)
         except Exception as e:
             print(f"  ⚠️  équipe ignorée après erreur ({team.get('name', '?')}) : {e}", file=sys.stderr)

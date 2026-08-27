@@ -395,6 +395,10 @@ def extract_players(match_data: dict):
 
 
 TRADE_WINDOW_MS = 3000  # fenêtre communément utilisée par les trackers pour créditer un "trade"
+# Plusieurs fenêtres candidates calculées en une seule passe (pas besoin de relancer
+# un run par valeur testée) — pour comparer avec Tracker.gg, dont la fenêtre exacte
+# n'est publiée nulle part (même leurs propres utilisateurs ne l'ont jamais obtenue).
+TRADE_WINDOW_CANDIDATES_MS = [3000, 4000, 5000, 6000, 8000, 10000]
 
 
 _debug_assist_stats = {"total_kills": 0, "kills_with_assistants": 0}
@@ -417,7 +421,13 @@ def compute_match_round_stats(match_data: dict):
     for k in kills:
         kills_by_round[k.get("round")].append(k)
 
-    result = defaultdict(lambda: {"kast": 0, "first_kills": 0, "first_deaths": 0, "clutches_won": 0, "eligible_rounds": 0})
+    def _new_round_entry():
+        d = {"kast": 0, "first_kills": 0, "first_deaths": 0, "clutches_won": 0, "eligible_rounds": 0}
+        for w in TRADE_WINDOW_CANDIDATES_MS:
+            d[f"kast_w{w}"] = 0
+        return d
+
+    result = defaultdict(_new_round_entry)
 
     def puuid_of(obj):
         if isinstance(obj, dict):
@@ -485,19 +495,19 @@ def compute_match_round_stats(match_data: dict):
                     if lone:
                         clutch_candidate = (lone, c1)
 
-        # Détection des trades : une mort est "vengée" si un coéquipier tue
-        # l'auteur du kill (le tueur d'origine se fait tuer à son tour) dans
-        # la fenêtre de temps suivante, ce même round.
-        traded_set = set()
+        # Détection des trades : pour chaque mort, on calcule le délai MINIMUM
+        # avant que l'auteur du kill soit lui-même éliminé par un coéquipier de
+        # la victime. Ce délai brut permet ensuite de tester plusieurs fenêtres
+        # de trade (3s, 5s, 10s...) sans refaire le calcul — un round est "tradé"
+        # pour une fenêtre W donnée si delai_min <= W.
+        trade_delay_ms = {}  # victim puuid -> délai en ms jusqu'à la vengeance (ou absent si jamais vengé)
         for i, (t, victim, killer) in enumerate(death_events):
             if not victim or not killer:
                 continue
             vteam = participants.get(victim)
             for t2, victim2, killer2 in death_events[i + 1:]:
-                if t2 - t > TRADE_WINDOW_MS:
-                    break
                 if victim2 == killer and participants.get(killer2) == vteam:
-                    traded_set.add(victim)
+                    trade_delay_ms[victim] = t2 - t
                     break
 
         if round_kills:
@@ -512,8 +522,15 @@ def compute_match_round_stats(match_data: dict):
             if pu in afk_puuids:
                 continue  # round exclu du calcul KAST pour ce joueur (ni pour, ni contre)
             result[pu]["eligible_rounds"] += 1
-            credited = (pu in got_kill_set) or (pu in assisted_set) or (pu not in killed_set) or (pu in traded_set)
-            if credited:
+            base_credited = (pu in got_kill_set) or (pu in assisted_set) or (pu not in killed_set)
+            delay = trade_delay_ms.get(pu)
+            for w in TRADE_WINDOW_CANDIDATES_MS:
+                traded_at_w = delay is not None and delay <= w
+                if base_credited or traded_at_w:
+                    result[pu][f"kast_w{w}"] += 1
+            # Le champ "kast" par défaut suit TRADE_WINDOW_MS, pour compatibilité
+            # avec le reste du code qui n'a pas besoin de connaître les autres fenêtres.
+            if base_credited or (delay is not None and delay <= TRADE_WINDOW_MS):
                 result[pu]["kast"] += 1
 
         if clutch_candidate:
@@ -611,6 +628,9 @@ def apply_match_stats_to_entry(agg: dict, puuid: str, name: str, team: dict, div
         entry["first_kills"] += round_stats["first_kills"]
         entry["first_deaths"] += round_stats["first_deaths"]
         entry["clutches_won"] += round_stats["clutches_won"]
+        entry.setdefault("kast_by_window", defaultdict(int))
+        for w in TRADE_WINDOW_CANDIDATES_MS:
+            entry["kast_by_window"][w] += round_stats.get(f"kast_w{w}", 0)
         entry["round_level_available"] = True
 
 
@@ -806,6 +826,23 @@ def main():
 
     players_season = finalize_player_stats(season_agg)
     players_weekend = finalize_player_stats(weekend_agg)
+
+    # Diagnostic : KAST calculé à plusieurs fenêtres de trade, pour comparer
+    # avec Tracker.gg sans avoir à relancer un run par valeur testée.
+    print("\n[diagnostic fenêtres de trade] KAST% selon la fenêtre choisie :")
+    print(f"  {'Joueur':<28} {'Rounds':>7}  " + "  ".join(f"{w//1000}s".rjust(6) for w in TRADE_WINDOW_CANDIDATES_MS))
+    shown = 0
+    for puuid, e in season_agg.items():
+        if not e.get("round_level_available") or not e.get("kast_total_rounds"):
+            continue
+        total_r = e["kast_total_rounds"]
+        row = f"  {(e.get('name') or puuid)[:28]:<28} {total_r:>7}  "
+        row += "  ".join(f"{round(100 * e['kast_by_window'][w] / total_r, 1):>5}%" for w in TRADE_WINDOW_CANDIDATES_MS)
+        print(row)
+        shown += 1
+        if shown >= 15:  # limite pour ne pas noyer les logs — un échantillon suffit
+            print(f"  ... ({len(season_agg) - shown} autres joueurs non affichés)")
+            break
 
     teams.sort(key=lambda t: -(extract_division_number(t) or 0))
 

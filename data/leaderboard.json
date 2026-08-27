@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T16:31:43Z",
+  "generated_at": "2026-08-27T17:49:41Z",
   "region": "eu",
   "conference": "EU_FRANCE",
   "weekend_range": [
@@ -3007,7 +3007,7 @@
       "acs": 354.0,
       "adr": 223.8,
       "hs_pct": 25.4,
-      "kast_pct": 79.5,
+      "kast_pct": 84.6,
       "fk_fd": "7/0",
       "clutches_won": 0,
       "rating_estimate": 1.79
@@ -3091,7 +3091,7 @@
       "acs": 306.8,
       "adr": 213.9,
       "hs_pct": 29.8,
-      "kast_pct": 71.1,
+      "kast_pct": 73.7,
       "fk_fd": "5/3",
       "clutches_won": 0,
       "rating_estimate": 1.64
@@ -3175,7 +3175,7 @@
       "acs": 328.6,
       "adr": 213.7,
       "hs_pct": 43.3,
-      "kast_pct": 77.8,
+      "kast_pct": 83.3,
       "fk_fd": "5/3",
       "clutches_won": 0,
       "rating_estimate": 1.56
@@ -3259,7 +3259,7 @@
       "acs": 282.9,
       "adr": 178.9,
       "hs_pct": 20.4,
-      "kast_pct": 83.3,
+      "kast_pct": 88.9,
       "fk_fd": "2/1",
       "clutches_won": 0,
       "rating_estimate": 1.54
@@ -3281,7 +3281,7 @@
       "acs": 325.8,
       "adr": 212.4,
       "hs_pct": 41.8,
-      "kast_pct": 77.8,
+      "kast_pct": 80.0,
       "fk_fd": "11/1",
       "clutches_won": 1,
       "rating_estimate": 1.48
@@ -3303,7 +3303,7 @@
       "acs": 300.9,
       "adr": 203.5,
       "hs_pct": 30.3,
-      "kast_pct": 72.7,
+      "kast_pct": 78.8,
       "fk_fd": "7/4",
       "clutches_won": 1,
       "rating_estimate": 1.48
@@ -3324,7 +3324,7 @@
       "acs": 256.7,
       "adr": 168.9,
       "hs_pct": 16.5,
-      "kast_pct": 85.7,
+      "kast_pct": 88.6,
       "fk_fd": "3/2",
       "clutches_won": 0,
       "rating_estimate": 1.47
@@ -3345,7 +3345,7 @@
       "acs": 310.7,
       "adr": 204.5,
       "hs_pct": 30.3,
-      "kast_pct": 76.5,
+      "kast_pct": 79.4,
       "fk_fd": "8/6",
       "clutches_won": 0,
       "rating_estimate": 1.44
@@ -3450,7 +3450,7 @@
       "acs": 254.4,
       "adr": 163.5,
       "hs_pct": 33.7,
-      "kast_pct": 81.6,
+      "kast_pct": 84.2,
       "fk_fd": "1/7",
       "clutches_won": 0,
       "rating_estimate": 1.42
@@ -3598,7 +3598,7 @@
       "acs": 301.5,
       "adr": 193.0,
       "hs_pct": 34.0,
-      "kast_pct": 76.3,
+      "kast_pct": 81.6,
       "fk_fd": "6/5",
       "clutches_won": 1,
       "rating_estimate": 1.38
@@ -3619,7 +3619,7 @@
       "acs": 244.6,
       "adr": 171.9,
       "hs_pct": 32.4,
-      "kast_pct": 87.2,
+      "kast_pct": 89.7,
       "fk_fd": "3/3",
       "clutches_won": 1,
       "rating_estimate": 1.38
@@ -3640,7 +3640,7 @@
       "acs": 289.3,
       "adr": 195.4,
       "hs_pct": 24.0,
-      "kast_pct": 72.7,
+      "kast_pct": 75.0,
       "fk_fd": "10/7",
       "clutches_won": 0,
       "rating_estimate": 1.38
@@ -3682,7 +3682,7 @@
       "acs": 282.9,
       "adr": 205.4,
       "hs_pct": 29.0,
-      "kast_pct": 73.9,
+      "kast_pct": 78.3,
       "fk_fd": "1/1",
       "clutches_won": 2,
       "rating_estimate": 1.37
@@ -3766,7 +3766,7 @@
       "acs": 325.8,
       "adr": 206.4,
       "hs_pct": 23.3,
-      "kast_pct": 71.1,
+      "kast_pct": 73.7,
       "fk_fd": "7/6",
       "clutches_won": 0,
       "rating_estimate": 1.35
@@ -3787,7 +3787,7 @@
       "acs": 272.5,
       "adr": 175.8,
       "hs_pct": 33.0,
-      "kast_pct": 73.0,
+      "kast_pct": 75.7,
       "fk_fd": "3/6",
       "clutches_won": 0,
       "rating_estimate": 1.35
@@ -3850,7 +3850,7 @@
       "acs": 247.9,
       "adr": 177.4,
       "hs_pct": 28.7,
-      "kast_pct": 74.5,
+      "kast_pct": 76.6,
       "fk_fd": "3/4",
       "clutches_won": 0,
       "rating_estimate": 1.31
@@ -3956,7 +3956,7 @@
       "acs": 239.6,
       "adr": 179.3,
       "hs_pct": 32.1,
-      "kast_pct": 79.1,
+      "kast_pct": 81.4,
       "fk_fd": "4/4",
       "clutches_won": 0,
       "rating_estimate": 1.28
@@ -4124,7 +4124,7 @@
       "acs": 229.8,
       "adr": 149.9,
       "hs_pct": 22.2,
-      "kast_pct": 90.0,
+      "kast_pct": 95.0,
       "fk_fd": "6/3",
       "clutches_won": 0,
       "rating_estimate": 1.25
@@ -4146,7 +4146,7 @@
       "acs": 302.5,
       "adr": 185.9,
       "hs_pct": 20.3,
-      "kast_pct": 78.0,
+      "kast_pct": 80.5,
       "fk_fd": "9/4",
       "clutches_won": 0,
       "rating_estimate": 1.25
@@ -4209,7 +4209,7 @@
       "acs": 260.0,
       "adr": 180.2,
       "hs_pct": 9.8,
-      "kast_pct": 81.0,
+      "kast_pct": 85.7,
       "fk_fd": "0/3",
       "clutches_won": 0,
       "rating_estimate": 1.25
@@ -4230,7 +4230,7 @@
       "acs": 224.8,
       "adr": 152.1,
       "hs_pct": 40.3,
-      "kast_pct": 68.6,
+      "kast_pct": 71.4,
       "fk_fd": "5/1",
       "clutches_won": 2,
       "rating_estimate": 1.24
@@ -4251,7 +4251,7 @@
       "acs": 265.8,
       "adr": 177.1,
       "hs_pct": 23.0,
-      "kast_pct": 63.4,
+      "kast_pct": 68.3,
       "fk_fd": "3/6",
       "clutches_won": 0,
       "rating_estimate": 1.24
@@ -4335,7 +4335,7 @@
       "acs": 221.9,
       "adr": 140.1,
       "hs_pct": 23.6,
-      "kast_pct": 80.0,
+      "kast_pct": 82.9,
       "fk_fd": "2/5",
       "clutches_won": 0,
       "rating_estimate": 1.22
@@ -4377,7 +4377,7 @@
       "acs": 268.9,
       "adr": 190.3,
       "hs_pct": 36.4,
-      "kast_pct": 76.2,
+      "kast_pct": 81.0,
       "fk_fd": "3/3",
       "clutches_won": 2,
       "rating_estimate": 1.22
@@ -4482,7 +4482,7 @@
       "acs": 156.3,
       "adr": 99.9,
       "hs_pct": 19.7,
-      "kast_pct": 89.7,
+      "kast_pct": 92.3,
       "fk_fd": "1/2",
       "clutches_won": 0,
       "rating_estimate": 1.2
@@ -4503,7 +4503,7 @@
       "acs": 219.7,
       "adr": 149.7,
       "hs_pct": 29.3,
-      "kast_pct": 81.6,
+      "kast_pct": 84.2,
       "fk_fd": "4/2",
       "clutches_won": 0,
       "rating_estimate": 1.19
@@ -4566,7 +4566,7 @@
       "acs": 184.1,
       "adr": 134.4,
       "hs_pct": 43.3,
-      "kast_pct": 70.6,
+      "kast_pct": 76.5,
       "fk_fd": "0/1",
       "clutches_won": 0,
       "rating_estimate": 1.18
@@ -4587,7 +4587,7 @@
       "acs": 251.8,
       "adr": 159.5,
       "hs_pct": 29.5,
-      "kast_pct": 65.9,
+      "kast_pct": 68.2,
       "fk_fd": "6/1",
       "clutches_won": 0,
       "rating_estimate": 1.18
@@ -4714,7 +4714,7 @@
       "acs": 203.5,
       "adr": 119.8,
       "hs_pct": 14.0,
-      "kast_pct": 83.3,
+      "kast_pct": 88.9,
       "fk_fd": "3/2",
       "clutches_won": 0,
       "rating_estimate": 1.17
@@ -4756,7 +4756,7 @@
       "acs": 233.1,
       "adr": 153.1,
       "hs_pct": 22.1,
-      "kast_pct": 70.0,
+      "kast_pct": 72.0,
       "fk_fd": "8/4",
       "clutches_won": 0,
       "rating_estimate": 1.16
@@ -4819,7 +4819,7 @@
       "acs": 211.8,
       "adr": 135.7,
       "hs_pct": 33.3,
-      "kast_pct": 80.6,
+      "kast_pct": 83.3,
       "fk_fd": "5/2",
       "clutches_won": 1,
       "rating_estimate": 1.14
@@ -4946,7 +4946,7 @@
       "acs": 202.3,
       "adr": 151.2,
       "hs_pct": 28.2,
-      "kast_pct": 71.1,
+      "kast_pct": 73.7,
       "fk_fd": "6/8",
       "clutches_won": 0,
       "rating_estimate": 1.11
@@ -5009,7 +5009,7 @@
       "acs": 203.2,
       "adr": 143.1,
       "hs_pct": 42.2,
-      "kast_pct": 76.9,
+      "kast_pct": 79.5,
       "fk_fd": "3/0",
       "clutches_won": 1,
       "rating_estimate": 1.11
@@ -5051,7 +5051,7 @@
       "acs": 228.8,
       "adr": 166.3,
       "hs_pct": 37.8,
-      "kast_pct": 69.6,
+      "kast_pct": 73.9,
       "fk_fd": "7/1",
       "clutches_won": 1,
       "rating_estimate": 1.1
@@ -5135,7 +5135,7 @@
       "acs": 243.3,
       "adr": 151.2,
       "hs_pct": 24.8,
-      "kast_pct": 76.7,
+      "kast_pct": 79.1,
       "fk_fd": "11/5",
       "clutches_won": 0,
       "rating_estimate": 1.09
@@ -5241,7 +5241,7 @@
       "acs": 196.6,
       "adr": 129.2,
       "hs_pct": 21.4,
-      "kast_pct": 82.4,
+      "kast_pct": 88.2,
       "fk_fd": "1/1",
       "clutches_won": 0,
       "rating_estimate": 1.08
@@ -5283,7 +5283,7 @@
       "acs": 174.5,
       "adr": 120.1,
       "hs_pct": 33.3,
-      "kast_pct": 78.8,
+      "kast_pct": 81.8,
       "fk_fd": "3/2",
       "clutches_won": 0,
       "rating_estimate": 1.07
@@ -5304,7 +5304,7 @@
       "acs": 221.3,
       "adr": 140.5,
       "hs_pct": 18.2,
-      "kast_pct": 70.2,
+      "kast_pct": 72.3,
       "fk_fd": "6/5",
       "clutches_won": 0,
       "rating_estimate": 1.07
@@ -5325,7 +5325,7 @@
       "acs": 197.8,
       "adr": 128.0,
       "hs_pct": 24.1,
-      "kast_pct": 75.6,
+      "kast_pct": 78.0,
       "fk_fd": "3/1",
       "clutches_won": 2,
       "rating_estimate": 1.06
@@ -5346,7 +5346,7 @@
       "acs": 203.1,
       "adr": 139.5,
       "hs_pct": 23.6,
-      "kast_pct": 78.4,
+      "kast_pct": 81.1,
       "fk_fd": "2/2",
       "clutches_won": 0,
       "rating_estimate": 1.06
@@ -5409,7 +5409,7 @@
       "acs": 220.0,
       "adr": 146.5,
       "hs_pct": 33.7,
-      "kast_pct": 73.2,
+      "kast_pct": 75.6,
       "fk_fd": "5/9",
       "clutches_won": 0,
       "rating_estimate": 1.04
@@ -5451,7 +5451,7 @@
       "acs": 178.1,
       "adr": 117.0,
       "hs_pct": 24.3,
-      "kast_pct": 84.2,
+      "kast_pct": 86.8,
       "fk_fd": "1/5",
       "clutches_won": 0,
       "rating_estimate": 1.04
@@ -5472,7 +5472,7 @@
       "acs": 204.0,
       "adr": 138.1,
       "hs_pct": 33.3,
-      "kast_pct": 74.4,
+      "kast_pct": 76.7,
       "fk_fd": "3/3",
       "clutches_won": 0,
       "rating_estimate": 1.04
@@ -5514,7 +5514,7 @@
       "acs": 205.9,
       "adr": 130.5,
       "hs_pct": 24.3,
-      "kast_pct": 65.8,
+      "kast_pct": 71.1,
       "fk_fd": "1/3",
       "clutches_won": 2,
       "rating_estimate": 1.04
@@ -5535,7 +5535,7 @@
       "acs": 219.0,
       "adr": 137.6,
       "hs_pct": 30.2,
-      "kast_pct": 69.8,
+      "kast_pct": 75.5,
       "fk_fd": "11/5",
       "clutches_won": 0,
       "rating_estimate": 1.04
@@ -5598,7 +5598,7 @@
       "acs": 209.2,
       "adr": 135.9,
       "hs_pct": 21.9,
-      "kast_pct": 76.7,
+      "kast_pct": 79.1,
       "fk_fd": "2/2",
       "clutches_won": 0,
       "rating_estimate": 1.03
@@ -5619,7 +5619,7 @@
       "acs": 244.0,
       "adr": 153.7,
       "hs_pct": 20.3,
-      "kast_pct": 81.0,
+      "kast_pct": 85.7,
       "fk_fd": "0/0",
       "clutches_won": 0,
       "rating_estimate": 1.03
@@ -5703,7 +5703,7 @@
       "acs": 159.5,
       "adr": 113.7,
       "hs_pct": 28.1,
-      "kast_pct": 87.5,
+      "kast_pct": 90.0,
       "fk_fd": "3/1",
       "clutches_won": 0,
       "rating_estimate": 1.01
@@ -5873,7 +5873,7 @@
       "acs": 194.4,
       "adr": 136.6,
       "hs_pct": 32.9,
-      "kast_pct": 66.7,
+      "kast_pct": 76.2,
       "fk_fd": "4/1",
       "clutches_won": 0,
       "rating_estimate": 0.99
@@ -5936,7 +5936,7 @@
       "acs": 202.0,
       "adr": 142.3,
       "hs_pct": 24.1,
-      "kast_pct": 72.3,
+      "kast_pct": 74.5,
       "fk_fd": "1/7",
       "clutches_won": 1,
       "rating_estimate": 0.99
@@ -6083,7 +6083,7 @@
       "acs": 197.2,
       "adr": 132.9,
       "hs_pct": 27.2,
-      "kast_pct": 64.4,
+      "kast_pct": 68.9,
       "fk_fd": "3/3",
       "clutches_won": 1,
       "rating_estimate": 0.96
@@ -6146,7 +6146,7 @@
       "acs": 189.1,
       "adr": 130.5,
       "hs_pct": 27.0,
-      "kast_pct": 75.6,
+      "kast_pct": 77.8,
       "fk_fd": "2/8",
       "clutches_won": 1,
       "rating_estimate": 0.96
@@ -6168,7 +6168,7 @@
       "acs": 211.3,
       "adr": 136.1,
       "hs_pct": 20.7,
-      "kast_pct": 65.4,
+      "kast_pct": 73.1,
       "fk_fd": "11/7",
       "clutches_won": 1,
       "rating_estimate": 0.96
@@ -6358,7 +6358,7 @@
       "acs": 193.7,
       "adr": 127.5,
       "hs_pct": 34.6,
-      "kast_pct": 62.2,
+      "kast_pct": 68.9,
       "fk_fd": "4/2",
       "clutches_won": 1,
       "rating_estimate": 0.94
@@ -6401,7 +6401,7 @@
       "acs": 210.3,
       "adr": 130.3,
       "hs_pct": 30.1,
-      "kast_pct": 62.3,
+      "kast_pct": 67.9,
       "fk_fd": "5/7",
       "clutches_won": 0,
       "rating_estimate": 0.94
@@ -6485,7 +6485,7 @@
       "acs": 233.0,
       "adr": 159.7,
       "hs_pct": 43.9,
-      "kast_pct": 65.2,
+      "kast_pct": 69.6,
       "fk_fd": "2/2",
       "clutches_won": 0,
       "rating_estimate": 0.93
@@ -6590,7 +6590,7 @@
       "acs": 192.2,
       "adr": 124.2,
       "hs_pct": 25.4,
-      "kast_pct": 71.8,
+      "kast_pct": 76.9,
       "fk_fd": "7/3",
       "clutches_won": 0,
       "rating_estimate": 0.91
@@ -6611,7 +6611,7 @@
       "acs": 195.1,
       "adr": 125.1,
       "hs_pct": 27.3,
-      "kast_pct": 68.2,
+      "kast_pct": 70.5,
       "fk_fd": "5/2",
       "clutches_won": 0,
       "rating_estimate": 0.91
@@ -6653,7 +6653,7 @@
       "acs": 163.6,
       "adr": 113.6,
       "hs_pct": 21.9,
-      "kast_pct": 63.6,
+      "kast_pct": 65.9,
       "fk_fd": "0/1",
       "clutches_won": 1,
       "rating_estimate": 0.91
@@ -6674,7 +6674,7 @@
       "acs": 198.1,
       "adr": 126.2,
       "hs_pct": 22.6,
-      "kast_pct": 62.2,
+      "kast_pct": 67.6,
       "fk_fd": "4/8",
       "clutches_won": 0,
       "rating_estimate": 0.9
@@ -6695,7 +6695,7 @@
       "acs": 158.1,
       "adr": 105.6,
       "hs_pct": 37.9,
-      "kast_pct": 68.6,
+      "kast_pct": 74.3,
       "fk_fd": "2/4",
       "clutches_won": 0,
       "rating_estimate": 0.9
@@ -6737,7 +6737,7 @@
       "acs": 217.8,
       "adr": 145.7,
       "hs_pct": 25.0,
-      "kast_pct": 67.4,
+      "kast_pct": 69.8,
       "fk_fd": "5/8",
       "clutches_won": 0,
       "rating_estimate": 0.9
@@ -6930,7 +6930,7 @@
       "acs": 191.9,
       "adr": 119.6,
       "hs_pct": 19.0,
-      "kast_pct": 68.3,
+      "kast_pct": 70.7,
       "fk_fd": "6/2",
       "clutches_won": 0,
       "rating_estimate": 0.88
@@ -7080,7 +7080,7 @@
       "acs": 194.7,
       "adr": 129.8,
       "hs_pct": 21.0,
-      "kast_pct": 68.2,
+      "kast_pct": 77.3,
       "fk_fd": "9/3",
       "clutches_won": 0,
       "rating_estimate": 0.84
@@ -7144,7 +7144,7 @@
       "acs": 196.8,
       "adr": 132.5,
       "hs_pct": 33.3,
-      "kast_pct": 60.4,
+      "kast_pct": 62.3,
       "fk_fd": "8/11",
       "clutches_won": 0,
       "rating_estimate": 0.84
@@ -7207,7 +7207,7 @@
       "acs": 198.2,
       "adr": 128.7,
       "hs_pct": 26.6,
-      "kast_pct": 66.7,
+      "kast_pct": 71.4,
       "fk_fd": "12/6",
       "clutches_won": 0,
       "rating_estimate": 0.83
@@ -7270,7 +7270,7 @@
       "acs": 173.8,
       "adr": 107.7,
       "hs_pct": 31.5,
-      "kast_pct": 66.7,
+      "kast_pct": 69.4,
       "fk_fd": "3/5",
       "clutches_won": 0,
       "rating_estimate": 0.81
@@ -7313,7 +7313,7 @@
       "acs": 200.5,
       "adr": 131.4,
       "hs_pct": 29.2,
-      "kast_pct": 54.2,
+      "kast_pct": 62.5,
       "fk_fd": "3/5",
       "clutches_won": 0,
       "rating_estimate": 0.81
@@ -7334,7 +7334,7 @@
       "acs": 165.6,
       "adr": 119.5,
       "hs_pct": 32.8,
-      "kast_pct": 70.5,
+      "kast_pct": 75.0,
       "fk_fd": "2/8",
       "clutches_won": 0,
       "rating_estimate": 0.8
@@ -7355,7 +7355,7 @@
       "acs": 159.0,
       "adr": 116.6,
       "hs_pct": 21.3,
-      "kast_pct": 72.3,
+      "kast_pct": 74.5,
       "fk_fd": "3/2",
       "clutches_won": 0,
       "rating_estimate": 0.8
@@ -7376,7 +7376,7 @@
       "acs": 182.0,
       "adr": 116.8,
       "hs_pct": 27.5,
-      "kast_pct": 58.1,
+      "kast_pct": 60.5,
       "fk_fd": "7/8",
       "clutches_won": 0,
       "rating_estimate": 0.79
@@ -7439,7 +7439,7 @@
       "acs": 164.1,
       "adr": 100.3,
       "hs_pct": 12.8,
-      "kast_pct": 73.3,
+      "kast_pct": 80.0,
       "fk_fd": "2/4",
       "clutches_won": 0,
       "rating_estimate": 0.78
@@ -7460,7 +7460,7 @@
       "acs": 139.0,
       "adr": 97.2,
       "hs_pct": 23.6,
-      "kast_pct": 66.7,
+      "kast_pct": 69.2,
       "fk_fd": "1/5",
       "clutches_won": 0,
       "rating_estimate": 0.78
@@ -7524,7 +7524,7 @@
       "acs": 207.8,
       "adr": 142.5,
       "hs_pct": 28.9,
-      "kast_pct": 67.4,
+      "kast_pct": 69.8,
       "fk_fd": "8/9",
       "clutches_won": 1,
       "rating_estimate": 0.78
@@ -7587,7 +7587,7 @@
       "acs": 185.3,
       "adr": 115.5,
       "hs_pct": 14.2,
-      "kast_pct": 72.1,
+      "kast_pct": 74.4,
       "fk_fd": "6/6",
       "clutches_won": 1,
       "rating_estimate": 0.77
@@ -7630,7 +7630,7 @@
       "acs": 118.0,
       "adr": 72.9,
       "hs_pct": 19.1,
-      "kast_pct": 62.8,
+      "kast_pct": 65.1,
       "fk_fd": "1/3",
       "clutches_won": 0,
       "rating_estimate": 0.76
@@ -7735,7 +7735,7 @@
       "acs": 168.9,
       "adr": 118.5,
       "hs_pct": 20.5,
-      "kast_pct": 62.2,
+      "kast_pct": 68.9,
       "fk_fd": "4/4",
       "clutches_won": 0,
       "rating_estimate": 0.74
@@ -7757,7 +7757,7 @@
       "acs": 180.1,
       "adr": 113.0,
       "hs_pct": 19.4,
-      "kast_pct": 61.8,
+      "kast_pct": 64.7,
       "fk_fd": "2/2",
       "clutches_won": 0,
       "rating_estimate": 0.73
@@ -7843,7 +7843,7 @@
       "acs": 163.5,
       "adr": 109.9,
       "hs_pct": 24.1,
-      "kast_pct": 71.4,
+      "kast_pct": 74.3,
       "fk_fd": "2/3",
       "clutches_won": 0,
       "rating_estimate": 0.72
@@ -7885,7 +7885,7 @@
       "acs": 152.5,
       "adr": 105.8,
       "hs_pct": 28.3,
-      "kast_pct": 70.3,
+      "kast_pct": 75.7,
       "fk_fd": "3/4",
       "clutches_won": 0,
       "rating_estimate": 0.71
@@ -7906,7 +7906,7 @@
       "acs": 145.6,
       "adr": 96.2,
       "hs_pct": 38.3,
-      "kast_pct": 63.2,
+      "kast_pct": 65.8,
       "fk_fd": "4/4",
       "clutches_won": 0,
       "rating_estimate": 0.7
@@ -7948,7 +7948,7 @@
       "acs": 122.8,
       "adr": 77.5,
       "hs_pct": 12.9,
-      "kast_pct": 61.9,
+      "kast_pct": 71.4,
       "fk_fd": "0/3",
       "clutches_won": 0,
       "rating_estimate": 0.69
@@ -8034,7 +8034,7 @@
       "acs": 170.4,
       "adr": 110.5,
       "hs_pct": 34.7,
-      "kast_pct": 50.0,
+      "kast_pct": 52.9,
       "fk_fd": "1/3",
       "clutches_won": 0,
       "rating_estimate": 0.68
@@ -8055,7 +8055,7 @@
       "acs": 156.4,
       "adr": 96.0,
       "hs_pct": 25.0,
-      "kast_pct": 55.3,
+      "kast_pct": 60.5,
       "fk_fd": "5/10",
       "clutches_won": 0,
       "rating_estimate": 0.67
@@ -8119,7 +8119,7 @@
       "acs": 113.2,
       "adr": 73.3,
       "hs_pct": 21.1,
-      "kast_pct": 62.8,
+      "kast_pct": 67.4,
       "fk_fd": "2/4",
       "clutches_won": 2,
       "rating_estimate": 0.66
@@ -8183,7 +8183,7 @@
       "acs": 141.2,
       "adr": 102.0,
       "hs_pct": 30.4,
-      "kast_pct": 61.0,
+      "kast_pct": 63.4,
       "fk_fd": "0/4",
       "clutches_won": 0,
       "rating_estimate": 0.65
@@ -8225,7 +8225,7 @@
       "acs": 150.8,
       "adr": 100.3,
       "hs_pct": 25.0,
-      "kast_pct": 74.3,
+      "kast_pct": 80.0,
       "fk_fd": "2/1",
       "clutches_won": 0,
       "rating_estimate": 0.65
@@ -8288,7 +8288,7 @@
       "acs": 186.7,
       "adr": 121.7,
       "hs_pct": 26.4,
-      "kast_pct": 66.7,
+      "kast_pct": 70.0,
       "fk_fd": "5/3",
       "clutches_won": 0,
       "rating_estimate": 0.64
@@ -8351,7 +8351,7 @@
       "acs": 177.9,
       "adr": 115.2,
       "hs_pct": 30.0,
-      "kast_pct": 58.8,
+      "kast_pct": 64.7,
       "fk_fd": "2/3",
       "clutches_won": 0,
       "rating_estimate": 0.62
@@ -8393,7 +8393,7 @@
       "acs": 123.2,
       "adr": 83.2,
       "hs_pct": 19.2,
-      "kast_pct": 56.6,
+      "kast_pct": 62.3,
       "fk_fd": "0/2",
       "clutches_won": 0,
       "rating_estimate": 0.61
@@ -8478,7 +8478,7 @@
       "acs": 176.8,
       "adr": 113.8,
       "hs_pct": 28.6,
-      "kast_pct": 50.0,
+      "kast_pct": 55.0,
       "fk_fd": "0/3",
       "clutches_won": 0,
       "rating_estimate": 0.59
@@ -8499,7 +8499,7 @@
       "acs": 164.7,
       "adr": 107.3,
       "hs_pct": 31.9,
-      "kast_pct": 57.1,
+      "kast_pct": 62.9,
       "fk_fd": "3/5",
       "clutches_won": 0,
       "rating_estimate": 0.59
@@ -8520,7 +8520,7 @@
       "acs": 146.1,
       "adr": 104.1,
       "hs_pct": 39.1,
-      "kast_pct": 57.1,
+      "kast_pct": 61.9,
       "fk_fd": "1/1",
       "clutches_won": 0,
       "rating_estimate": 0.59
@@ -8583,7 +8583,7 @@
       "acs": 119.5,
       "adr": 82.8,
       "hs_pct": 20.3,
-      "kast_pct": 56.8,
+      "kast_pct": 61.4,
       "fk_fd": "3/3",
       "clutches_won": 0,
       "rating_estimate": 0.56
@@ -8625,7 +8625,7 @@
       "acs": 137.5,
       "adr": 108.3,
       "hs_pct": 17.6,
-      "kast_pct": 60.5,
+      "kast_pct": 63.2,
       "fk_fd": "1/5",
       "clutches_won": 0,
       "rating_estimate": 0.54
@@ -8646,7 +8646,7 @@
       "acs": 123.5,
       "adr": 82.9,
       "hs_pct": 32.7,
-      "kast_pct": 46.2,
+      "kast_pct": 48.7,
       "fk_fd": "3/9",
       "clutches_won": 0,
       "rating_estimate": 0.53
@@ -8668,7 +8668,7 @@
       "acs": 114.6,
       "adr": 83.7,
       "hs_pct": 11.8,
-      "kast_pct": 51.4,
+      "kast_pct": 54.1,
       "fk_fd": "0/4",
       "clutches_won": 0,
       "rating_estimate": 0.53
@@ -8710,7 +8710,7 @@
       "acs": 120.4,
       "adr": 82.2,
       "hs_pct": 34.1,
-      "kast_pct": 58.5,
+      "kast_pct": 65.9,
       "fk_fd": "5/6",
       "clutches_won": 0,
       "rating_estimate": 0.53
@@ -8731,7 +8731,7 @@
       "acs": 146.9,
       "adr": 106.5,
       "hs_pct": 6.6,
-      "kast_pct": 52.4,
+      "kast_pct": 61.9,
       "fk_fd": "1/1",
       "clutches_won": 0,
       "rating_estimate": 0.53
@@ -8752,7 +8752,7 @@
       "acs": 148.2,
       "adr": 94.1,
       "hs_pct": 28.6,
-      "kast_pct": 60.0,
+      "kast_pct": 63.3,
       "fk_fd": "0/1",
       "clutches_won": 0,
       "rating_estimate": 0.52
@@ -8816,7 +8816,7 @@
       "acs": 140.7,
       "adr": 105.2,
       "hs_pct": 21.9,
-      "kast_pct": 52.9,
+      "kast_pct": 55.9,
       "fk_fd": "2/7",
       "clutches_won": 0,
       "rating_estimate": 0.44
@@ -8837,7 +8837,7 @@
       "acs": 130.3,
       "adr": 85.2,
       "hs_pct": 17.1,
-      "kast_pct": 59.1,
+      "kast_pct": 63.6,
       "fk_fd": "1/3",
       "clutches_won": 0,
       "rating_estimate": 0.42
@@ -8858,7 +8858,7 @@
       "acs": 122.4,
       "adr": 87.5,
       "hs_pct": 31.6,
-      "kast_pct": 46.7,
+      "kast_pct": 53.3,
       "fk_fd": "1/2",
       "clutches_won": 0,
       "rating_estimate": 0.38
@@ -8879,7 +8879,7 @@
       "acs": 129.7,
       "adr": 84.2,
       "hs_pct": 21.1,
-      "kast_pct": 40.0,
+      "kast_pct": 53.3,
       "fk_fd": "2/5",
       "clutches_won": 0,
       "rating_estimate": 0.37
@@ -8921,7 +8921,7 @@
       "acs": 85.4,
       "adr": 64.4,
       "hs_pct": 26.2,
-      "kast_pct": 43.6,
+      "kast_pct": 46.2,
       "fk_fd": "1/5",
       "clutches_won": 0,
       "rating_estimate": 0.36
@@ -8963,7 +8963,7 @@
       "acs": 113.7,
       "adr": 73.8,
       "hs_pct": 23.8,
-      "kast_pct": 38.2,
+      "kast_pct": 47.1,
       "fk_fd": "2/7",
       "clutches_won": 0,
       "rating_estimate": 0.33
@@ -9006,7 +9006,7 @@
       "acs": 90.5,
       "adr": 67.4,
       "hs_pct": 23.3,
-      "kast_pct": 43.5,
+      "kast_pct": 47.8,
       "fk_fd": "0/3",
       "clutches_won": 0,
       "rating_estimate": 0.25
@@ -9027,7 +9027,7 @@
       "acs": 86.8,
       "adr": 58.0,
       "hs_pct": 16.2,
-      "kast_pct": 42.9,
+      "kast_pct": 45.7,
       "fk_fd": "0/5",
       "clutches_won": 0,
       "rating_estimate": 0.22
@@ -9113,7 +9113,7 @@
       "acs": 354.0,
       "adr": 223.8,
       "hs_pct": 25.4,
-      "kast_pct": 79.5,
+      "kast_pct": 84.6,
       "fk_fd": "7/0",
       "clutches_won": 0,
       "rating_estimate": 1.79
@@ -9197,7 +9197,7 @@
       "acs": 306.8,
       "adr": 213.9,
       "hs_pct": 29.8,
-      "kast_pct": 71.1,
+      "kast_pct": 73.7,
       "fk_fd": "5/3",
       "clutches_won": 0,
       "rating_estimate": 1.64
@@ -9281,7 +9281,7 @@
       "acs": 328.6,
       "adr": 213.7,
       "hs_pct": 43.3,
-      "kast_pct": 77.8,
+      "kast_pct": 83.3,
       "fk_fd": "5/3",
       "clutches_won": 0,
       "rating_estimate": 1.56
@@ -9365,7 +9365,7 @@
       "acs": 282.9,
       "adr": 178.9,
       "hs_pct": 20.4,
-      "kast_pct": 83.3,
+      "kast_pct": 88.9,
       "fk_fd": "2/1",
       "clutches_won": 0,
       "rating_estimate": 1.54
@@ -9387,7 +9387,7 @@
       "acs": 325.8,
       "adr": 212.4,
       "hs_pct": 41.8,
-      "kast_pct": 77.8,
+      "kast_pct": 80.0,
       "fk_fd": "11/1",
       "clutches_won": 1,
       "rating_estimate": 1.48
@@ -9409,7 +9409,7 @@
       "acs": 300.9,
       "adr": 203.5,
       "hs_pct": 30.3,
-      "kast_pct": 72.7,
+      "kast_pct": 78.8,
       "fk_fd": "7/4",
       "clutches_won": 1,
       "rating_estimate": 1.48
@@ -9430,7 +9430,7 @@
       "acs": 256.7,
       "adr": 168.9,
       "hs_pct": 16.5,
-      "kast_pct": 85.7,
+      "kast_pct": 88.6,
       "fk_fd": "3/2",
       "clutches_won": 0,
       "rating_estimate": 1.47
@@ -9451,7 +9451,7 @@
       "acs": 310.7,
       "adr": 204.5,
       "hs_pct": 30.3,
-      "kast_pct": 76.5,
+      "kast_pct": 79.4,
       "fk_fd": "8/6",
       "clutches_won": 0,
       "rating_estimate": 1.44
@@ -9556,7 +9556,7 @@
       "acs": 254.4,
       "adr": 163.5,
       "hs_pct": 33.7,
-      "kast_pct": 81.6,
+      "kast_pct": 84.2,
       "fk_fd": "1/7",
       "clutches_won": 0,
       "rating_estimate": 1.42
@@ -9704,7 +9704,7 @@
       "acs": 301.5,
       "adr": 193.0,
       "hs_pct": 34.0,
-      "kast_pct": 76.3,
+      "kast_pct": 81.6,
       "fk_fd": "6/5",
       "clutches_won": 1,
       "rating_estimate": 1.38
@@ -9725,7 +9725,7 @@
       "acs": 244.6,
       "adr": 171.9,
       "hs_pct": 32.4,
-      "kast_pct": 87.2,
+      "kast_pct": 89.7,
       "fk_fd": "3/3",
       "clutches_won": 1,
       "rating_estimate": 1.38
@@ -9746,7 +9746,7 @@
       "acs": 289.3,
       "adr": 195.4,
       "hs_pct": 24.0,
-      "kast_pct": 72.7,
+      "kast_pct": 75.0,
       "fk_fd": "10/7",
       "clutches_won": 0,
       "rating_estimate": 1.38
@@ -9788,7 +9788,7 @@
       "acs": 282.9,
       "adr": 205.4,
       "hs_pct": 29.0,
-      "kast_pct": 73.9,
+      "kast_pct": 78.3,
       "fk_fd": "1/1",
       "clutches_won": 2,
       "rating_estimate": 1.37
@@ -9872,7 +9872,7 @@
       "acs": 325.8,
       "adr": 206.4,
       "hs_pct": 23.3,
-      "kast_pct": 71.1,
+      "kast_pct": 73.7,
       "fk_fd": "7/6",
       "clutches_won": 0,
       "rating_estimate": 1.35
@@ -9893,7 +9893,7 @@
       "acs": 272.5,
       "adr": 175.8,
       "hs_pct": 33.0,
-      "kast_pct": 73.0,
+      "kast_pct": 75.7,
       "fk_fd": "3/6",
       "clutches_won": 0,
       "rating_estimate": 1.35
@@ -9956,7 +9956,7 @@
       "acs": 247.9,
       "adr": 177.4,
       "hs_pct": 28.7,
-      "kast_pct": 74.5,
+      "kast_pct": 76.6,
       "fk_fd": "3/4",
       "clutches_won": 0,
       "rating_estimate": 1.31
@@ -10062,7 +10062,7 @@
       "acs": 239.6,
       "adr": 179.3,
       "hs_pct": 32.1,
-      "kast_pct": 79.1,
+      "kast_pct": 81.4,
       "fk_fd": "4/4",
       "clutches_won": 0,
       "rating_estimate": 1.28
@@ -10230,7 +10230,7 @@
       "acs": 229.8,
       "adr": 149.9,
       "hs_pct": 22.2,
-      "kast_pct": 90.0,
+      "kast_pct": 95.0,
       "fk_fd": "6/3",
       "clutches_won": 0,
       "rating_estimate": 1.25
@@ -10252,7 +10252,7 @@
       "acs": 302.5,
       "adr": 185.9,
       "hs_pct": 20.3,
-      "kast_pct": 78.0,
+      "kast_pct": 80.5,
       "fk_fd": "9/4",
       "clutches_won": 0,
       "rating_estimate": 1.25
@@ -10315,7 +10315,7 @@
       "acs": 260.0,
       "adr": 180.2,
       "hs_pct": 9.8,
-      "kast_pct": 81.0,
+      "kast_pct": 85.7,
       "fk_fd": "0/3",
       "clutches_won": 0,
       "rating_estimate": 1.25
@@ -10336,7 +10336,7 @@
       "acs": 224.8,
       "adr": 152.1,
       "hs_pct": 40.3,
-      "kast_pct": 68.6,
+      "kast_pct": 71.4,
       "fk_fd": "5/1",
       "clutches_won": 2,
       "rating_estimate": 1.24
@@ -10357,7 +10357,7 @@
       "acs": 265.8,
       "adr": 177.1,
       "hs_pct": 23.0,
-      "kast_pct": 63.4,
+      "kast_pct": 68.3,
       "fk_fd": "3/6",
       "clutches_won": 0,
       "rating_estimate": 1.24
@@ -10441,7 +10441,7 @@
       "acs": 221.9,
       "adr": 140.1,
       "hs_pct": 23.6,
-      "kast_pct": 80.0,
+      "kast_pct": 82.9,
       "fk_fd": "2/5",
       "clutches_won": 0,
       "rating_estimate": 1.22
@@ -10483,7 +10483,7 @@
       "acs": 268.9,
       "adr": 190.3,
       "hs_pct": 36.4,
-      "kast_pct": 76.2,
+      "kast_pct": 81.0,
       "fk_fd": "3/3",
       "clutches_won": 2,
       "rating_estimate": 1.22
@@ -10588,7 +10588,7 @@
       "acs": 156.3,
       "adr": 99.9,
       "hs_pct": 19.7,
-      "kast_pct": 89.7,
+      "kast_pct": 92.3,
       "fk_fd": "1/2",
       "clutches_won": 0,
       "rating_estimate": 1.2
@@ -10609,7 +10609,7 @@
       "acs": 219.7,
       "adr": 149.7,
       "hs_pct": 29.3,
-      "kast_pct": 81.6,
+      "kast_pct": 84.2,
       "fk_fd": "4/2",
       "clutches_won": 0,
       "rating_estimate": 1.19
@@ -10672,7 +10672,7 @@
       "acs": 184.1,
       "adr": 134.4,
       "hs_pct": 43.3,
-      "kast_pct": 70.6,
+      "kast_pct": 76.5,
       "fk_fd": "0/1",
       "clutches_won": 0,
       "rating_estimate": 1.18
@@ -10693,7 +10693,7 @@
       "acs": 251.8,
       "adr": 159.5,
       "hs_pct": 29.5,
-      "kast_pct": 65.9,
+      "kast_pct": 68.2,
       "fk_fd": "6/1",
       "clutches_won": 0,
       "rating_estimate": 1.18
@@ -10820,7 +10820,7 @@
       "acs": 203.5,
       "adr": 119.8,
       "hs_pct": 14.0,
-      "kast_pct": 83.3,
+      "kast_pct": 88.9,
       "fk_fd": "3/2",
       "clutches_won": 0,
       "rating_estimate": 1.17
@@ -10862,7 +10862,7 @@
       "acs": 233.1,
       "adr": 153.1,
       "hs_pct": 22.1,
-      "kast_pct": 70.0,
+      "kast_pct": 72.0,
       "fk_fd": "8/4",
       "clutches_won": 0,
       "rating_estimate": 1.16
@@ -10925,7 +10925,7 @@
       "acs": 211.8,
       "adr": 135.7,
       "hs_pct": 33.3,
-      "kast_pct": 80.6,
+      "kast_pct": 83.3,
       "fk_fd": "5/2",
       "clutches_won": 1,
       "rating_estimate": 1.14
@@ -11052,7 +11052,7 @@
       "acs": 202.3,
       "adr": 151.2,
       "hs_pct": 28.2,
-      "kast_pct": 71.1,
+      "kast_pct": 73.7,
       "fk_fd": "6/8",
       "clutches_won": 0,
       "rating_estimate": 1.11
@@ -11115,7 +11115,7 @@
       "acs": 203.2,
       "adr": 143.1,
       "hs_pct": 42.2,
-      "kast_pct": 76.9,
+      "kast_pct": 79.5,
       "fk_fd": "3/0",
       "clutches_won": 1,
       "rating_estimate": 1.11
@@ -11157,7 +11157,7 @@
       "acs": 228.8,
       "adr": 166.3,
       "hs_pct": 37.8,
-      "kast_pct": 69.6,
+      "kast_pct": 73.9,
       "fk_fd": "7/1",
       "clutches_won": 1,
       "rating_estimate": 1.1
@@ -11241,7 +11241,7 @@
       "acs": 243.3,
       "adr": 151.2,
       "hs_pct": 24.8,
-      "kast_pct": 76.7,
+      "kast_pct": 79.1,
       "fk_fd": "11/5",
       "clutches_won": 0,
       "rating_estimate": 1.09
@@ -11347,7 +11347,7 @@
       "acs": 196.6,
       "adr": 129.2,
       "hs_pct": 21.4,
-      "kast_pct": 82.4,
+      "kast_pct": 88.2,
       "fk_fd": "1/1",
       "clutches_won": 0,
       "rating_estimate": 1.08
@@ -11389,7 +11389,7 @@
       "acs": 174.5,
       "adr": 120.1,
       "hs_pct": 33.3,
-      "kast_pct": 78.8,
+      "kast_pct": 81.8,
       "fk_fd": "3/2",
       "clutches_won": 0,
       "rating_estimate": 1.07
@@ -11410,7 +11410,7 @@
       "acs": 221.3,
       "adr": 140.5,
       "hs_pct": 18.2,
-      "kast_pct": 70.2,
+      "kast_pct": 72.3,
       "fk_fd": "6/5",
       "clutches_won": 0,
       "rating_estimate": 1.07
@@ -11431,7 +11431,7 @@
       "acs": 197.8,
       "adr": 128.0,
       "hs_pct": 24.1,
-      "kast_pct": 75.6,
+      "kast_pct": 78.0,
       "fk_fd": "3/1",
       "clutches_won": 2,
       "rating_estimate": 1.06
@@ -11452,7 +11452,7 @@
       "acs": 203.1,
       "adr": 139.5,
       "hs_pct": 23.6,
-      "kast_pct": 78.4,
+      "kast_pct": 81.1,
       "fk_fd": "2/2",
       "clutches_won": 0,
       "rating_estimate": 1.06
@@ -11515,7 +11515,7 @@
       "acs": 220.0,
       "adr": 146.5,
       "hs_pct": 33.7,
-      "kast_pct": 73.2,
+      "kast_pct": 75.6,
       "fk_fd": "5/9",
       "clutches_won": 0,
       "rating_estimate": 1.04
@@ -11557,7 +11557,7 @@
       "acs": 178.1,
       "adr": 117.0,
       "hs_pct": 24.3,
-      "kast_pct": 84.2,
+      "kast_pct": 86.8,
       "fk_fd": "1/5",
       "clutches_won": 0,
       "rating_estimate": 1.04
@@ -11578,7 +11578,7 @@
       "acs": 204.0,
       "adr": 138.1,
       "hs_pct": 33.3,
-      "kast_pct": 74.4,
+      "kast_pct": 76.7,
       "fk_fd": "3/3",
       "clutches_won": 0,
       "rating_estimate": 1.04
@@ -11620,7 +11620,7 @@
       "acs": 205.9,
       "adr": 130.5,
       "hs_pct": 24.3,
-      "kast_pct": 65.8,
+      "kast_pct": 71.1,
       "fk_fd": "1/3",
       "clutches_won": 2,
       "rating_estimate": 1.04
@@ -11641,7 +11641,7 @@
       "acs": 219.0,
       "adr": 137.6,
       "hs_pct": 30.2,
-      "kast_pct": 69.8,
+      "kast_pct": 75.5,
       "fk_fd": "11/5",
       "clutches_won": 0,
       "rating_estimate": 1.04
@@ -11704,7 +11704,7 @@
       "acs": 209.2,
       "adr": 135.9,
       "hs_pct": 21.9,
-      "kast_pct": 76.7,
+      "kast_pct": 79.1,
       "fk_fd": "2/2",
       "clutches_won": 0,
       "rating_estimate": 1.03
@@ -11725,7 +11725,7 @@
       "acs": 244.0,
       "adr": 153.7,
       "hs_pct": 20.3,
-      "kast_pct": 81.0,
+      "kast_pct": 85.7,
       "fk_fd": "0/0",
       "clutches_won": 0,
       "rating_estimate": 1.03
@@ -11809,7 +11809,7 @@
       "acs": 159.5,
       "adr": 113.7,
       "hs_pct": 28.1,
-      "kast_pct": 87.5,
+      "kast_pct": 90.0,
       "fk_fd": "3/1",
       "clutches_won": 0,
       "rating_estimate": 1.01
@@ -11979,7 +11979,7 @@
       "acs": 194.4,
       "adr": 136.6,
       "hs_pct": 32.9,
-      "kast_pct": 66.7,
+      "kast_pct": 76.2,
       "fk_fd": "4/1",
       "clutches_won": 0,
       "rating_estimate": 0.99
@@ -12042,7 +12042,7 @@
       "acs": 202.0,
       "adr": 142.3,
       "hs_pct": 24.1,
-      "kast_pct": 72.3,
+      "kast_pct": 74.5,
       "fk_fd": "1/7",
       "clutches_won": 1,
       "rating_estimate": 0.99
@@ -12189,7 +12189,7 @@
       "acs": 197.2,
       "adr": 132.9,
       "hs_pct": 27.2,
-      "kast_pct": 64.4,
+      "kast_pct": 68.9,
       "fk_fd": "3/3",
       "clutches_won": 1,
       "rating_estimate": 0.96
@@ -12252,7 +12252,7 @@
       "acs": 189.1,
       "adr": 130.5,
       "hs_pct": 27.0,
-      "kast_pct": 75.6,
+      "kast_pct": 77.8,
       "fk_fd": "2/8",
       "clutches_won": 1,
       "rating_estimate": 0.96
@@ -12274,7 +12274,7 @@
       "acs": 211.3,
       "adr": 136.1,
       "hs_pct": 20.7,
-      "kast_pct": 65.4,
+      "kast_pct": 73.1,
       "fk_fd": "11/7",
       "clutches_won": 1,
       "rating_estimate": 0.96
@@ -12464,7 +12464,7 @@
       "acs": 193.7,
       "adr": 127.5,
       "hs_pct": 34.6,
-      "kast_pct": 62.2,
+      "kast_pct": 68.9,
       "fk_fd": "4/2",
       "clutches_won": 1,
       "rating_estimate": 0.94
@@ -12507,7 +12507,7 @@
       "acs": 210.3,
       "adr": 130.3,
       "hs_pct": 30.1,
-      "kast_pct": 62.3,
+      "kast_pct": 67.9,
       "fk_fd": "5/7",
       "clutches_won": 0,
       "rating_estimate": 0.94
@@ -12591,7 +12591,7 @@
       "acs": 233.0,
       "adr": 159.7,
       "hs_pct": 43.9,
-      "kast_pct": 65.2,
+      "kast_pct": 69.6,
       "fk_fd": "2/2",
       "clutches_won": 0,
       "rating_estimate": 0.93
@@ -12696,7 +12696,7 @@
       "acs": 192.2,
       "adr": 124.2,
       "hs_pct": 25.4,
-      "kast_pct": 71.8,
+      "kast_pct": 76.9,
       "fk_fd": "7/3",
       "clutches_won": 0,
       "rating_estimate": 0.91
@@ -12717,7 +12717,7 @@
       "acs": 195.1,
       "adr": 125.1,
       "hs_pct": 27.3,
-      "kast_pct": 68.2,
+      "kast_pct": 70.5,
       "fk_fd": "5/2",
       "clutches_won": 0,
       "rating_estimate": 0.91
@@ -12759,7 +12759,7 @@
       "acs": 163.6,
       "adr": 113.6,
       "hs_pct": 21.9,
-      "kast_pct": 63.6,
+      "kast_pct": 65.9,
       "fk_fd": "0/1",
       "clutches_won": 1,
       "rating_estimate": 0.91
@@ -12780,7 +12780,7 @@
       "acs": 198.1,
       "adr": 126.2,
       "hs_pct": 22.6,
-      "kast_pct": 62.2,
+      "kast_pct": 67.6,
       "fk_fd": "4/8",
       "clutches_won": 0,
       "rating_estimate": 0.9
@@ -12801,7 +12801,7 @@
       "acs": 158.1,
       "adr": 105.6,
       "hs_pct": 37.9,
-      "kast_pct": 68.6,
+      "kast_pct": 74.3,
       "fk_fd": "2/4",
       "clutches_won": 0,
       "rating_estimate": 0.9
@@ -12843,7 +12843,7 @@
       "acs": 217.8,
       "adr": 145.7,
       "hs_pct": 25.0,
-      "kast_pct": 67.4,
+      "kast_pct": 69.8,
       "fk_fd": "5/8",
       "clutches_won": 0,
       "rating_estimate": 0.9
@@ -13036,7 +13036,7 @@
       "acs": 191.9,
       "adr": 119.6,
       "hs_pct": 19.0,
-      "kast_pct": 68.3,
+      "kast_pct": 70.7,
       "fk_fd": "6/2",
       "clutches_won": 0,
       "rating_estimate": 0.88
@@ -13186,7 +13186,7 @@
       "acs": 194.7,
       "adr": 129.8,
       "hs_pct": 21.0,
-      "kast_pct": 68.2,
+      "kast_pct": 77.3,
       "fk_fd": "9/3",
       "clutches_won": 0,
       "rating_estimate": 0.84
@@ -13250,7 +13250,7 @@
       "acs": 196.8,
       "adr": 132.5,
       "hs_pct": 33.3,
-      "kast_pct": 60.4,
+      "kast_pct": 62.3,
       "fk_fd": "8/11",
       "clutches_won": 0,
       "rating_estimate": 0.84
@@ -13313,7 +13313,7 @@
       "acs": 198.2,
       "adr": 128.7,
       "hs_pct": 26.6,
-      "kast_pct": 66.7,
+      "kast_pct": 71.4,
       "fk_fd": "12/6",
       "clutches_won": 0,
       "rating_estimate": 0.83
@@ -13376,7 +13376,7 @@
       "acs": 173.8,
       "adr": 107.7,
       "hs_pct": 31.5,
-      "kast_pct": 66.7,
+      "kast_pct": 69.4,
       "fk_fd": "3/5",
       "clutches_won": 0,
       "rating_estimate": 0.81
@@ -13419,7 +13419,7 @@
       "acs": 200.5,
       "adr": 131.4,
       "hs_pct": 29.2,
-      "kast_pct": 54.2,
+      "kast_pct": 62.5,
       "fk_fd": "3/5",
       "clutches_won": 0,
       "rating_estimate": 0.81
@@ -13440,7 +13440,7 @@
       "acs": 165.6,
       "adr": 119.5,
       "hs_pct": 32.8,
-      "kast_pct": 70.5,
+      "kast_pct": 75.0,
       "fk_fd": "2/8",
       "clutches_won": 0,
       "rating_estimate": 0.8
@@ -13461,7 +13461,7 @@
       "acs": 159.0,
       "adr": 116.6,
       "hs_pct": 21.3,
-      "kast_pct": 72.3,
+      "kast_pct": 74.5,
       "fk_fd": "3/2",
       "clutches_won": 0,
       "rating_estimate": 0.8
@@ -13482,7 +13482,7 @@
       "acs": 182.0,
       "adr": 116.8,
       "hs_pct": 27.5,
-      "kast_pct": 58.1,
+      "kast_pct": 60.5,
       "fk_fd": "7/8",
       "clutches_won": 0,
       "rating_estimate": 0.79
@@ -13545,7 +13545,7 @@
       "acs": 164.1,
       "adr": 100.3,
       "hs_pct": 12.8,
-      "kast_pct": 73.3,
+      "kast_pct": 80.0,
       "fk_fd": "2/4",
       "clutches_won": 0,
       "rating_estimate": 0.78
@@ -13566,7 +13566,7 @@
       "acs": 139.0,
       "adr": 97.2,
       "hs_pct": 23.6,
-      "kast_pct": 66.7,
+      "kast_pct": 69.2,
       "fk_fd": "1/5",
       "clutches_won": 0,
       "rating_estimate": 0.78
@@ -13630,7 +13630,7 @@
       "acs": 207.8,
       "adr": 142.5,
       "hs_pct": 28.9,
-      "kast_pct": 67.4,
+      "kast_pct": 69.8,
       "fk_fd": "8/9",
       "clutches_won": 1,
       "rating_estimate": 0.78
@@ -13693,7 +13693,7 @@
       "acs": 185.3,
       "adr": 115.5,
       "hs_pct": 14.2,
-      "kast_pct": 72.1,
+      "kast_pct": 74.4,
       "fk_fd": "6/6",
       "clutches_won": 1,
       "rating_estimate": 0.77
@@ -13736,7 +13736,7 @@
       "acs": 118.0,
       "adr": 72.9,
       "hs_pct": 19.1,
-      "kast_pct": 62.8,
+      "kast_pct": 65.1,
       "fk_fd": "1/3",
       "clutches_won": 0,
       "rating_estimate": 0.76
@@ -13841,7 +13841,7 @@
       "acs": 168.9,
       "adr": 118.5,
       "hs_pct": 20.5,
-      "kast_pct": 62.2,
+      "kast_pct": 68.9,
       "fk_fd": "4/4",
       "clutches_won": 0,
       "rating_estimate": 0.74
@@ -13863,7 +13863,7 @@
       "acs": 180.1,
       "adr": 113.0,
       "hs_pct": 19.4,
-      "kast_pct": 61.8,
+      "kast_pct": 64.7,
       "fk_fd": "2/2",
       "clutches_won": 0,
       "rating_estimate": 0.73
@@ -13949,7 +13949,7 @@
       "acs": 163.5,
       "adr": 109.9,
       "hs_pct": 24.1,
-      "kast_pct": 71.4,
+      "kast_pct": 74.3,
       "fk_fd": "2/3",
       "clutches_won": 0,
       "rating_estimate": 0.72
@@ -13991,7 +13991,7 @@
       "acs": 152.5,
       "adr": 105.8,
       "hs_pct": 28.3,
-      "kast_pct": 70.3,
+      "kast_pct": 75.7,
       "fk_fd": "3/4",
       "clutches_won": 0,
       "rating_estimate": 0.71
@@ -14012,7 +14012,7 @@
       "acs": 145.6,
       "adr": 96.2,
       "hs_pct": 38.3,
-      "kast_pct": 63.2,
+      "kast_pct": 65.8,
       "fk_fd": "4/4",
       "clutches_won": 0,
       "rating_estimate": 0.7
@@ -14054,7 +14054,7 @@
       "acs": 122.8,
       "adr": 77.5,
       "hs_pct": 12.9,
-      "kast_pct": 61.9,
+      "kast_pct": 71.4,
       "fk_fd": "0/3",
       "clutches_won": 0,
       "rating_estimate": 0.69
@@ -14140,7 +14140,7 @@
       "acs": 170.4,
       "adr": 110.5,
       "hs_pct": 34.7,
-      "kast_pct": 50.0,
+      "kast_pct": 52.9,
       "fk_fd": "1/3",
       "clutches_won": 0,
       "rating_estimate": 0.68
@@ -14161,7 +14161,7 @@
       "acs": 156.4,
       "adr": 96.0,
       "hs_pct": 25.0,
-      "kast_pct": 55.3,
+      "kast_pct": 60.5,
       "fk_fd": "5/10",
       "clutches_won": 0,
       "rating_estimate": 0.67
@@ -14225,7 +14225,7 @@
       "acs": 113.2,
       "adr": 73.3,
       "hs_pct": 21.1,
-      "kast_pct": 62.8,
+      "kast_pct": 67.4,
       "fk_fd": "2/4",
       "clutches_won": 2,
       "rating_estimate": 0.66
@@ -14289,7 +14289,7 @@
       "acs": 141.2,
       "adr": 102.0,
       "hs_pct": 30.4,
-      "kast_pct": 61.0,
+      "kast_pct": 63.4,
       "fk_fd": "0/4",
       "clutches_won": 0,
       "rating_estimate": 0.65
@@ -14331,7 +14331,7 @@
       "acs": 150.8,
       "adr": 100.3,
       "hs_pct": 25.0,
-      "kast_pct": 74.3,
+      "kast_pct": 80.0,
       "fk_fd": "2/1",
       "clutches_won": 0,
       "rating_estimate": 0.65
@@ -14394,7 +14394,7 @@
       "acs": 186.7,
       "adr": 121.7,
       "hs_pct": 26.4,
-      "kast_pct": 66.7,
+      "kast_pct": 70.0,
       "fk_fd": "5/3",
       "clutches_won": 0,
       "rating_estimate": 0.64
@@ -14457,7 +14457,7 @@
       "acs": 177.9,
       "adr": 115.2,
       "hs_pct": 30.0,
-      "kast_pct": 58.8,
+      "kast_pct": 64.7,
       "fk_fd": "2/3",
       "clutches_won": 0,
       "rating_estimate": 0.62
@@ -14499,7 +14499,7 @@
       "acs": 123.2,
       "adr": 83.2,
       "hs_pct": 19.2,
-      "kast_pct": 56.6,
+      "kast_pct": 62.3,
       "fk_fd": "0/2",
       "clutches_won": 0,
       "rating_estimate": 0.61
@@ -14584,7 +14584,7 @@
       "acs": 176.8,
       "adr": 113.8,
       "hs_pct": 28.6,
-      "kast_pct": 50.0,
+      "kast_pct": 55.0,
       "fk_fd": "0/3",
       "clutches_won": 0,
       "rating_estimate": 0.59
@@ -14605,7 +14605,7 @@
       "acs": 164.7,
       "adr": 107.3,
       "hs_pct": 31.9,
-      "kast_pct": 57.1,
+      "kast_pct": 62.9,
       "fk_fd": "3/5",
       "clutches_won": 0,
       "rating_estimate": 0.59
@@ -14626,7 +14626,7 @@
       "acs": 146.1,
       "adr": 104.1,
       "hs_pct": 39.1,
-      "kast_pct": 57.1,
+      "kast_pct": 61.9,
       "fk_fd": "1/1",
       "clutches_won": 0,
       "rating_estimate": 0.59
@@ -14689,7 +14689,7 @@
       "acs": 119.5,
       "adr": 82.8,
       "hs_pct": 20.3,
-      "kast_pct": 56.8,
+      "kast_pct": 61.4,
       "fk_fd": "3/3",
       "clutches_won": 0,
       "rating_estimate": 0.56
@@ -14731,7 +14731,7 @@
       "acs": 137.5,
       "adr": 108.3,
       "hs_pct": 17.6,
-      "kast_pct": 60.5,
+      "kast_pct": 63.2,
       "fk_fd": "1/5",
       "clutches_won": 0,
       "rating_estimate": 0.54
@@ -14752,7 +14752,7 @@
       "acs": 123.5,
       "adr": 82.9,
       "hs_pct": 32.7,
-      "kast_pct": 46.2,
+      "kast_pct": 48.7,
       "fk_fd": "3/9",
       "clutches_won": 0,
       "rating_estimate": 0.53
@@ -14774,7 +14774,7 @@
       "acs": 114.6,
       "adr": 83.7,
       "hs_pct": 11.8,
-      "kast_pct": 51.4,
+      "kast_pct": 54.1,
       "fk_fd": "0/4",
       "clutches_won": 0,
       "rating_estimate": 0.53
@@ -14816,7 +14816,7 @@
       "acs": 120.4,
       "adr": 82.2,
       "hs_pct": 34.1,
-      "kast_pct": 58.5,
+      "kast_pct": 65.9,
       "fk_fd": "5/6",
       "clutches_won": 0,
       "rating_estimate": 0.53
@@ -14837,7 +14837,7 @@
       "acs": 146.9,
       "adr": 106.5,
       "hs_pct": 6.6,
-      "kast_pct": 52.4,
+      "kast_pct": 61.9,
       "fk_fd": "1/1",
       "clutches_won": 0,
       "rating_estimate": 0.53
@@ -14858,7 +14858,7 @@
       "acs": 148.2,
       "adr": 94.1,
       "hs_pct": 28.6,
-      "kast_pct": 60.0,
+      "kast_pct": 63.3,
       "fk_fd": "0/1",
       "clutches_won": 0,
       "rating_estimate": 0.52
@@ -14922,7 +14922,7 @@
       "acs": 140.7,
       "adr": 105.2,
       "hs_pct": 21.9,
-      "kast_pct": 52.9,
+      "kast_pct": 55.9,
       "fk_fd": "2/7",
       "clutches_won": 0,
       "rating_estimate": 0.44
@@ -14943,7 +14943,7 @@
       "acs": 130.3,
       "adr": 85.2,
       "hs_pct": 17.1,
-      "kast_pct": 59.1,
+      "kast_pct": 63.6,
       "fk_fd": "1/3",
       "clutches_won": 0,
       "rating_estimate": 0.42
@@ -14964,7 +14964,7 @@
       "acs": 122.4,
       "adr": 87.5,
       "hs_pct": 31.6,
-      "kast_pct": 46.7,
+      "kast_pct": 53.3,
       "fk_fd": "1/2",
       "clutches_won": 0,
       "rating_estimate": 0.38
@@ -14985,7 +14985,7 @@
       "acs": 129.7,
       "adr": 84.2,
       "hs_pct": 21.1,
-      "kast_pct": 40.0,
+      "kast_pct": 53.3,
       "fk_fd": "2/5",
       "clutches_won": 0,
       "rating_estimate": 0.37
@@ -15027,7 +15027,7 @@
       "acs": 85.4,
       "adr": 64.4,
       "hs_pct": 26.2,
-      "kast_pct": 43.6,
+      "kast_pct": 46.2,
       "fk_fd": "1/5",
       "clutches_won": 0,
       "rating_estimate": 0.36
@@ -15069,7 +15069,7 @@
       "acs": 113.7,
       "adr": 73.8,
       "hs_pct": 23.8,
-      "kast_pct": 38.2,
+      "kast_pct": 47.1,
       "fk_fd": "2/7",
       "clutches_won": 0,
       "rating_estimate": 0.33
@@ -15112,7 +15112,7 @@
       "acs": 90.5,
       "adr": 67.4,
       "hs_pct": 23.3,
-      "kast_pct": 43.5,
+      "kast_pct": 47.8,
       "fk_fd": "0/3",
       "clutches_won": 0,
       "rating_estimate": 0.25
@@ -15133,7 +15133,7 @@
       "acs": 86.8,
       "adr": 58.0,
       "hs_pct": 16.2,
-      "kast_pct": 42.9,
+      "kast_pct": 45.7,
       "fk_fd": "0/5",
       "clutches_won": 0,
       "rating_estimate": 0.22

@@ -397,6 +397,9 @@ def extract_players(match_data: dict):
 TRADE_WINDOW_MS = 3000  # fenêtre communément utilisée par les trackers pour créditer un "trade"
 
 
+_debug_assist_stats = {"total_kills": 0, "kills_with_assistants": 0}
+
+
 def compute_match_round_stats(match_data: dict):
     """Calcule KAST / First Kill / First Death / Clutch pour TOUS les joueurs
     d'un match, en une seule passe, à partir de la structure confirmée :
@@ -452,7 +455,11 @@ def compute_match_round_stats(match_data: dict):
                 got_kill_set.add(killer)
             if victim:
                 killed_set.add(victim)
-            for a in (k.get("assistants") or []):
+            _debug_assist_stats["total_kills"] += 1
+            assistants_list = k.get("assistants") or []
+            if assistants_list:
+                _debug_assist_stats["kills_with_assistants"] += 1
+            for a in assistants_list:
                 au = puuid_of(a)
                 if au:
                     assisted_set.add(au)
@@ -821,6 +828,15 @@ def main():
     )
     print(f"\n✓ {len(teams)} équipes, {len(players_season)} joueurs (saison), "
           f"{len(players_weekend)} joueurs (dernier week-end) écrits dans {OUTPUT_PATH}")
+
+    total_k = _debug_assist_stats["total_kills"]
+    with_a = _debug_assist_stats["kills_with_assistants"]
+    pct = round(100 * with_a / total_k, 1) if total_k else 0
+    print(f"\n[diagnostic assistants] {with_a}/{total_k} kills ont un champ 'assistants' non-vide ({pct}%).")
+    if total_k and pct < 1:
+        print("  ⚠️  Le champ 'assistants' semble systématiquement vide dans cette API — "
+              "le KAST calculé ici ne compte probablement AUCUN assist, ce qui explique "
+              "un déficit par rapport à Tracker.gg pour les joueurs au jeu plus supportif.")
 
 
 if __name__ == "__main__":

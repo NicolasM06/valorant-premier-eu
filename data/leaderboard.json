@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T21:41:42Z",
+  "generated_at": "2026-08-31T14:10:56Z",
   "region": "eu",
   "conference": "EU_FRANCE",
   "weekend_range": [
@@ -166,7 +166,7 @@
         "secondary": "#730a0a",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.698Z",
+      "updated_at": "2026-08-31T12:33:32.391Z",
       "roster_resolved": [
         {
           "puuid": "f1e50db3-5019-5e88-9c1a-3a4b6718b54f",
@@ -211,7 +211,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.66Z",
+      "updated_at": "2026-08-31T12:33:32.398Z",
       "roster_resolved": [
         {
           "puuid": "7573f3e2-73b9-5076-800b-a2daa3ca786b",
@@ -264,7 +264,7 @@
         "secondary": "#d353be",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.667Z",
+      "updated_at": "2026-08-31T12:33:32.416Z",
       "roster_resolved": [
         {
           "puuid": "1c74ef9e-afe0-589a-ae74-382b337b4c9c",
@@ -313,7 +313,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.701Z",
+      "updated_at": "2026-08-31T12:33:32.394Z",
       "roster_resolved": [
         {
           "puuid": "f6896b2f-61e0-5d2a-8da2-124826fdbff6",
@@ -362,7 +362,7 @@
         "secondary": "#113c63",
         "tertiary": "#41c6ba"
       },
-      "updated_at": "2026-08-30T18:19:08.668Z",
+      "updated_at": "2026-08-31T12:33:32.439Z",
       "roster_resolved": [
         {
           "puuid": "43464c5e-de4f-568d-9804-a4aea538a80e",
@@ -411,7 +411,7 @@
         "secondary": "#ffb7c4",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.644Z",
+      "updated_at": "2026-08-31T12:33:32.462Z",
       "roster_resolved": [
         {
           "puuid": "98cf9ab5-3bea-5987-9433-75c99ecdf455",
@@ -464,7 +464,7 @@
         "secondary": "#d353be",
         "tertiary": "#ff98ef"
       },
-      "updated_at": "2026-08-30T18:19:08.702Z",
+      "updated_at": "2026-08-31T12:33:32.387Z",
       "roster_resolved": [
         {
           "puuid": "49f1fe68-b4b5-5707-9e92-6d46ecf82c4c",
@@ -513,7 +513,7 @@
         "secondary": "#f4d433",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-08-30T18:19:08.647Z",
+      "updated_at": "2026-08-31T12:33:32.446Z",
       "roster_resolved": [
         {
           "puuid": "63fbc629-6f6f-5fa7-93f5-abb1081aae0b",
@@ -562,7 +562,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.695Z",
+      "updated_at": "2026-08-31T12:33:32.421Z",
       "roster_resolved": [
         {
           "puuid": "0f8e9098-6a97-54d8-8430-d70a1cb783a8",
@@ -611,7 +611,7 @@
         "secondary": "#865ea5",
         "tertiary": "#865ea5"
       },
-      "updated_at": "2026-08-30T18:19:08.688Z",
+      "updated_at": "2026-08-31T12:33:32.395Z",
       "roster_resolved": [
         {
           "puuid": "dde31c50-f712-58f5-8d91-84fc3df6c0ef",
@@ -660,7 +660,7 @@
         "secondary": "#297dbb",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.645Z",
+      "updated_at": "2026-08-31T12:33:32.403Z",
       "roster_resolved": [
         {
           "puuid": "c98a1e8d-603b-5095-8e5f-3ab5d0525ecc",
@@ -713,7 +713,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.642Z",
+      "updated_at": "2026-08-31T12:33:32.454Z",
       "roster_resolved": [
         {
           "puuid": "a05f3a91-29ce-5980-84f7-1def849bd6a1",
@@ -766,7 +766,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#730a0a"
       },
-      "updated_at": "2026-08-30T18:19:08.652Z",
+      "updated_at": "2026-08-31T12:33:32.426Z",
       "roster_resolved": [
         {
           "puuid": "0c91fca7-5342-596b-bcc4-b5b904e68639",
@@ -811,7 +811,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.684Z",
+      "updated_at": "2026-08-31T12:33:32.43Z",
       "roster_resolved": [
         {
           "puuid": "6f24b115-74ba-5689-9a32-f790686340b9",
@@ -864,7 +864,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.664Z",
+      "updated_at": "2026-08-31T12:33:32.435Z",
       "roster_resolved": [
         {
           "puuid": "15f9027c-99c0-55f9-a141-697089fe4f8a",
@@ -909,7 +909,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.648Z",
+      "updated_at": "2026-08-31T12:33:32.389Z",
       "roster_resolved": [
         {
           "puuid": "263cb5c8-7622-5425-b716-2e6a7981525b",
@@ -962,7 +962,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.713Z",
+      "updated_at": "2026-08-31T12:33:32.41Z",
       "roster_resolved": [
         {
           "puuid": "e61516c5-b4ae-5784-967f-9a138150faf7",
@@ -1011,7 +1011,7 @@
         "secondary": "#730a0a",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.632Z",
+      "updated_at": "2026-08-31T12:33:32.429Z",
       "roster_resolved": [
         {
           "puuid": "36ac1afe-b2c3-59da-9fe4-8e9863dc7d64",
@@ -1056,7 +1056,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#c9fffc"
       },
-      "updated_at": "2026-08-30T18:19:08.665Z",
+      "updated_at": "2026-08-31T12:33:32.456Z",
       "roster_resolved": [
         {
           "puuid": "c51ea20d-0b0e-52f3-b1a8-43a49f134a87",
@@ -1101,7 +1101,7 @@
         "secondary": "#d095ff",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.689Z",
+      "updated_at": "2026-08-31T12:33:32.412Z",
       "roster_resolved": [
         {
           "puuid": "490b6610-0fed-55d3-9271-d280a5b6799f",
@@ -1150,7 +1150,7 @@
         "secondary": "#5732bf",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.709Z",
+      "updated_at": "2026-08-31T12:33:32.449Z",
       "roster_resolved": [
         {
           "puuid": "625c8c7f-c18a-5509-95c9-60a130ea4687",
@@ -1203,7 +1203,7 @@
         "secondary": "#297dbb",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-08-30T18:19:08.638Z",
+      "updated_at": "2026-08-31T12:33:32.469Z",
       "roster_resolved": [
         {
           "puuid": "dd241bab-353f-56f3-9a91-67cdc9b3087f",
@@ -1252,7 +1252,7 @@
         "secondary": "#113c63",
         "tertiary": "#007369"
       },
-      "updated_at": "2026-08-30T18:19:08.656Z",
+      "updated_at": "2026-08-31T12:33:32.458Z",
       "roster_resolved": [
         {
           "puuid": "a482bc60-ca69-59f6-91f7-5744d40ddf60",
@@ -1297,7 +1297,7 @@
         "secondary": "#d095ff",
         "tertiary": "#d095ff"
       },
-      "updated_at": "2026-08-30T18:19:08.649Z",
+      "updated_at": "2026-08-31T12:33:32.418Z",
       "roster_resolved": [
         {
           "puuid": "f9866f25-ae77-5d72-9d45-d21040ba3f49",
@@ -1346,7 +1346,7 @@
         "secondary": "#ffb7c4",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.669Z",
+      "updated_at": "2026-08-31T12:33:32.419Z",
       "roster_resolved": [
         {
           "puuid": "7585fbbc-82bd-5bd1-a3b0-6f76af956258",
@@ -1391,7 +1391,7 @@
         "secondary": "#f24141",
         "tertiary": "#7d7c7f"
       },
-      "updated_at": "2026-08-30T18:19:08.67Z",
+      "updated_at": "2026-08-31T12:33:32.425Z",
       "roster_resolved": [
         {
           "puuid": "d3fea709-cea5-5a87-8d0a-f634f8a070af",
@@ -1440,7 +1440,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.672Z",
+      "updated_at": "2026-08-31T12:33:32.461Z",
       "roster_resolved": [
         {
           "puuid": "f61b44d7-3fad-50af-9522-33574eedcd83",
@@ -1489,7 +1489,7 @@
         "secondary": "#730a0a",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.7Z",
+      "updated_at": "2026-08-31T12:33:32.452Z",
       "roster_resolved": [
         {
           "puuid": "464ab272-54ec-59f8-877f-5bc7b39ca62d",
@@ -1542,7 +1542,7 @@
         "secondary": "#ffb7c4",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.634Z",
+      "updated_at": "2026-08-31T12:33:32.473Z",
       "roster_resolved": [
         {
           "puuid": "d2334732-af79-553f-87f4-fd99b6f5c551",
@@ -1595,7 +1595,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#730a0a"
       },
-      "updated_at": "2026-08-30T18:19:08.705Z",
+      "updated_at": "2026-08-31T12:33:32.42Z",
       "roster_resolved": [
         {
           "puuid": "aa25bef7-b60d-51af-8990-b8631139920c",
@@ -1648,7 +1648,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#bcbabf"
       },
-      "updated_at": "2026-08-30T18:19:08.681Z",
+      "updated_at": "2026-08-31T12:33:32.433Z",
       "roster_resolved": [
         {
           "puuid": "007afbe6-5138-54a3-9e54-7da76f0ec477",
@@ -1697,7 +1697,7 @@
         "secondary": "#f1ff54",
         "tertiary": "#a5702d"
       },
-      "updated_at": "2026-08-30T18:19:08.692Z",
+      "updated_at": "2026-08-31T12:33:32.467Z",
       "roster_resolved": [
         {
           "puuid": "9a22d768-2b56-5185-85b2-de6732c49bcb",
@@ -1742,7 +1742,7 @@
         "secondary": "#f4d433",
         "tertiary": "#f24141"
       },
-      "updated_at": "2026-08-30T18:19:08.663Z",
+      "updated_at": "2026-08-31T12:33:32.448Z",
       "roster_resolved": [
         {
           "puuid": "7d1f086c-1ff6-551b-97a9-384543e96306",
@@ -1791,7 +1791,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#113c63"
       },
-      "updated_at": "2026-08-30T18:19:08.708Z",
+      "updated_at": "2026-08-31T12:33:32.407Z",
       "roster_resolved": [
         {
           "puuid": "dc33d613-44a6-553f-90ba-be29e2249a60",
@@ -1840,7 +1840,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#865ea5"
       },
-      "updated_at": "2026-08-30T18:19:08.661Z",
+      "updated_at": "2026-08-31T12:33:32.471Z",
       "roster_resolved": [
         {
           "puuid": "1f98d0cc-c660-53ec-9f3b-fef1d49d7df4",
@@ -1889,7 +1889,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-08-30T18:19:08.651Z",
+      "updated_at": "2026-08-31T12:33:32.414Z",
       "roster_resolved": [
         {
           "puuid": "b87e31b9-f7b4-5df9-baa8-cffccff571bb",
@@ -1913,7 +1913,7 @@
         },
         {
           "puuid": "689500fa-04bc-594a-8735-1d568d0726e3",
-          "name": "le ravagé#fou"
+          "name": "KR1L3X#KNX"
         }
       ],
       "matches_played": 4
@@ -1938,7 +1938,7 @@
         "secondary": "#573a6e",
         "tertiary": "#d353be"
       },
-      "updated_at": "2026-08-30T18:19:08.682Z",
+      "updated_at": "2026-08-31T12:33:32.406Z",
       "roster_resolved": [
         {
           "puuid": "e63a23b7-4792-5d72-b067-659ae48e28c1",
@@ -1991,7 +1991,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#5732bf"
       },
-      "updated_at": "2026-08-30T18:19:08.63Z",
+      "updated_at": "2026-08-31T12:33:32.404Z",
       "roster_resolved": [
         {
           "puuid": "61ab8a89-cd07-529f-a0de-e4331338b919",
@@ -2044,7 +2044,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.637Z",
+      "updated_at": "2026-08-31T12:33:32.451Z",
       "roster_resolved": [
         {
           "puuid": "13b1640c-3dc5-5ef4-a76d-827ba0200dfe",
@@ -2097,7 +2097,7 @@
         "secondary": "#f4d433",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.629Z",
+      "updated_at": "2026-08-31T12:33:32.457Z",
       "roster_resolved": [
         {
           "puuid": "8b32e391-72ec-554e-8867-40f4f24be2df",
@@ -2142,7 +2142,7 @@
         "secondary": "#f24141",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.673Z",
+      "updated_at": "2026-08-31T12:33:32.409Z",
       "roster_resolved": [
         {
           "puuid": "405d3237-005e-543a-b394-0177b532efba",
@@ -2191,7 +2191,7 @@
         "secondary": "#02a676",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.639Z",
+      "updated_at": "2026-08-31T12:33:32.428Z",
       "roster_resolved": [
         {
           "puuid": "1fed2f72-df79-5a3e-bb2d-3d2b5bfd6c98",
@@ -2244,7 +2244,7 @@
         "secondary": "#ff8730",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.712Z",
+      "updated_at": "2026-08-31T12:33:32.399Z",
       "roster_resolved": [
         {
           "puuid": "d5fcaa8d-259c-5777-9f2a-84496ed5cc42",
@@ -2293,7 +2293,7 @@
         "secondary": "#5732bf",
         "tertiary": "#5732bf"
       },
-      "updated_at": "2026-08-30T18:19:08.666Z",
+      "updated_at": "2026-08-31T12:33:32.401Z",
       "roster_resolved": [
         {
           "puuid": "9f5b8bed-d79b-570e-8be5-eaf8611bb15c",
@@ -2342,7 +2342,7 @@
         "secondary": "#730a0a",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.706Z",
+      "updated_at": "2026-08-31T12:33:32.463Z",
       "roster_resolved": [
         {
           "puuid": "117672e0-90bc-5e58-a462-3c767cbb85cc",
@@ -2395,7 +2395,7 @@
         "secondary": "#113c63",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-08-30T18:19:08.635Z",
+      "updated_at": "2026-08-31T12:33:32.4Z",
       "roster_resolved": [
         {
           "puuid": "6ef9b0f3-ab60-54de-ae24-5a82991cec3b",
@@ -2448,7 +2448,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.677Z",
+      "updated_at": "2026-08-31T12:33:32.474Z",
       "roster_resolved": [
         {
           "puuid": "2fea9519-2927-56c5-a3ea-39f1f559f88b",
@@ -2493,7 +2493,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#573a6e"
       },
-      "updated_at": "2026-08-30T18:19:08.693Z",
+      "updated_at": "2026-08-31T12:33:32.459Z",
       "roster_resolved": [
         {
           "puuid": "8174c5d6-41e4-503b-8cc2-a5323e3b655f",
@@ -2542,7 +2542,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-08-30T18:19:08.678Z",
+      "updated_at": "2026-08-31T12:33:32.39Z",
       "roster_resolved": [
         {
           "puuid": "b850c7c8-1781-5ee2-8ad1-eaa2ae4f27e7",
@@ -2587,7 +2587,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.662Z",
+      "updated_at": "2026-08-31T12:33:32.432Z",
       "roster_resolved": [
         {
           "puuid": "6b1972fd-33d5-5a2f-a3c5-687c6d2abf74",
@@ -2640,7 +2640,7 @@
         "secondary": "#f4d433",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.658Z",
+      "updated_at": "2026-08-31T12:33:32.382Z",
       "roster_resolved": [
         {
           "puuid": "5d44a873-979a-53d8-93b9-44ef972ad6f9",
@@ -2685,7 +2685,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#7d7c7f"
       },
-      "updated_at": "2026-08-30T18:19:08.679Z",
+      "updated_at": "2026-08-31T12:33:32.468Z",
       "roster_resolved": [
         {
           "puuid": "2c058d13-cb53-5d4b-995c-35cd3c7ceee5",
@@ -2738,7 +2738,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.704Z",
+      "updated_at": "2026-08-31T12:33:32.472Z",
       "roster_resolved": [
         {
           "puuid": "ddc9187a-b81f-546b-879b-5c219c73cfa4",
@@ -2791,7 +2791,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.697Z",
+      "updated_at": "2026-08-31T12:33:32.397Z",
       "roster_resolved": [
         {
           "puuid": "4410f0a4-032e-59ec-8fdb-3dcddb7ab103",
@@ -2836,7 +2836,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#ffb7c4"
       },
-      "updated_at": "2026-08-30T18:19:08.68Z",
+      "updated_at": "2026-08-31T12:33:32.422Z",
       "roster_resolved": [
         {
           "puuid": "15c08cf5-75f4-57eb-a1a2-06f0aa0ff31d",
@@ -2881,7 +2881,7 @@
         "secondary": "#f4d433",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.628Z",
+      "updated_at": "2026-08-31T12:33:32.384Z",
       "roster_resolved": [
         {
           "puuid": "b948b8d4-b0d5-51a9-be56-1890c5fcde68",
@@ -2930,7 +2930,7 @@
         "secondary": "#113c63",
         "tertiary": "#c9fffc"
       },
-      "updated_at": "2026-08-30T18:19:08.675Z",
+      "updated_at": "2026-08-31T12:33:32.417Z",
       "roster_resolved": [
         {
           "puuid": "7059f198-7926-5f0f-ba81-76079a0578a9",
@@ -2983,7 +2983,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#a338f7"
       },
-      "updated_at": "2026-08-30T18:19:08.685Z",
+      "updated_at": "2026-08-31T12:33:32.427Z",
       "roster_resolved": [
         {
           "puuid": "e487e262-ed5b-5086-94fc-2a57beb38a61",
@@ -3036,7 +3036,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#a338f7"
       },
-      "updated_at": "2026-08-30T18:19:08.641Z",
+      "updated_at": "2026-08-31T12:33:32.466Z",
       "roster_resolved": [
         {
           "puuid": "4009280f-bab1-587a-bf0b-e1ce1d8adcd5",
@@ -3089,7 +3089,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#730a0a"
       },
-      "updated_at": "2026-08-30T18:19:08.676Z",
+      "updated_at": "2026-08-31T12:33:32.465Z",
       "roster_resolved": [
         {
           "puuid": "327e0925-e629-5e4e-8065-396555e14a1c",
@@ -3142,7 +3142,7 @@
         "secondary": "#bcbabf",
         "tertiary": "#113c63"
       },
-      "updated_at": "2026-08-30T18:19:08.683Z",
+      "updated_at": "2026-08-31T12:33:32.413Z",
       "roster_resolved": [
         {
           "puuid": "b9852420-6f8c-54ff-b347-be70f74c2f64",
@@ -3195,7 +3195,7 @@
         "secondary": "#f4d433",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.691Z",
+      "updated_at": "2026-08-31T12:33:32.402Z",
       "roster_resolved": [
         {
           "puuid": "9a22d768-2b56-5185-85b2-de6732c49bcb",
@@ -3244,7 +3244,7 @@
         "secondary": "#297dbb",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-08-30T18:19:08.71Z",
+      "updated_at": "2026-08-31T12:33:32.44Z",
       "roster_resolved": [
         {
           "puuid": "9ea9d900-f4f3-5f4d-8fef-aeb009606148",
@@ -3289,7 +3289,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.696Z",
+      "updated_at": "2026-08-31T12:33:32.385Z",
       "roster_resolved": [
         {
           "puuid": "ef4f6ac7-730b-5bae-8103-5e6303d4cd8b",
@@ -3342,7 +3342,7 @@
         "secondary": "#f4d433",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.659Z",
+      "updated_at": "2026-08-31T12:33:32.434Z",
       "roster_resolved": [
         {
           "puuid": "dc52f069-b0d7-5a8a-bda6-609b031db817",
@@ -3391,7 +3391,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-08-30T18:19:08.626Z",
+      "updated_at": "2026-08-31T12:33:32.424Z",
       "roster_resolved": [
         {
           "puuid": "4585e559-390f-5cc0-b8b1-c09167aee537",
@@ -3440,7 +3440,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-08-30T18:19:08.655Z",
+      "updated_at": "2026-08-31T12:33:32.393Z",
       "roster_resolved": [
         {
           "puuid": "95015b54-99af-55a3-b62c-574236e9917e",
@@ -4194,6 +4194,27 @@
       "rating_estimate": 1.39
     },
     {
+      "puuid": "263cb5c8-7622-5425-b716-2e6a7981525b",
+      "name": "Soliik#zen",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 3,
+      "agents": [
+        "Omen"
+      ],
+      "kills": 45,
+      "deaths": 28,
+      "assists": 29,
+      "kd": 1.61,
+      "acs": 231.6,
+      "adr": 150.2,
+      "hs_pct": 22.7,
+      "kast_pct": 85.2,
+      "fk_fd": "6/4",
+      "clutches_won": 1,
+      "rating_estimate": 1.39
+    },
+    {
       "puuid": "b4af5707-5b02-5732-a4b2-ffb4317139de",
       "name": "veteran#222",
       "team": "fan2veteran #Fn2vT",
@@ -4754,28 +4775,6 @@
       "rating_estimate": 1.26
     },
     {
-      "puuid": "263cb5c8-7622-5425-b716-2e6a7981525b",
-      "name": "Soliik#zen",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 4,
-      "agents": [
-        "Omen",
-        "Astra"
-      ],
-      "kills": 60,
-      "deaths": 45,
-      "assists": 41,
-      "kd": 1.33,
-      "acs": 211.3,
-      "adr": 139.5,
-      "hs_pct": 26.3,
-      "kast_pct": 81.2,
-      "fk_fd": "7/8",
-      "clutches_won": 1,
-      "rating_estimate": 1.26
-    },
-    {
       "puuid": "7e192603-b5c9-5840-8a7f-876fe72449c7",
       "name": "Ayoub#16yo",
       "team": "AZRising #AZR",
@@ -4836,6 +4835,28 @@
       "hs_pct": 19.9,
       "kast_pct": 90.9,
       "fk_fd": "4/5",
+      "clutches_won": 0,
+      "rating_estimate": 1.25
+    },
+    {
+      "puuid": "d432c0d1-4a32-523e-9740-dfd25d394cc0",
+      "name": "Kayzz#tien",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 3,
+      "agents": [
+        "Neon",
+        "Waylay"
+      ],
+      "kills": 55,
+      "deaths": 41,
+      "assists": 7,
+      "kd": 1.34,
+      "acs": 288.5,
+      "adr": 186.8,
+      "hs_pct": 35.5,
+      "kast_pct": 68.5,
+      "fk_fd": "14/12",
       "clutches_won": 0,
       "rating_estimate": 1.25
     },
@@ -5326,28 +5347,6 @@
       "hs_pct": 36.7,
       "kast_pct": 81.2,
       "fk_fd": "5/5",
-      "clutches_won": 0,
-      "rating_estimate": 1.18
-    },
-    {
-      "puuid": "edaa9358-8b52-559d-947b-c9e31c6e3ebd",
-      "name": "leyu#1212",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 4,
-      "agents": [
-        "Cypher",
-        "Vyse"
-      ],
-      "kills": 61,
-      "deaths": 43,
-      "assists": 13,
-      "kd": 1.42,
-      "acs": 205.2,
-      "adr": 131.3,
-      "hs_pct": 47.0,
-      "kast_pct": 66.2,
-      "fk_fd": "4/3",
       "clutches_won": 0,
       "rating_estimate": 1.18
     },
@@ -5978,50 +5977,6 @@
       "rating_estimate": 1.11
     },
     {
-      "puuid": "b6e84dd6-3c94-5f23-ad38-b60e8d020dff",
-      "name": "H1mSe#1Tap",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 4,
-      "agents": [
-        "Neon",
-        "Phoenix",
-        "Jett"
-      ],
-      "kills": 67,
-      "deaths": 58,
-      "assists": 22,
-      "kd": 1.16,
-      "acs": 217.6,
-      "adr": 146.0,
-      "hs_pct": 22.7,
-      "kast_pct": 77.0,
-      "fk_fd": "13/9",
-      "clutches_won": 0,
-      "rating_estimate": 1.11
-    },
-    {
-      "puuid": "065ae3b8-ac1d-58db-9591-dcce3f059686",
-      "name": "Summer#LLLL",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Sova"
-      ],
-      "kills": 35,
-      "deaths": 32,
-      "assists": 13,
-      "kd": 1.09,
-      "acs": 228.1,
-      "adr": 156.9,
-      "hs_pct": 39.7,
-      "kast_pct": 76.1,
-      "fk_fd": "4/3",
-      "clutches_won": 1,
-      "rating_estimate": 1.11
-    },
-    {
       "puuid": "19b4569e-4600-5426-bab9-4003ca7710ae",
       "name": "Voiture roulante#EUW",
       "team": "Special Grade #特",
@@ -6171,27 +6126,6 @@
       "rating_estimate": 1.1
     },
     {
-      "puuid": "f55a1704-6391-52ac-bcb6-10a6898a2744",
-      "name": "Emgo#DeadL",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Vyse"
-      ],
-      "kills": 35,
-      "deaths": 32,
-      "assists": 10,
-      "kd": 1.09,
-      "acs": 216.1,
-      "adr": 157.8,
-      "hs_pct": 32.7,
-      "kast_pct": 70.2,
-      "fk_fd": "2/4",
-      "clutches_won": 0,
-      "rating_estimate": 1.1
-    },
-    {
       "puuid": "49f1fe68-b4b5-5707-9e92-6d46ecf82c4c",
       "name": "SΛYT#LUM",
       "team": "Tana Gang #Tng",
@@ -6232,6 +6166,49 @@
       "hs_pct": 28.8,
       "kast_pct": 80.0,
       "fk_fd": "11/8",
+      "clutches_won": 0,
+      "rating_estimate": 1.09
+    },
+    {
+      "puuid": "f55a1704-6391-52ac-bcb6-10a6898a2744",
+      "name": "Emgo#DeadL",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Vyse"
+      ],
+      "kills": 17,
+      "deaths": 15,
+      "assists": 1,
+      "kd": 1.13,
+      "acs": 250.7,
+      "adr": 167.3,
+      "hs_pct": 41.5,
+      "kast_pct": 61.9,
+      "fk_fd": "1/2",
+      "clutches_won": 0,
+      "rating_estimate": 1.09
+    },
+    {
+      "puuid": "edaa9358-8b52-559d-947b-c9e31c6e3ebd",
+      "name": "leyu#1212",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 3,
+      "agents": [
+        "Cypher",
+        "Vyse"
+      ],
+      "kills": 33,
+      "deaths": 26,
+      "assists": 12,
+      "kd": 1.27,
+      "acs": 160.7,
+      "adr": 103.4,
+      "hs_pct": 50.8,
+      "kast_pct": 70.4,
+      "fk_fd": "1/1",
       "clutches_won": 0,
       "rating_estimate": 1.09
     },
@@ -6818,6 +6795,29 @@
       "rating_estimate": 1.05
     },
     {
+      "puuid": "b6e84dd6-3c94-5f23-ad38-b60e8d020dff",
+      "name": "H1mSe#1Tap",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 3,
+      "agents": [
+        "Neon",
+        "Phoenix",
+        "Jett"
+      ],
+      "kills": 43,
+      "deaths": 41,
+      "assists": 17,
+      "kd": 1.05,
+      "acs": 201.5,
+      "adr": 138.1,
+      "hs_pct": 20.6,
+      "kast_pct": 78.7,
+      "fk_fd": "7/6",
+      "clutches_won": 0,
+      "rating_estimate": 1.05
+    },
+    {
       "puuid": "22e92b4f-9710-5d39-bf4d-76e43cc8df7a",
       "name": "Spaghetti#7BBEK",
       "team": "Cubs Esports #CE",
@@ -7152,6 +7152,27 @@
       "hs_pct": 21.9,
       "kast_pct": 79.1,
       "fk_fd": "2/2",
+      "clutches_won": 0,
+      "rating_estimate": 1.03
+    },
+    {
+      "puuid": "23bf0766-6190-5d08-9b33-e7c79881434d",
+      "name": "Harry#yamur",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Neon"
+      ],
+      "kills": 14,
+      "deaths": 14,
+      "assists": 6,
+      "kd": 1.0,
+      "acs": 203.8,
+      "adr": 139.2,
+      "hs_pct": 23.1,
+      "kast_pct": 66.7,
+      "fk_fd": "2/3",
       "clutches_won": 0,
       "rating_estimate": 1.03
     },
@@ -7824,25 +7845,25 @@
       "rating_estimate": 0.99
     },
     {
-      "puuid": "23bf0766-6190-5d08-9b33-e7c79881434d",
-      "name": "Harry#yamur",
+      "puuid": "0c91fca7-5342-596b-bcc4-b5b904e68639",
+      "name": "zylithan#1Tap",
       "team": "EASY WIN #EASY",
       "division": 21,
-      "matches": 2,
+      "matches": 3,
       "agents": [
-        "Fade",
-        "Neon"
+        "Jett",
+        "Omen"
       ],
-      "kills": 30,
-      "deaths": 30,
-      "assists": 12,
-      "kd": 1.0,
-      "acs": 174.9,
-      "adr": 118.3,
-      "hs_pct": 32.1,
-      "kast_pct": 74.5,
-      "fk_fd": "4/3",
-      "clutches_won": 0,
+      "kills": 47,
+      "deaths": 44,
+      "assists": 6,
+      "kd": 1.07,
+      "acs": 216.5,
+      "adr": 132.0,
+      "hs_pct": 37.8,
+      "kast_pct": 68.9,
+      "fk_fd": "7/5",
+      "clutches_won": 1,
       "rating_estimate": 0.98
     },
     {
@@ -8035,28 +8056,6 @@
       "kast_pct": 80.0,
       "fk_fd": "4/2",
       "clutches_won": 0,
-      "rating_estimate": 0.97
-    },
-    {
-      "puuid": "0c91fca7-5342-596b-bcc4-b5b904e68639",
-      "name": "zylithan#1Tap",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 4,
-      "agents": [
-        "Jett",
-        "Omen"
-      ],
-      "kills": 68,
-      "deaths": 65,
-      "assists": 11,
-      "kd": 1.05,
-      "acs": 215.8,
-      "adr": 132.4,
-      "hs_pct": 38.8,
-      "kast_pct": 71.3,
-      "fk_fd": "9/7",
-      "clutches_won": 1,
       "rating_estimate": 0.97
     },
     {
@@ -8595,28 +8594,6 @@
       "rating_estimate": 0.95
     },
     {
-      "puuid": "d432c0d1-4a32-523e-9740-dfd25d394cc0",
-      "name": "Kayzz#tien",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 4,
-      "agents": [
-        "Neon",
-        "Waylay"
-      ],
-      "kills": 60,
-      "deaths": 64,
-      "assists": 15,
-      "kd": 0.94,
-      "acs": 220.9,
-      "adr": 146.1,
-      "hs_pct": 33.6,
-      "kast_pct": 63.8,
-      "fk_fd": "14/16",
-      "clutches_won": 0,
-      "rating_estimate": 0.94
-    },
-    {
       "puuid": "0bc06193-6721-50ec-bcc3-014ce79624e6",
       "name": "FlameNco#0303",
       "team": "PROTOCOL DAHLIA #DHL",
@@ -8784,6 +8761,27 @@
       "kast_pct": 65.0,
       "fk_fd": "6/8",
       "clutches_won": 1,
+      "rating_estimate": 0.93
+    },
+    {
+      "puuid": "065ae3b8-ac1d-58db-9591-dcce3f059686",
+      "name": "Summer#LLLL",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Sova"
+      ],
+      "kills": 12,
+      "deaths": 15,
+      "assists": 8,
+      "kd": 0.8,
+      "acs": 200.4,
+      "adr": 139.1,
+      "hs_pct": 52.6,
+      "kast_pct": 75.0,
+      "fk_fd": "1/0",
+      "clutches_won": 0,
       "rating_estimate": 0.93
     },
     {
@@ -10000,27 +9998,6 @@
       "rating_estimate": 0.82
     },
     {
-      "puuid": "089e4a90-2ff4-56a2-b3e5-667768202112",
-      "name": "haydn#KCORP",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Neon"
-      ],
-      "kills": 33,
-      "deaths": 39,
-      "assists": 9,
-      "kd": 0.85,
-      "acs": 199.5,
-      "adr": 127.1,
-      "hs_pct": 29.7,
-      "kast_pct": 73.9,
-      "fk_fd": "4/4",
-      "clutches_won": 0,
-      "rating_estimate": 0.82
-    },
-    {
       "puuid": "a482bc60-ca69-59f6-91f7-5744d40ddf60",
       "name": "Sparquix#grind",
       "team": "DreamTeam CH #DT",
@@ -10190,28 +10167,6 @@
       "fk_fd": "2/8",
       "clutches_won": 0,
       "rating_estimate": 0.8
-    },
-    {
-      "puuid": "39de89ad-ff40-5040-aec1-b96b67e40a93",
-      "name": "Nevorce#006",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Jett",
-        "Fade"
-      ],
-      "kills": 29,
-      "deaths": 38,
-      "assists": 10,
-      "kd": 0.76,
-      "acs": 180.2,
-      "adr": 121.9,
-      "hs_pct": 35.7,
-      "kast_pct": 57.4,
-      "fk_fd": "5/6",
-      "clutches_won": 0,
-      "rating_estimate": 0.79
     },
     {
       "puuid": "a50ed8b5-8de4-5fb7-9e39-765fe054481b",
@@ -10968,6 +10923,27 @@
       "rating_estimate": 0.71
     },
     {
+      "puuid": "39de89ad-ff40-5040-aec1-b96b67e40a93",
+      "name": "Nevorce#006",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Fade"
+      ],
+      "kills": 13,
+      "deaths": 18,
+      "assists": 7,
+      "kd": 0.72,
+      "acs": 168.9,
+      "adr": 101.9,
+      "hs_pct": 44.0,
+      "kast_pct": 61.9,
+      "fk_fd": "0/3",
+      "clutches_won": 0,
+      "rating_estimate": 0.71
+    },
+    {
       "puuid": "e1fe2db0-a6c5-556a-b0c6-a5854de3ac54",
       "name": "ihl#silly",
       "team": "GPTANCE #GPT",
@@ -11399,6 +11375,27 @@
       "fk_fd": "4/2",
       "clutches_won": 0,
       "rating_estimate": 0.66
+    },
+    {
+      "puuid": "089e4a90-2ff4-56a2-b3e5-667768202112",
+      "name": "haydn#KCORP",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Neon"
+      ],
+      "kills": 13,
+      "deaths": 18,
+      "assists": 3,
+      "kd": 0.72,
+      "acs": 177.8,
+      "adr": 106.5,
+      "hs_pct": 31.4,
+      "kast_pct": 70.0,
+      "fk_fd": "1/1",
+      "clutches_won": 0,
+      "rating_estimate": 0.65
     },
     {
       "puuid": "ce946a66-e4be-53c9-a66a-93ee1059518d",
@@ -14056,27 +14053,6 @@
       "rating_estimate": 1.14
     },
     {
-      "puuid": "edaa9358-8b52-559d-947b-c9e31c6e3ebd",
-      "name": "leyu#1212",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Vyse"
-      ],
-      "kills": 42,
-      "deaths": 34,
-      "assists": 5,
-      "kd": 1.24,
-      "acs": 250.4,
-      "adr": 162.0,
-      "hs_pct": 46.9,
-      "kast_pct": 56.5,
-      "fk_fd": "4/3",
-      "clutches_won": 0,
-      "rating_estimate": 1.13
-    },
-    {
       "puuid": "7979fb8e-95a5-5189-a2db-03200a0d54e2",
       "name": "misanthropy#Zakus",
       "team": "JamalCorp #jml",
@@ -14226,27 +14202,6 @@
       "rating_estimate": 1.11
     },
     {
-      "puuid": "065ae3b8-ac1d-58db-9591-dcce3f059686",
-      "name": "Summer#LLLL",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Sova"
-      ],
-      "kills": 35,
-      "deaths": 32,
-      "assists": 13,
-      "kd": 1.09,
-      "acs": 228.1,
-      "adr": 156.9,
-      "hs_pct": 39.7,
-      "kast_pct": 76.1,
-      "fk_fd": "4/3",
-      "clutches_won": 1,
-      "rating_estimate": 1.11
-    },
-    {
       "puuid": "8839f07c-3a1d-501b-b92e-b3ec4e8c9dcd",
       "name": "AIMTRUCK#NAYB",
       "team": "Banana Split #BS",
@@ -14310,27 +14265,6 @@
       "rating_estimate": 1.11
     },
     {
-      "puuid": "f55a1704-6391-52ac-bcb6-10a6898a2744",
-      "name": "Emgo#DeadL",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Vyse"
-      ],
-      "kills": 35,
-      "deaths": 32,
-      "assists": 10,
-      "kd": 1.09,
-      "acs": 216.1,
-      "adr": 157.8,
-      "hs_pct": 32.7,
-      "kast_pct": 70.2,
-      "fk_fd": "2/4",
-      "clutches_won": 0,
-      "rating_estimate": 1.1
-    },
-    {
       "puuid": "8949e691-a150-5628-8cf3-2cb79a5a8121",
       "name": "DayRoZ#Smoke",
       "team": "ORIGINS OMEGA #ORG",
@@ -14350,6 +14284,27 @@
       "fk_fd": "6/3",
       "clutches_won": 0,
       "rating_estimate": 1.1
+    },
+    {
+      "puuid": "f55a1704-6391-52ac-bcb6-10a6898a2744",
+      "name": "Emgo#DeadL",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Vyse"
+      ],
+      "kills": 17,
+      "deaths": 15,
+      "assists": 1,
+      "kd": 1.13,
+      "acs": 250.7,
+      "adr": 167.3,
+      "hs_pct": 41.5,
+      "kast_pct": 61.9,
+      "fk_fd": "1/2",
+      "clutches_won": 0,
+      "rating_estimate": 1.09
     },
     {
       "puuid": "dc33d613-44a6-553f-90ba-be29e2249a60",
@@ -14625,28 +14580,6 @@
       "rating_estimate": 1.06
     },
     {
-      "puuid": "b6e84dd6-3c94-5f23-ad38-b60e8d020dff",
-      "name": "H1mSe#1Tap",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Neon",
-        "Jett"
-      ],
-      "kills": 37,
-      "deaths": 31,
-      "assists": 6,
-      "kd": 1.19,
-      "acs": 214.2,
-      "adr": 131.9,
-      "hs_pct": 27.4,
-      "kast_pct": 70.2,
-      "fk_fd": "9/8",
-      "clutches_won": 0,
-      "rating_estimate": 1.06
-    },
-    {
       "puuid": "0bc06193-6721-50ec-bcc3-014ce79624e6",
       "name": "FlameNco#0303",
       "team": "PROTOCOL DAHLIA #DHL",
@@ -14877,6 +14810,27 @@
       "fk_fd": "6/3",
       "clutches_won": 0,
       "rating_estimate": 1.04
+    },
+    {
+      "puuid": "23bf0766-6190-5d08-9b33-e7c79881434d",
+      "name": "Harry#yamur",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Neon"
+      ],
+      "kills": 14,
+      "deaths": 14,
+      "assists": 6,
+      "kd": 1.0,
+      "acs": 203.8,
+      "adr": 139.2,
+      "hs_pct": 23.1,
+      "kast_pct": 66.7,
+      "fk_fd": "2/3",
+      "clutches_won": 0,
+      "rating_estimate": 1.03
     },
     {
       "puuid": "adc2b470-bd28-5346-8fba-863f1061368d",
@@ -15132,6 +15086,27 @@
       "rating_estimate": 1.0
     },
     {
+      "puuid": "263cb5c8-7622-5425-b716-2e6a7981525b",
+      "name": "Soliik#zen",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Omen"
+      ],
+      "kills": 14,
+      "deaths": 15,
+      "assists": 10,
+      "kd": 0.93,
+      "acs": 207.2,
+      "adr": 132.1,
+      "hs_pct": 36.4,
+      "kast_pct": 80.0,
+      "fk_fd": "2/1",
+      "clutches_won": 1,
+      "rating_estimate": 1.0
+    },
+    {
       "puuid": "241e8cee-383e-5a8d-9dce-7e09c29cc634",
       "name": "MakSat#VCT",
       "team": "True E kittens #MIAOU",
@@ -15197,28 +15172,6 @@
       "rating_estimate": 0.99
     },
     {
-      "puuid": "263cb5c8-7622-5425-b716-2e6a7981525b",
-      "name": "Soliik#zen",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Astra",
-        "Omen"
-      ],
-      "kills": 29,
-      "deaths": 32,
-      "assists": 22,
-      "kd": 0.91,
-      "acs": 185.7,
-      "adr": 123.8,
-      "hs_pct": 37.5,
-      "kast_pct": 76.1,
-      "fk_fd": "3/5",
-      "clutches_won": 1,
-      "rating_estimate": 0.99
-    },
-    {
       "puuid": "a71198d9-1ef2-570d-8b7f-dbec9b949d61",
       "name": "take#star",
       "team": "V1Blyss Es #V1B",
@@ -15280,28 +15233,6 @@
       "fk_fd": "0/0",
       "clutches_won": 0,
       "rating_estimate": 0.99
-    },
-    {
-      "puuid": "23bf0766-6190-5d08-9b33-e7c79881434d",
-      "name": "Harry#yamur",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Fade",
-        "Neon"
-      ],
-      "kills": 30,
-      "deaths": 30,
-      "assists": 12,
-      "kd": 1.0,
-      "acs": 174.9,
-      "adr": 118.3,
-      "hs_pct": 32.1,
-      "kast_pct": 74.5,
-      "fk_fd": "4/3",
-      "clutches_won": 0,
-      "rating_estimate": 0.98
     },
     {
       "puuid": "522cfbc2-afdc-5ca7-9959-792d956b4f16",
@@ -15812,6 +15743,27 @@
       "rating_estimate": 0.93
     },
     {
+      "puuid": "065ae3b8-ac1d-58db-9591-dcce3f059686",
+      "name": "Summer#LLLL",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Sova"
+      ],
+      "kills": 12,
+      "deaths": 15,
+      "assists": 8,
+      "kd": 0.8,
+      "acs": 200.4,
+      "adr": 139.1,
+      "hs_pct": 52.6,
+      "kast_pct": 75.0,
+      "fk_fd": "1/0",
+      "clutches_won": 0,
+      "rating_estimate": 0.93
+    },
+    {
       "puuid": "eef4b1b3-7157-5ba9-b42f-cef33c9018df",
       "name": "RoMaaaaaan#4132",
       "team": "9Corp #9C",
@@ -15914,6 +15866,27 @@
       "hs_pct": 40.3,
       "kast_pct": 63.9,
       "fk_fd": "3/3",
+      "clutches_won": 0,
+      "rating_estimate": 0.92
+    },
+    {
+      "puuid": "d432c0d1-4a32-523e-9740-dfd25d394cc0",
+      "name": "Kayzz#tien",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Waylay"
+      ],
+      "kills": 16,
+      "deaths": 17,
+      "assists": 2,
+      "kd": 0.94,
+      "acs": 250.8,
+      "adr": 156.8,
+      "hs_pct": 50.0,
+      "kast_pct": 50.0,
+      "fk_fd": "6/6",
       "clutches_won": 0,
       "rating_estimate": 0.92
     },
@@ -16617,23 +16590,23 @@
       "rating_estimate": 0.83
     },
     {
-      "puuid": "089e4a90-2ff4-56a2-b3e5-667768202112",
-      "name": "haydn#KCORP",
-      "team": "Brezelit #BZL",
+      "puuid": "b6e84dd6-3c94-5f23-ad38-b60e8d020dff",
+      "name": "H1mSe#1Tap",
+      "team": "EASY WIN #EASY",
       "division": 21,
-      "matches": 2,
+      "matches": 1,
       "agents": [
-        "Neon"
+        "Jett"
       ],
-      "kills": 33,
-      "deaths": 39,
-      "assists": 9,
-      "kd": 0.85,
-      "acs": 199.5,
-      "adr": 127.1,
-      "hs_pct": 29.7,
-      "kast_pct": 73.9,
-      "fk_fd": "4/4",
+      "kills": 13,
+      "deaths": 14,
+      "assists": 1,
+      "kd": 0.93,
+      "acs": 162.9,
+      "adr": 91.5,
+      "hs_pct": 28.0,
+      "kast_pct": 66.7,
+      "fk_fd": "3/5",
       "clutches_won": 0,
       "rating_estimate": 0.82
     },
@@ -16828,6 +16801,27 @@
       "rating_estimate": 0.81
     },
     {
+      "puuid": "edaa9358-8b52-559d-947b-c9e31c6e3ebd",
+      "name": "leyu#1212",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Vyse"
+      ],
+      "kills": 14,
+      "deaths": 17,
+      "assists": 4,
+      "kd": 0.82,
+      "acs": 188.9,
+      "adr": 126.3,
+      "hs_pct": 56.0,
+      "kast_pct": 55.0,
+      "fk_fd": "1/1",
+      "clutches_won": 0,
+      "rating_estimate": 0.8
+    },
+    {
       "puuid": "c51ea20d-0b0e-52f3-b1a8-43a49f134a87",
       "name": "Kyr#17y",
       "team": "ARKAD B2 #ARK",
@@ -16889,28 +16883,6 @@
       "fk_fd": "4/2",
       "clutches_won": 0,
       "rating_estimate": 0.8
-    },
-    {
-      "puuid": "39de89ad-ff40-5040-aec1-b96b67e40a93",
-      "name": "Nevorce#006",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Jett",
-        "Fade"
-      ],
-      "kills": 29,
-      "deaths": 38,
-      "assists": 10,
-      "kd": 0.76,
-      "acs": 180.2,
-      "adr": 121.9,
-      "hs_pct": 35.7,
-      "kast_pct": 57.4,
-      "fk_fd": "5/6",
-      "clutches_won": 0,
-      "rating_estimate": 0.79
     },
     {
       "puuid": "2debf984-aaeb-5f7d-b2a8-cad63cf0b83b",
@@ -17295,27 +17267,6 @@
       "rating_estimate": 0.76
     },
     {
-      "puuid": "0c91fca7-5342-596b-bcc4-b5b904e68639",
-      "name": "zylithan#1Tap",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Omen"
-      ],
-      "kills": 28,
-      "deaths": 36,
-      "assists": 7,
-      "kd": 0.78,
-      "acs": 165.3,
-      "adr": 101.3,
-      "hs_pct": 46.4,
-      "kast_pct": 68.1,
-      "fk_fd": "2/4",
-      "clutches_won": 0,
-      "rating_estimate": 0.75
-    },
-    {
       "puuid": "c0478bcd-0dc3-5654-bcd3-a5bbcb9a7d61",
       "name": "Roro#EMEA",
       "team": "BMs Virtuose #BMs",
@@ -17481,6 +17432,27 @@
       "hs_pct": 33.3,
       "kast_pct": 82.4,
       "fk_fd": "0/0",
+      "clutches_won": 0,
+      "rating_estimate": 0.71
+    },
+    {
+      "puuid": "39de89ad-ff40-5040-aec1-b96b67e40a93",
+      "name": "Nevorce#006",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Fade"
+      ],
+      "kills": 13,
+      "deaths": 18,
+      "assists": 7,
+      "kd": 0.72,
+      "acs": 168.9,
+      "adr": 101.9,
+      "hs_pct": 44.0,
+      "kast_pct": 61.9,
+      "fk_fd": "0/3",
       "clutches_won": 0,
       "rating_estimate": 0.71
     },
@@ -17868,6 +17840,27 @@
       "rating_estimate": 0.66
     },
     {
+      "puuid": "089e4a90-2ff4-56a2-b3e5-667768202112",
+      "name": "haydn#KCORP",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Neon"
+      ],
+      "kills": 13,
+      "deaths": 18,
+      "assists": 3,
+      "kd": 0.72,
+      "acs": 177.8,
+      "adr": 106.5,
+      "hs_pct": 31.4,
+      "kast_pct": 70.0,
+      "fk_fd": "1/1",
+      "clutches_won": 0,
+      "rating_estimate": 0.65
+    },
+    {
       "puuid": "d57380f6-8656-5eae-a0c7-5d0d3cf447a6",
       "name": "requ ツ#8654",
       "team": "Novas Lyra #Lyra",
@@ -18166,27 +18159,6 @@
       "rating_estimate": 0.58
     },
     {
-      "puuid": "d432c0d1-4a32-523e-9740-dfd25d394cc0",
-      "name": "Kayzz#tien",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Waylay"
-      ],
-      "kills": 21,
-      "deaths": 40,
-      "assists": 10,
-      "kd": 0.53,
-      "acs": 154.5,
-      "adr": 102.8,
-      "hs_pct": 38.6,
-      "kast_pct": 52.2,
-      "fk_fd": "6/10",
-      "clutches_won": 0,
-      "rating_estimate": 0.57
-    },
-    {
       "puuid": "ffd6f980-3ef3-5ff7-9a16-0a773877ed6b",
       "name": "Yoshioka#BOO",
       "team": "CasseurDeLatte #CDL",
@@ -18293,6 +18265,27 @@
       "fk_fd": "3/5",
       "clutches_won": 0,
       "rating_estimate": 0.53
+    },
+    {
+      "puuid": "0c91fca7-5342-596b-bcc4-b5b904e68639",
+      "name": "zylithan#1Tap",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Omen"
+      ],
+      "kills": 7,
+      "deaths": 15,
+      "assists": 2,
+      "kd": 0.47,
+      "acs": 105.0,
+      "adr": 61.7,
+      "hs_pct": 66.7,
+      "kast_pct": 57.1,
+      "fk_fd": "0/2",
+      "clutches_won": 0,
+      "rating_estimate": 0.52
     },
     {
       "puuid": "2d88cc1d-0894-5180-ad99-28ce025bfad2",

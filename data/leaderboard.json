@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T11:52:58Z",
+  "generated_at": "2026-09-04T21:34:50Z",
   "region": "eu",
   "conference": "EU_FRANCE",
   "weekend_range": [
@@ -166,7 +166,7 @@
         "secondary": "#730a0a",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.282Z",
+      "updated_at": "2026-09-04T19:46:21.185Z",
       "roster_resolved": [
         {
           "puuid": "f1e50db3-5019-5e88-9c1a-3a4b6718b54f",
@@ -309,7 +309,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.29Z",
+      "updated_at": "2026-09-04T19:46:21.134Z",
       "roster_resolved": [
         {
           "puuid": "7573f3e2-73b9-5076-800b-a2daa3ca786b",
@@ -362,7 +362,7 @@
         "secondary": "#d353be",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.321Z",
+      "updated_at": "2026-09-04T19:46:21.127Z",
       "roster_resolved": [
         {
           "puuid": "1c74ef9e-afe0-589a-ae74-382b337b4c9c",
@@ -411,7 +411,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.332Z",
+      "updated_at": "2026-09-04T19:46:21.168Z",
       "roster_resolved": [
         {
           "puuid": "f6896b2f-61e0-5d2a-8da2-124826fdbff6",
@@ -460,7 +460,7 @@
         "secondary": "#113c63",
         "tertiary": "#41c6ba"
       },
-      "updated_at": "2026-09-04T10:38:56.324Z",
+      "updated_at": "2026-09-04T19:46:21.143Z",
       "roster_resolved": [
         {
           "puuid": "43464c5e-de4f-568d-9804-a4aea538a80e",
@@ -509,7 +509,7 @@
         "secondary": "#ffb7c4",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.313Z",
+      "updated_at": "2026-09-04T19:46:21.171Z",
       "roster_resolved": [
         {
           "puuid": "98cf9ab5-3bea-5987-9433-75c99ecdf455",
@@ -562,7 +562,7 @@
         "secondary": "#d353be",
         "tertiary": "#ff98ef"
       },
-      "updated_at": "2026-09-04T10:38:56.318Z",
+      "updated_at": "2026-09-04T19:46:21.148Z",
       "roster_resolved": [
         {
           "puuid": "49f1fe68-b4b5-5707-9e92-6d46ecf82c4c",
@@ -582,7 +582,7 @@
         },
         {
           "puuid": "7d0de40a-29a3-5c53-9e79-cf0fac033d63",
-          "name": "Snyrel#SNY"
+          "name": "secret mother#TOP1"
         },
         {
           "puuid": "8adf8cfe-c15e-57f8-8a34-66bd6ed50a96",
@@ -611,7 +611,7 @@
         "secondary": "#f4d433",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-04T10:38:56.26Z",
+      "updated_at": "2026-09-04T19:46:21.162Z",
       "roster_resolved": [
         {
           "puuid": "63fbc629-6f6f-5fa7-93f5-abb1081aae0b",
@@ -660,7 +660,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.27Z",
+      "updated_at": "2026-09-04T19:46:21.138Z",
       "roster_resolved": [
         {
           "puuid": "0f8e9098-6a97-54d8-8430-d70a1cb783a8",
@@ -709,7 +709,7 @@
         "secondary": "#865ea5",
         "tertiary": "#865ea5"
       },
-      "updated_at": "2026-09-04T10:38:56.331Z",
+      "updated_at": "2026-09-04T19:46:21.163Z",
       "roster_resolved": [
         {
           "puuid": "dde31c50-f712-58f5-8d91-84fc3df6c0ef",
@@ -758,7 +758,7 @@
         "secondary": "#297dbb",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.286Z",
+      "updated_at": "2026-09-04T19:46:21.13Z",
       "roster_resolved": [
         {
           "puuid": "c98a1e8d-603b-5095-8e5f-3ab5d0525ecc",
@@ -811,7 +811,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.312Z",
+      "updated_at": "2026-09-04T19:46:21.169Z",
       "roster_resolved": [
         {
           "puuid": "a05f3a91-29ce-5980-84f7-1def849bd6a1",
@@ -864,7 +864,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#730a0a"
       },
-      "updated_at": "2026-09-04T10:38:56.306Z",
+      "updated_at": "2026-09-04T19:46:21.158Z",
       "roster_resolved": [
         {
           "puuid": "0c91fca7-5342-596b-bcc4-b5b904e68639",
@@ -909,11 +909,11 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.294Z",
+      "updated_at": "2026-09-04T19:46:21.123Z",
       "roster_resolved": [
         {
           "puuid": "6f24b115-74ba-5689-9a32-f790686340b9",
-          "name": "im js him#him"
+          "name": "هاتف محمول#hhhh"
         },
         {
           "puuid": "769b88a4-e879-5eb1-9d71-809d36572306",
@@ -962,7 +962,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.32Z",
+      "updated_at": "2026-09-04T19:46:21.15Z",
       "roster_resolved": [
         {
           "puuid": "15f9027c-99c0-55f9-a141-697089fe4f8a",
@@ -1007,7 +1007,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.262Z",
+      "updated_at": "2026-09-04T19:46:21.173Z",
       "roster_resolved": [
         {
           "puuid": "263cb5c8-7622-5425-b716-2e6a7981525b",
@@ -1060,7 +1060,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.335Z",
+      "updated_at": "2026-09-04T19:46:21.183Z",
       "roster_resolved": [
         {
           "puuid": "e61516c5-b4ae-5784-967f-9a138150faf7",
@@ -1109,7 +1109,7 @@
         "secondary": "#730a0a",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.325Z",
+      "updated_at": "2026-09-04T19:46:21.128Z",
       "roster_resolved": [
         {
           "puuid": "36ac1afe-b2c3-59da-9fe4-8e9863dc7d64",
@@ -1154,7 +1154,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#c9fffc"
       },
-      "updated_at": "2026-09-04T10:38:56.326Z",
+      "updated_at": "2026-09-04T19:46:21.167Z",
       "roster_resolved": [
         {
           "puuid": "c51ea20d-0b0e-52f3-b1a8-43a49f134a87",
@@ -1199,7 +1199,7 @@
         "secondary": "#d095ff",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.316Z",
+      "updated_at": "2026-09-04T19:46:21.161Z",
       "roster_resolved": [
         {
           "puuid": "490b6610-0fed-55d3-9271-d280a5b6799f",
@@ -1248,7 +1248,7 @@
         "secondary": "#5732bf",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.265Z",
+      "updated_at": "2026-09-04T19:46:21.139Z",
       "roster_resolved": [
         {
           "puuid": "625c8c7f-c18a-5509-95c9-60a130ea4687",
@@ -1301,7 +1301,7 @@
         "secondary": "#297dbb",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-04T10:38:56.298Z",
+      "updated_at": "2026-09-04T19:46:21.179Z",
       "roster_resolved": [
         {
           "puuid": "dd241bab-353f-56f3-9a91-67cdc9b3087f",
@@ -1350,7 +1350,7 @@
         "secondary": "#113c63",
         "tertiary": "#007369"
       },
-      "updated_at": "2026-09-04T10:38:56.324Z",
+      "updated_at": "2026-09-04T19:46:21.154Z",
       "roster_resolved": [
         {
           "puuid": "a482bc60-ca69-59f6-91f7-5744d40ddf60",
@@ -1395,7 +1395,7 @@
         "secondary": "#d095ff",
         "tertiary": "#d095ff"
       },
-      "updated_at": "2026-09-04T10:38:56.319Z",
+      "updated_at": "2026-09-04T19:46:21.166Z",
       "roster_resolved": [
         {
           "puuid": "f9866f25-ae77-5d72-9d45-d21040ba3f49",
@@ -1444,7 +1444,7 @@
         "secondary": "#ffb7c4",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.305Z",
+      "updated_at": "2026-09-04T19:46:21.144Z",
       "roster_resolved": [
         {
           "puuid": "7585fbbc-82bd-5bd1-a3b0-6f76af956258",
@@ -1489,7 +1489,7 @@
         "secondary": "#f24141",
         "tertiary": "#7d7c7f"
       },
-      "updated_at": "2026-09-04T10:38:56.311Z",
+      "updated_at": "2026-09-04T19:46:21.182Z",
       "roster_resolved": [
         {
           "puuid": "d3fea709-cea5-5a87-8d0a-f634f8a070af",
@@ -1538,7 +1538,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.323Z",
+      "updated_at": "2026-09-04T19:46:21.159Z",
       "roster_resolved": [
         {
           "puuid": "f61b44d7-3fad-50af-9522-33574eedcd83",
@@ -1587,7 +1587,7 @@
         "secondary": "#730a0a",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.304Z",
+      "updated_at": "2026-09-04T19:46:21.137Z",
       "roster_resolved": [
         {
           "puuid": "464ab272-54ec-59f8-877f-5bc7b39ca62d",
@@ -1640,7 +1640,7 @@
         "secondary": "#ffb7c4",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.283Z",
+      "updated_at": "2026-09-04T19:46:21.172Z",
       "roster_resolved": [
         {
           "puuid": "d2334732-af79-553f-87f4-fd99b6f5c551",
@@ -1693,7 +1693,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#730a0a"
       },
-      "updated_at": "2026-09-04T10:38:56.328Z",
+      "updated_at": "2026-09-04T19:46:21.135Z",
       "roster_resolved": [
         {
           "puuid": "aa25bef7-b60d-51af-8990-b8631139920c",
@@ -1746,7 +1746,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#bcbabf"
       },
-      "updated_at": "2026-09-04T10:38:56.317Z",
+      "updated_at": "2026-09-04T19:46:21.126Z",
       "roster_resolved": [
         {
           "puuid": "007afbe6-5138-54a3-9e54-7da76f0ec477",
@@ -1795,7 +1795,7 @@
         "secondary": "#f1ff54",
         "tertiary": "#a5702d"
       },
-      "updated_at": "2026-09-04T10:38:56.333Z",
+      "updated_at": "2026-09-04T19:46:21.187Z",
       "roster_resolved": [
         {
           "puuid": "9a22d768-2b56-5185-85b2-de6732c49bcb",
@@ -1840,7 +1840,7 @@
         "secondary": "#f4d433",
         "tertiary": "#f24141"
       },
-      "updated_at": "2026-09-04T10:38:56.274Z",
+      "updated_at": "2026-09-04T19:46:21.169Z",
       "roster_resolved": [
         {
           "puuid": "7d1f086c-1ff6-551b-97a9-384543e96306",
@@ -1889,7 +1889,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#113c63"
       },
-      "updated_at": "2026-09-04T10:38:56.269Z",
+      "updated_at": "2026-09-04T19:46:21.181Z",
       "roster_resolved": [
         {
           "puuid": "dc33d613-44a6-553f-90ba-be29e2249a60",
@@ -1938,7 +1938,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#865ea5"
       },
-      "updated_at": "2026-09-04T10:38:56.292Z",
+      "updated_at": "2026-09-04T19:46:21.164Z",
       "roster_resolved": [
         {
           "puuid": "1f98d0cc-c660-53ec-9f3b-fef1d49d7df4",
@@ -1987,7 +1987,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-04T10:38:56.271Z",
+      "updated_at": "2026-09-04T19:46:21.142Z",
       "roster_resolved": [
         {
           "puuid": "b87e31b9-f7b4-5df9-baa8-cffccff571bb",
@@ -2036,7 +2036,7 @@
         "secondary": "#573a6e",
         "tertiary": "#d353be"
       },
-      "updated_at": "2026-09-04T10:38:56.302Z",
+      "updated_at": "2026-09-04T19:46:21.131Z",
       "roster_resolved": [
         {
           "puuid": "e63a23b7-4792-5d72-b067-659ae48e28c1",
@@ -2089,7 +2089,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#5732bf"
       },
-      "updated_at": "2026-09-04T10:38:56.308Z",
+      "updated_at": "2026-09-04T19:46:21.16Z",
       "roster_resolved": [
         {
           "puuid": "61ab8a89-cd07-529f-a0de-e4331338b919",
@@ -2142,7 +2142,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.28Z",
+      "updated_at": "2026-09-04T19:46:21.136Z",
       "roster_resolved": [
         {
           "puuid": "13b1640c-3dc5-5ef4-a76d-827ba0200dfe",
@@ -2195,7 +2195,7 @@
         "secondary": "#f4d433",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.314Z",
+      "updated_at": "2026-09-04T19:46:21.19Z",
       "roster_resolved": [
         {
           "puuid": "8b32e391-72ec-554e-8867-40f4f24be2df",
@@ -2240,7 +2240,7 @@
         "secondary": "#f24141",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.287Z",
+      "updated_at": "2026-09-04T19:46:21.145Z",
       "roster_resolved": [
         {
           "puuid": "405d3237-005e-543a-b394-0177b532efba",
@@ -2289,7 +2289,7 @@
         "secondary": "#02a676",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.267Z",
+      "updated_at": "2026-09-04T19:46:21.194Z",
       "roster_resolved": [
         {
           "puuid": "1fed2f72-df79-5a3e-bb2d-3d2b5bfd6c98",
@@ -2342,7 +2342,7 @@
         "secondary": "#ff8730",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.329Z",
+      "updated_at": "2026-09-04T19:46:21.149Z",
       "roster_resolved": [
         {
           "puuid": "d5fcaa8d-259c-5777-9f2a-84496ed5cc42",
@@ -2391,7 +2391,7 @@
         "secondary": "#5732bf",
         "tertiary": "#5732bf"
       },
-      "updated_at": "2026-09-04T10:38:56.336Z",
+      "updated_at": "2026-09-04T19:46:21.134Z",
       "roster_resolved": [
         {
           "puuid": "9f5b8bed-d79b-570e-8be5-eaf8611bb15c",
@@ -2440,7 +2440,7 @@
         "secondary": "#730a0a",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.335Z",
+      "updated_at": "2026-09-04T19:46:21.17Z",
       "roster_resolved": [
         {
           "puuid": "117672e0-90bc-5e58-a462-3c767cbb85cc",
@@ -2493,7 +2493,7 @@
         "secondary": "#113c63",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-04T10:38:56.285Z",
+      "updated_at": "2026-09-04T19:46:21.191Z",
       "roster_resolved": [
         {
           "puuid": "6ef9b0f3-ab60-54de-ae24-5a82991cec3b",
@@ -2546,7 +2546,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.309Z",
+      "updated_at": "2026-09-04T19:46:21.175Z",
       "roster_resolved": [
         {
           "puuid": "2fea9519-2927-56c5-a3ea-39f1f559f88b",
@@ -2591,7 +2591,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#573a6e"
       },
-      "updated_at": "2026-09-04T10:38:56.299Z",
+      "updated_at": "2026-09-04T19:46:21.132Z",
       "roster_resolved": [
         {
           "puuid": "8174c5d6-41e4-503b-8cc2-a5323e3b655f",
@@ -2640,7 +2640,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-04T10:38:56.307Z",
+      "updated_at": "2026-09-04T19:46:21.193Z",
       "roster_resolved": [
         {
           "puuid": "b850c7c8-1781-5ee2-8ad1-eaa2ae4f27e7",
@@ -2685,7 +2685,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.278Z",
+      "updated_at": "2026-09-04T19:46:21.186Z",
       "roster_resolved": [
         {
           "puuid": "6b1972fd-33d5-5a2f-a3c5-687c6d2abf74",
@@ -2738,7 +2738,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#7d7c7f"
       },
-      "updated_at": "2026-09-04T10:38:56.289Z",
+      "updated_at": "2026-09-04T19:46:21.177Z",
       "roster_resolved": [
         {
           "puuid": "2c058d13-cb53-5d4b-995c-35cd3c7ceee5",
@@ -2791,7 +2791,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.301Z",
+      "updated_at": "2026-09-04T19:46:21.184Z",
       "roster_resolved": [
         {
           "puuid": "ddc9187a-b81f-546b-879b-5c219c73cfa4",
@@ -2844,7 +2844,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.295Z",
+      "updated_at": "2026-09-04T19:46:21.121Z",
       "roster_resolved": [
         {
           "puuid": "4410f0a4-032e-59ec-8fdb-3dcddb7ab103",
@@ -2889,7 +2889,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#ffb7c4"
       },
-      "updated_at": "2026-09-04T10:38:56.33Z",
+      "updated_at": "2026-09-04T19:46:21.186Z",
       "roster_resolved": [
         {
           "puuid": "15c08cf5-75f4-57eb-a1a2-06f0aa0ff31d",
@@ -2934,7 +2934,7 @@
         "secondary": "#f4d433",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.296Z",
+      "updated_at": "2026-09-04T19:46:21.133Z",
       "roster_resolved": [
         {
           "puuid": "b948b8d4-b0d5-51a9-be56-1890c5fcde68",
@@ -2983,7 +2983,7 @@
         "secondary": "#113c63",
         "tertiary": "#c9fffc"
       },
-      "updated_at": "2026-09-04T10:38:56.3Z",
+      "updated_at": "2026-09-04T19:46:21.147Z",
       "roster_resolved": [
         {
           "puuid": "7059f198-7926-5f0f-ba81-76079a0578a9",
@@ -3036,7 +3036,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#a338f7"
       },
-      "updated_at": "2026-09-04T10:38:56.275Z",
+      "updated_at": "2026-09-04T19:46:21.174Z",
       "roster_resolved": [
         {
           "puuid": "e487e262-ed5b-5086-94fc-2a57beb38a61",
@@ -3089,7 +3089,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#a338f7"
       },
-      "updated_at": "2026-09-04T10:38:56.259Z",
+      "updated_at": "2026-09-04T19:46:21.153Z",
       "roster_resolved": [
         {
           "puuid": "4009280f-bab1-587a-bf0b-e1ce1d8adcd5",
@@ -3142,7 +3142,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#730a0a"
       },
-      "updated_at": "2026-09-04T10:38:56.288Z",
+      "updated_at": "2026-09-04T19:46:21.151Z",
       "roster_resolved": [
         {
           "puuid": "327e0925-e629-5e4e-8065-396555e14a1c",
@@ -3195,7 +3195,7 @@
         "secondary": "#bcbabf",
         "tertiary": "#113c63"
       },
-      "updated_at": "2026-09-04T10:38:56.257Z",
+      "updated_at": "2026-09-04T19:46:21.146Z",
       "roster_resolved": [
         {
           "puuid": "b9852420-6f8c-54ff-b347-be70f74c2f64",
@@ -3248,7 +3248,7 @@
         "secondary": "#f4d433",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.263Z",
+      "updated_at": "2026-09-04T19:46:21.176Z",
       "roster_resolved": [
         {
           "puuid": "9a22d768-2b56-5185-85b2-de6732c49bcb",
@@ -3297,7 +3297,7 @@
         "secondary": "#297dbb",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-04T10:38:56.293Z",
+      "updated_at": "2026-09-04T19:46:21.178Z",
       "roster_resolved": [
         {
           "puuid": "9ea9d900-f4f3-5f4d-8fef-aeb009606148",
@@ -3342,7 +3342,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.266Z",
+      "updated_at": "2026-09-04T19:46:21.192Z",
       "roster_resolved": [
         {
           "puuid": "ef4f6ac7-730b-5bae-8103-5e6303d4cd8b",
@@ -3395,7 +3395,7 @@
         "secondary": "#f4d433",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.277Z",
+      "updated_at": "2026-09-04T19:46:21.14Z",
       "roster_resolved": [
         {
           "puuid": "dc52f069-b0d7-5a8a-bda6-609b031db817",
@@ -3444,7 +3444,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-04T10:38:56.281Z",
+      "updated_at": "2026-09-04T19:46:21.18Z",
       "roster_resolved": [
         {
           "puuid": "4585e559-390f-5cc0-b8b1-c09167aee537",
@@ -3493,7 +3493,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-04T10:38:56.273Z",
+      "updated_at": "2026-09-04T19:46:21.155Z",
       "roster_resolved": [
         {
           "puuid": "95015b54-99af-55a3-b62c-574236e9917e",
@@ -4206,7 +4206,7 @@
     },
     {
       "puuid": "7d0de40a-29a3-5c53-9e79-cf0fac033d63",
-      "name": "Snyrel#SNY",
+      "name": "secret mother#TOP1",
       "team": "Tana Gang #Tng",
       "division": 21,
       "matches": 4,
@@ -5578,7 +5578,7 @@
     },
     {
       "puuid": "6f24b115-74ba-5689-9a32-f790686340b9",
-      "name": "im js him#him",
+      "name": "هاتف محمول#hhhh",
       "team": "Cubs Esports #CE",
       "division": 21,
       "matches": 4,
@@ -13581,7 +13581,7 @@
     },
     {
       "puuid": "7d0de40a-29a3-5c53-9e79-cf0fac033d63",
-      "name": "Snyrel#SNY",
+      "name": "secret mother#TOP1",
       "team": "Tana Gang #Tng",
       "division": 21,
       "matches": 2,
@@ -15080,7 +15080,7 @@
     },
     {
       "puuid": "6f24b115-74ba-5689-9a32-f790686340b9",
-      "name": "im js him#him",
+      "name": "هاتف محمول#hhhh",
       "team": "Cubs Esports #CE",
       "division": 21,
       "matches": 2,

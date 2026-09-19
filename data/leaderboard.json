@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T11:48:53Z",
+  "generated_at": "2026-09-19T21:38:23Z",
   "region": "eu",
   "conference": "EU_FRANCE",
   "weekend_range": [
@@ -147,54 +147,46 @@
       "matches_played": 0
     },
     {
-      "id": "7302ba5e-a6b8-44e7-87d8-c3b0203f821b",
-      "name": "Vrai Jamal 9",
-      "tag": "JML",
+      "id": "a6ee0ba9-926b-462f-bf38-ac45f7a6f7b6",
+      "name": "AZRising",
+      "tag": "AZR",
       "conference": "EU_FRANCE",
       "division": 21,
       "affinity": "eu",
       "region": "eu",
-      "losses": 1,
-      "wins": 7,
-      "score": 700,
+      "losses": 2,
+      "wins": 6,
+      "score": 950600,
       "ranking": 0,
       "ranked": true,
       "customization": {
-        "icon": "0f3d97ed-4951-939c-0e15-22aa02dfe607",
-        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/0f3d97ed-4951-939c-0e15-22aa02dfe607?primary=bcbabf&secondary=730a0a&tertiary=3f3e40",
-        "primary": "#bcbabf",
-        "secondary": "#730a0a",
+        "icon": "2703e129-496f-e43c-b93a-5da43f2e71c9",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/2703e129-496f-e43c-b93a-5da43f2e71c9?primary=730a0a&secondary=ffb7c4&tertiary=3f3e40",
+        "primary": "#730a0a",
+        "secondary": "#ffb7c4",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.617Z",
+      "updated_at": "2026-09-19T18:26:01.985Z",
       "roster_resolved": [
         {
-          "puuid": "afbbc3a4-5f25-52de-9e08-8c12d23cdbc3",
-          "name": "Medea#lie"
+          "puuid": "b6f2427f-4a94-5c6d-97c3-8e8731ea6db2",
+          "name": "islo#aimRZ"
         },
         {
-          "puuid": "f1e50db3-5019-5e88-9c1a-3a4b6718b54f",
-          "name": "Trayardinho#plniv"
+          "puuid": "3df7b165-a075-59f8-989d-94c4473d44ef",
+          "name": "ez1#AZR"
         },
         {
-          "puuid": "e8a26ff0-5ce8-55f0-a695-c4a6d0211b6b",
-          "name": "SKeltM#HAAAA"
+          "puuid": "5720fff9-cc10-566b-b873-36a43d075aa8",
+          "name": "Skyz#8359"
         },
         {
-          "puuid": "d830862f-1b0c-5fac-b8c2-70c3b55214de",
-          "name": "kur0x#15yo"
+          "puuid": "7e192603-b5c9-5840-8a7f-876fe72449c7",
+          "name": "Ayoub#16yo"
         },
         {
-          "puuid": "51c6f3f9-5b75-5a6c-9163-671bd6a74704",
-          "name": "killian#7X1"
-        },
-        {
-          "puuid": "da790c8e-7ec6-544d-bee6-3aa45c2430e8",
-          "name": "S00ug#099"
-        },
-        {
-          "puuid": "986c008c-b31f-5468-b4ad-3d28643b5721",
-          "name": "RedroX#16yo"
+          "puuid": "081df54b-cc9d-581b-87dd-bda047b63fac",
+          "name": "Onnen#1tap"
         }
       ],
       "matches_played": 8
@@ -388,6 +380,374 @@
       "matches_played": 0
     },
     {
+      "id": "9768366c-5c1b-4e24-ac5d-f601c0449e9f",
+      "name": "TheOnePiece",
+      "tag": "ONE",
+      "conference": "EU_FRANCE",
+      "division": 21,
+      "affinity": "eu",
+      "region": "eu",
+      "losses": 0,
+      "wins": 6,
+      "score": 950600,
+      "ranking": 1,
+      "ranked": true,
+      "customization": {
+        "icon": "5a8000f8-4668-7b88-3a96-50b5eec9311a",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/5a8000f8-4668-7b88-3a96-50b5eec9311a?primary=ece8e1&secondary=3f3e40&tertiary=bcbabf",
+        "primary": "#ece8e1",
+        "secondary": "#3f3e40",
+        "tertiary": "#bcbabf"
+      },
+      "updated_at": "2026-09-19T18:26:01.991Z",
+      "roster_resolved": [
+        {
+          "puuid": "059b8a24-a2b8-5d45-90f0-ed1aa1496c51",
+          "name": "YAS MyXoN#Sexy"
+        },
+        {
+          "puuid": "007afbe6-5138-54a3-9e54-7da76f0ec477",
+          "name": "RqGa#0301"
+        },
+        {
+          "puuid": "3d0aacc8-b87e-53c7-93f1-fe5843fd548d",
+          "name": "wʍʍ#tizm"
+        },
+        {
+          "puuid": "3351ff8d-a1eb-5bc8-a213-916c6176090c",
+          "name": "Grotz#hallo"
+        },
+        {
+          "puuid": "c91c2dc3-6cbf-5463-91da-c3116e996a0c",
+          "name": "z0wex#6621"
+        }
+      ],
+      "matches_played": 6
+    },
+    {
+      "id": "76c474c2-4ac9-4745-a0ee-5790d5f83310",
+      "name": "BDG SUPREME",
+      "tag": "BDG",
+      "conference": "EU_FRANCE",
+      "division": 21,
+      "affinity": "eu",
+      "region": "eu",
+      "losses": 3,
+      "wins": 5,
+      "score": 950500,
+      "ranking": 2,
+      "ranked": true,
+      "customization": {
+        "icon": "d47242d3-4136-138b-59d9-b89497ee6aa2",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/d47242d3-4136-138b-59d9-b89497ee6aa2?primary=ece8e1&secondary=ece8e1&tertiary=ece8e1",
+        "primary": "#ece8e1",
+        "secondary": "#ece8e1",
+        "tertiary": "#ece8e1"
+      },
+      "updated_at": "2026-09-19T18:26:01.982Z",
+      "roster_resolved": [
+        {
+          "puuid": "9f863176-58a2-5597-9093-7df3eca27971",
+          "name": "милый izk#ken"
+        },
+        {
+          "puuid": "5cf29916-b572-58db-b85a-917643388b52",
+          "name": "sneax#luv"
+        },
+        {
+          "puuid": "2cf82663-ca1c-5005-8f4d-e5095e5549e6",
+          "name": "Kiboo#1tap"
+        },
+        {
+          "puuid": "e61516c5-b4ae-5784-967f-9a138150faf7",
+          "name": "zehn1x#777"
+        },
+        {
+          "puuid": "0f59caa2-ecef-57e1-a7ae-70007dd76006",
+          "name": "No Tilt Era#XDXD"
+        }
+      ],
+      "matches_played": 8
+    },
+    {
+      "id": "a020ed86-c59e-40a2-a59d-5083bbb74289",
+      "name": "SEG WHITE",
+      "tag": "SEGW",
+      "conference": "EU_FRANCE",
+      "division": 21,
+      "affinity": "eu",
+      "region": "eu",
+      "losses": 3,
+      "wins": 5,
+      "score": 950500,
+      "ranking": 3,
+      "ranked": true,
+      "customization": {
+        "icon": "8dc0d3d1-4d8d-16e3-68c4-a69f9bfd2650",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/8dc0d3d1-4d8d-16e3-68c4-a69f9bfd2650?primary=ece8e1&secondary=297dbb&tertiary=297dbb",
+        "primary": "#ece8e1",
+        "secondary": "#297dbb",
+        "tertiary": "#297dbb"
+      },
+      "updated_at": "2026-09-19T18:26:01.99Z",
+      "roster_resolved": [
+        {
+          "puuid": "dd241bab-353f-56f3-9a91-67cdc9b3087f",
+          "name": "JuliaNn#3630"
+        },
+        {
+          "puuid": "316ba310-c5ae-56c4-b2e9-abae35145a86",
+          "name": "Layz#fps"
+        },
+        {
+          "puuid": "75925290-89c0-56da-bb5b-2f378944397d",
+          "name": "ARCKETTY#SEG"
+        },
+        {
+          "puuid": "8fbb7624-dc17-5cc4-9977-62b19dfb8334",
+          "name": "0ursPolaire#SEG"
+        },
+        {
+          "puuid": "d88f7394-510a-563d-8cda-208be2239e42",
+          "name": "Itzzz Evi#7112"
+        }
+      ],
+      "matches_played": 7
+    },
+    {
+      "id": "347794da-695d-41dd-b0fa-48cbe5447ae2",
+      "name": "Guy3Maupazgar",
+      "tag": "G3M",
+      "conference": "EU_FRANCE",
+      "division": 21,
+      "affinity": "eu",
+      "region": "eu",
+      "losses": 2,
+      "wins": 5,
+      "score": 950500,
+      "ranking": 4,
+      "ranked": true,
+      "customization": {
+        "icon": "2534df0c-4d64-3ef1-2f3b-aabe659233f5",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/2534df0c-4d64-3ef1-2f3b-aabe659233f5?primary=573a6e&secondary=865ea5&tertiary=865ea5",
+        "primary": "#573a6e",
+        "secondary": "#865ea5",
+        "tertiary": "#865ea5"
+      },
+      "updated_at": "2026-09-19T18:26:02.003Z",
+      "roster_resolved": [
+        {
+          "puuid": "3c099dee-875c-56cc-9f83-ebd57abe5701",
+          "name": "Evoks#2287"
+        },
+        {
+          "puuid": "0c3c2ff6-531b-530e-ba67-31497803bf48",
+          "name": "flocon#iwnl"
+        },
+        {
+          "puuid": "14354d69-5300-5497-82aa-d10e04f6d0c7",
+          "name": "benripeur#demon"
+        },
+        {
+          "puuid": "506ab01f-a622-52b1-88b3-6ebf5cabdbef",
+          "name": "Ras al Ghul#00000"
+        },
+        {
+          "puuid": "20c7a29e-5515-550f-8cfc-edc74cbe009a",
+          "name": "Azgarito#tbag"
+        }
+      ],
+      "matches_played": 7
+    },
+    {
+      "id": "cb6c9b26-1a54-4cc8-8f51-063466cf98ad",
+      "name": "Banana Split",
+      "tag": "BS",
+      "conference": "EU_FRANCE",
+      "division": 21,
+      "affinity": "eu",
+      "region": "eu",
+      "losses": 1,
+      "wins": 5,
+      "score": 950500,
+      "ranking": 5,
+      "ranked": true,
+      "customization": {
+        "icon": "f135e667-4de4-24cc-07cc-91974814bfe8",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/f135e667-4de4-24cc-07cc-91974814bfe8?primary=f1ff54&secondary=f1ff54&tertiary=a5702d",
+        "primary": "#f1ff54",
+        "secondary": "#f1ff54",
+        "tertiary": "#a5702d"
+      },
+      "updated_at": "2026-09-19T18:26:02.001Z",
+      "roster_resolved": [
+        {
+          "puuid": "9a22d768-2b56-5185-85b2-de6732c49bcb",
+          "name": "M0li8#23338"
+        },
+        {
+          "puuid": "8839f07c-3a1d-501b-b92e-b3ec4e8c9dcd",
+          "name": "AIMTRUCK#NAYB"
+        },
+        {
+          "puuid": "af6edbb4-399a-5e83-8418-f8d0395e8fa9",
+          "name": "jf1#8888"
+        },
+        {
+          "puuid": "4158cb01-10dd-57d3-9766-2381d4c78b0d",
+          "name": "maelontop#champ"
+        },
+        {
+          "puuid": "282ff453-956b-5de8-9bb3-9a05e865435c",
+          "name": "bøuuhh#RANK1"
+        }
+      ],
+      "matches_played": 6
+    },
+    {
+      "id": "107c9833-06d1-4fb3-b318-4942668386b1",
+      "name": "Special Grade",
+      "tag": "特",
+      "conference": "EU_FRANCE",
+      "division": 21,
+      "affinity": "eu",
+      "region": "eu",
+      "losses": 4,
+      "wins": 4,
+      "score": 950400,
+      "ranking": 6,
+      "ranked": true,
+      "customization": {
+        "icon": "356bfa9f-4744-3c0b-f7a1-88a3234b17c3",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/356bfa9f-4744-3c0b-f7a1-88a3234b17c3?primary=ece8e1&secondary=730a0a&tertiary=ece8e1",
+        "primary": "#ece8e1",
+        "secondary": "#730a0a",
+        "tertiary": "#ece8e1"
+      },
+      "updated_at": "2026-09-19T18:26:01.964Z",
+      "roster_resolved": [
+        {
+          "puuid": "36ac1afe-b2c3-59da-9fe4-8e9863dc7d64",
+          "name": "Jacadi#adi"
+        },
+        {
+          "puuid": "19b4569e-4600-5426-bab9-4003ca7710ae",
+          "name": "Voiture roulante#EUW"
+        },
+        {
+          "puuid": "bb9fb83a-8167-5eb6-9d94-a73eed8486f5",
+          "name": "Akuma1#111"
+        },
+        {
+          "puuid": "f0619313-84d4-5901-a531-7b27dfd194fb",
+          "name": "donk666#EZWIN"
+        },
+        {
+          "puuid": "1f3f2104-ff19-548e-b82d-ee3d366a190f",
+          "name": "aykerss#kerss"
+        }
+      ],
+      "matches_played": 8
+    },
+    {
+      "id": "a3ef924d-3bd8-4d2d-aed6-1ab3312f922f",
+      "name": "9Corp",
+      "tag": "9C",
+      "conference": "EU_FRANCE",
+      "division": 21,
+      "affinity": "eu",
+      "region": "eu",
+      "losses": 4,
+      "wins": 4,
+      "score": 950400,
+      "ranking": 7,
+      "ranked": true,
+      "customization": {
+        "icon": "b68d847b-4a45-0e3f-2183-8b802a75103d",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/b68d847b-4a45-0e3f-2183-8b802a75103d?primary=f4d433&secondary=5732bf&tertiary=ece8e1",
+        "primary": "#f4d433",
+        "secondary": "#5732bf",
+        "tertiary": "#ece8e1"
+      },
+      "updated_at": "2026-09-19T18:26:01.957Z",
+      "roster_resolved": [
+        {
+          "puuid": "a0606461-f4a3-50dd-91c1-f9a5ab48805c",
+          "name": "Justin#REV"
+        },
+        {
+          "puuid": "eef4b1b3-7157-5ba9-b42f-cef33c9018df",
+          "name": "RoMaaaaaan#4132"
+        },
+        {
+          "puuid": "93956115-210b-5c50-b6e6-a4cf03dab078",
+          "name": "balling#ilyu"
+        },
+        {
+          "puuid": "e46432a9-b5a5-554a-8d39-08cb38276d92",
+          "name": "M4gicKmX#LKA06"
+        },
+        {
+          "puuid": "0243fe79-1918-574d-a4fb-ef318f21f841",
+          "name": "PcConfisquisiix#isiix"
+        }
+      ],
+      "matches_played": 8
+    },
+    {
+      "id": "7302ba5e-a6b8-44e7-87d8-c3b0203f821b",
+      "name": "Vrai Jamal 9",
+      "tag": "JML",
+      "conference": "EU_FRANCE",
+      "division": 21,
+      "affinity": "eu",
+      "region": "eu",
+      "losses": 1,
+      "wins": 7,
+      "score": 700,
+      "ranking": 8,
+      "ranked": true,
+      "customization": {
+        "icon": "0f3d97ed-4951-939c-0e15-22aa02dfe607",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/0f3d97ed-4951-939c-0e15-22aa02dfe607?primary=bcbabf&secondary=730a0a&tertiary=3f3e40",
+        "primary": "#bcbabf",
+        "secondary": "#730a0a",
+        "tertiary": "#3f3e40"
+      },
+      "updated_at": "2026-09-19T18:26:01.955Z",
+      "roster_resolved": [
+        {
+          "puuid": "afbbc3a4-5f25-52de-9e08-8c12d23cdbc3",
+          "name": "Medea#lie"
+        },
+        {
+          "puuid": "f1e50db3-5019-5e88-9c1a-3a4b6718b54f",
+          "name": "Trayardinho#plniv"
+        },
+        {
+          "puuid": "e8a26ff0-5ce8-55f0-a695-c4a6d0211b6b",
+          "name": "SKeltM#HAAAA"
+        },
+        {
+          "puuid": "d830862f-1b0c-5fac-b8c2-70c3b55214de",
+          "name": "kur0x#15yo"
+        },
+        {
+          "puuid": "51c6f3f9-5b75-5a6c-9163-671bd6a74704",
+          "name": "killian#7X1"
+        },
+        {
+          "puuid": "da790c8e-7ec6-544d-bee6-3aa45c2430e8",
+          "name": "S00ug#099"
+        },
+        {
+          "puuid": "986c008c-b31f-5468-b4ad-3d28643b5721",
+          "name": "RedroX#16yo"
+        }
+      ],
+      "matches_played": 8
+    },
+    {
       "id": "2b225f97-eaab-42ac-853c-1237a7687b25",
       "name": "EASY WIN",
       "tag": "EASY",
@@ -398,7 +758,7 @@
       "losses": 1,
       "wins": 7,
       "score": 700,
-      "ranking": 1,
+      "ranking": 9,
       "ranked": true,
       "customization": {
         "icon": "7776e8f4-4fdc-f7bd-177a-fa81255f6973",
@@ -407,7 +767,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#730a0a"
       },
-      "updated_at": "2026-09-19T09:16:59.597Z",
+      "updated_at": "2026-09-19T18:26:01.954Z",
       "roster_resolved": [
         {
           "puuid": "f55a1704-6391-52ac-bcb6-10a6898a2744",
@@ -447,7 +807,7 @@
       "losses": 2,
       "wins": 6,
       "score": 600,
-      "ranking": 2,
+      "ranking": 10,
       "ranked": true,
       "customization": {
         "icon": "0f3d97ed-4951-939c-0e15-22aa02dfe607",
@@ -456,7 +816,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.6Z",
+      "updated_at": "2026-09-19T18:26:02.013Z",
       "roster_resolved": [
         {
           "puuid": "e61516c5-b4ae-5784-967f-9a138150faf7",
@@ -490,55 +850,6 @@
       "matches_played": 8
     },
     {
-      "id": "a6ee0ba9-926b-462f-bf38-ac45f7a6f7b6",
-      "name": "AZRising",
-      "tag": "AZR",
-      "conference": "EU_FRANCE",
-      "division": 21,
-      "affinity": "eu",
-      "region": "eu",
-      "losses": 2,
-      "wins": 6,
-      "score": 600,
-      "ranking": 3,
-      "ranked": true,
-      "customization": {
-        "icon": "2703e129-496f-e43c-b93a-5da43f2e71c9",
-        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/2703e129-496f-e43c-b93a-5da43f2e71c9?primary=730a0a&secondary=ffb7c4&tertiary=3f3e40",
-        "primary": "#730a0a",
-        "secondary": "#ffb7c4",
-        "tertiary": "#3f3e40"
-      },
-      "updated_at": "2026-09-19T09:16:59.65Z",
-      "roster_resolved": [
-        {
-          "puuid": "4a86c62f-5e49-5ebd-83d2-8e1e17d80e6e",
-          "name": "LisTy#Ghoul"
-        },
-        {
-          "puuid": "3df7b165-a075-59f8-989d-94c4473d44ef",
-          "name": "ez1#AZR"
-        },
-        {
-          "puuid": "7e192603-b5c9-5840-8a7f-876fe72449c7",
-          "name": "Ayoub#16yo"
-        },
-        {
-          "puuid": "5720fff9-cc10-566b-b873-36a43d075aa8",
-          "name": "Skyz#8359"
-        },
-        {
-          "puuid": "b6f2427f-4a94-5c6d-97c3-8e8731ea6db2",
-          "name": "islo#aimRZ"
-        },
-        {
-          "puuid": "081df54b-cc9d-581b-87dd-bda047b63fac",
-          "name": "Onnen#1tap"
-        }
-      ],
-      "matches_played": 8
-    },
-    {
       "id": "79b8629d-b4fa-46bb-843d-7099fcc36476",
       "name": "Out of Fame",
       "tag": "OOF",
@@ -549,7 +860,7 @@
       "losses": 2,
       "wins": 6,
       "score": 600,
-      "ranking": 4,
+      "ranking": 11,
       "ranked": true,
       "customization": {
         "icon": "58f809de-4227-ede4-d0ed-d5a9511f0525",
@@ -558,7 +869,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.62Z",
+      "updated_at": "2026-09-19T18:26:01.962Z",
       "roster_resolved": [
         {
           "puuid": "850a7b02-a133-5301-8502-bdf085fae803",
@@ -588,59 +899,6 @@
       "matches_played": 8
     },
     {
-      "id": "9768366c-5c1b-4e24-ac5d-f601c0449e9f",
-      "name": "TheOnePiece",
-      "tag": "ONE",
-      "conference": "EU_FRANCE",
-      "division": 21,
-      "affinity": "eu",
-      "region": "eu",
-      "losses": 0,
-      "wins": 6,
-      "score": 600,
-      "ranking": 5,
-      "ranked": true,
-      "customization": {
-        "icon": "5a8000f8-4668-7b88-3a96-50b5eec9311a",
-        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/5a8000f8-4668-7b88-3a96-50b5eec9311a?primary=ece8e1&secondary=3f3e40&tertiary=bcbabf",
-        "primary": "#ece8e1",
-        "secondary": "#3f3e40",
-        "tertiary": "#bcbabf"
-      },
-      "updated_at": "2026-09-19T09:16:59.644Z",
-      "roster_resolved": [
-        {
-          "puuid": "007afbe6-5138-54a3-9e54-7da76f0ec477",
-          "name": "RqGa#0301"
-        },
-        {
-          "puuid": "357e2605-345e-5982-b652-6eb35c84fbcd",
-          "name": "srals#zuza"
-        },
-        {
-          "puuid": "059b8a24-a2b8-5d45-90f0-ed1aa1496c51",
-          "name": "YAS MyXoN#Sexy"
-        },
-        {
-          "puuid": "c91c2dc3-6cbf-5463-91da-c3116e996a0c",
-          "name": "z0wex#6621"
-        },
-        {
-          "puuid": "63fbb7c7-e156-5bf4-b530-047ee18b8897",
-          "name": "ChamberOfRegrets#help"
-        },
-        {
-          "puuid": "dcafd486-7bfe-57cd-87f5-229bcb5d2fe4",
-          "name": "I miss Him ツ#SAHUR"
-        },
-        {
-          "puuid": "a2b1c779-2e07-5bec-baa9-c6d86448b63b",
-          "name": "Stiles Stilinski#Azco"
-        }
-      ],
-      "matches_played": 6
-    },
-    {
       "id": "07489a0a-45ce-42f7-bf19-b951b6f6ba9a",
       "name": "PROTOCOL OMEGA",
       "tag": "PRTL",
@@ -651,7 +909,7 @@
       "losses": 3,
       "wins": 5,
       "score": 500,
-      "ranking": 6,
+      "ranking": 12,
       "ranked": true,
       "customization": {
         "icon": "356bfa9f-4744-3c0b-f7a1-88a3234b17c3",
@@ -660,7 +918,7 @@
         "secondary": "#113c63",
         "tertiary": "#41c6ba"
       },
-      "updated_at": "2026-09-19T09:16:59.589Z",
+      "updated_at": "2026-09-19T18:26:02.015Z",
       "roster_resolved": [
         {
           "puuid": "714131d4-df95-559f-a467-e853cb1da0e7",
@@ -696,7 +954,7 @@
       "losses": 3,
       "wins": 5,
       "score": 500,
-      "ranking": 7,
+      "ranking": 13,
       "ranked": true,
       "customization": {
         "icon": "c6129b64-4b98-d0b1-1692-f6aeebd32bc1",
@@ -705,7 +963,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.608Z",
+      "updated_at": "2026-09-19T18:26:01.978Z",
       "roster_resolved": [
         {
           "puuid": "d432c0d1-4a32-523e-9740-dfd25d394cc0",
@@ -735,112 +993,6 @@
       "matches_played": 8
     },
     {
-      "id": "76c474c2-4ac9-4745-a0ee-5790d5f83310",
-      "name": "BDG SUPREME",
-      "tag": "BDG",
-      "conference": "EU_FRANCE",
-      "division": 21,
-      "affinity": "eu",
-      "region": "eu",
-      "losses": 3,
-      "wins": 5,
-      "score": 500,
-      "ranking": 8,
-      "ranked": true,
-      "customization": {
-        "icon": "d47242d3-4136-138b-59d9-b89497ee6aa2",
-        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/d47242d3-4136-138b-59d9-b89497ee6aa2?primary=ece8e1&secondary=ece8e1&tertiary=ece8e1",
-        "primary": "#ece8e1",
-        "secondary": "#ece8e1",
-        "tertiary": "#ece8e1"
-      },
-      "updated_at": "2026-09-19T09:16:59.623Z",
-      "roster_resolved": [
-        {
-          "puuid": "7c420166-58d7-55d1-8315-2a85bb1b90d4",
-          "name": "Niiko#1904"
-        },
-        {
-          "puuid": "6c301f79-a648-5cbc-bc8f-a13f6d5e6e87",
-          "name": "JL flazzerrrr#iqq"
-        },
-        {
-          "puuid": "0a199549-1158-56ba-be73-07bdec1c3569",
-          "name": "smiski toilet#shyan"
-        },
-        {
-          "puuid": "25aef4ef-70c4-5d32-ac5c-5f9f1eb02bd2",
-          "name": "ZEYNO8#smth"
-        },
-        {
-          "puuid": "9f863176-58a2-5597-9093-7df3eca27971",
-          "name": "милый izk#ken"
-        },
-        {
-          "puuid": "5cf29916-b572-58db-b85a-917643388b52",
-          "name": "sneax#luv"
-        },
-        {
-          "puuid": "0f59caa2-ecef-57e1-a7ae-70007dd76006",
-          "name": "No Tilt Era#XDXD"
-        }
-      ],
-      "matches_played": 8
-    },
-    {
-      "id": "a020ed86-c59e-40a2-a59d-5083bbb74289",
-      "name": "SEG WHITE",
-      "tag": "SEGW",
-      "conference": "EU_FRANCE",
-      "division": 21,
-      "affinity": "eu",
-      "region": "eu",
-      "losses": 3,
-      "wins": 5,
-      "score": 500,
-      "ranking": 9,
-      "ranked": true,
-      "customization": {
-        "icon": "8dc0d3d1-4d8d-16e3-68c4-a69f9bfd2650",
-        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/8dc0d3d1-4d8d-16e3-68c4-a69f9bfd2650?primary=ece8e1&secondary=297dbb&tertiary=297dbb",
-        "primary": "#ece8e1",
-        "secondary": "#297dbb",
-        "tertiary": "#297dbb"
-      },
-      "updated_at": "2026-09-19T09:16:59.623Z",
-      "roster_resolved": [
-        {
-          "puuid": "08184806-bb2e-5347-8900-e8a5c04b1807",
-          "name": "rhyzot#Naton"
-        },
-        {
-          "puuid": "dd241bab-353f-56f3-9a91-67cdc9b3087f",
-          "name": "JuliaNn#3630"
-        },
-        {
-          "puuid": "316ba310-c5ae-56c4-b2e9-abae35145a86",
-          "name": "Layz#fps"
-        },
-        {
-          "puuid": "cf6396cc-d86d-5ef1-8ea0-36c008979ec5",
-          "name": "Novaa#SEG"
-        },
-        {
-          "puuid": "8fbb7624-dc17-5cc4-9977-62b19dfb8334",
-          "name": "0ursPolaire#SEG"
-        },
-        {
-          "puuid": "75925290-89c0-56da-bb5b-2f378944397d",
-          "name": "ARCKETTY#SEG"
-        },
-        {
-          "puuid": "d88f7394-510a-563d-8cda-208be2239e42",
-          "name": "Itzzz Evi#7112"
-        }
-      ],
-      "matches_played": 7
-    },
-    {
       "id": "eab2189b-b7e8-41d0-b58a-4b5091d7c7dc",
       "name": "Sandoria",
       "tag": "TSK",
@@ -851,7 +1003,7 @@
       "losses": 3,
       "wins": 5,
       "score": 500,
-      "ranking": 10,
+      "ranking": 14,
       "ranked": true,
       "customization": {
         "icon": "2534df0c-4d64-3ef1-2f3b-aabe659233f5",
@@ -860,7 +1012,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.596Z",
+      "updated_at": "2026-09-19T18:26:01.994Z",
       "roster_resolved": [
         {
           "puuid": "8b4354c2-63ae-5156-add2-d4004afc906f",
@@ -894,55 +1046,6 @@
       "matches_played": 8
     },
     {
-      "id": "347794da-695d-41dd-b0fa-48cbe5447ae2",
-      "name": "Guy3Maupazgar",
-      "tag": "G3M",
-      "conference": "EU_FRANCE",
-      "division": 21,
-      "affinity": "eu",
-      "region": "eu",
-      "losses": 2,
-      "wins": 5,
-      "score": 500,
-      "ranking": 11,
-      "ranked": true,
-      "customization": {
-        "icon": "2534df0c-4d64-3ef1-2f3b-aabe659233f5",
-        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/2534df0c-4d64-3ef1-2f3b-aabe659233f5?primary=573a6e&secondary=865ea5&tertiary=865ea5",
-        "primary": "#573a6e",
-        "secondary": "#865ea5",
-        "tertiary": "#865ea5"
-      },
-      "updated_at": "2026-09-19T09:16:59.654Z",
-      "roster_resolved": [
-        {
-          "puuid": "3c099dee-875c-56cc-9f83-ebd57abe5701",
-          "name": "Evoks#2287"
-        },
-        {
-          "puuid": "413a3f31-15f0-5f14-afcc-1cc24cd7dedb",
-          "name": "Nomali#mad"
-        },
-        {
-          "puuid": "14354d69-5300-5497-82aa-d10e04f6d0c7",
-          "name": "benripeur#demon"
-        },
-        {
-          "puuid": "bc922c85-0e07-5723-850c-044d17a6b08b",
-          "name": "zwayd#noid"
-        },
-        {
-          "puuid": "2eb95f9e-38e5-5b58-902a-861f57bed0d1",
-          "name": "MECHANICS ABUSER#Chloe"
-        },
-        {
-          "puuid": "20c7a29e-5515-550f-8cfc-edc74cbe009a",
-          "name": "Azgarito#tbag"
-        }
-      ],
-      "matches_played": 7
-    },
-    {
       "id": "d7ca7b72-d7bf-4588-b585-70a9c92b036e",
       "name": "GPTANCE",
       "tag": "GPT",
@@ -953,7 +1056,7 @@
       "losses": 1,
       "wins": 5,
       "score": 500,
-      "ranking": 12,
+      "ranking": 15,
       "ranked": true,
       "customization": {
         "icon": "1dfac46c-438c-2401-11b1-28ad9258fea3",
@@ -962,7 +1065,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.614Z",
+      "updated_at": "2026-09-19T18:26:01.987Z",
       "roster_resolved": [
         {
           "puuid": "d0f5b9cc-4733-59b9-adf7-ca1e957dbcd4",
@@ -996,157 +1099,6 @@
       "matches_played": 6
     },
     {
-      "id": "cb6c9b26-1a54-4cc8-8f51-063466cf98ad",
-      "name": "Banana Split",
-      "tag": "BS",
-      "conference": "EU_FRANCE",
-      "division": 21,
-      "affinity": "eu",
-      "region": "eu",
-      "losses": 1,
-      "wins": 5,
-      "score": 500,
-      "ranking": 13,
-      "ranked": true,
-      "customization": {
-        "icon": "f135e667-4de4-24cc-07cc-91974814bfe8",
-        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/f135e667-4de4-24cc-07cc-91974814bfe8?primary=f1ff54&secondary=f1ff54&tertiary=a5702d",
-        "primary": "#f1ff54",
-        "secondary": "#f1ff54",
-        "tertiary": "#a5702d"
-      },
-      "updated_at": "2026-09-19T09:16:59.638Z",
-      "roster_resolved": [
-        {
-          "puuid": "9a22d768-2b56-5185-85b2-de6732c49bcb",
-          "name": "M0li8#23338"
-        },
-        {
-          "puuid": "49ea9ead-ec03-5cb3-951e-8adacc2a9736",
-          "name": "Genesis#1302"
-        },
-        {
-          "puuid": "4158cb01-10dd-57d3-9766-2381d4c78b0d",
-          "name": "maelontop#champ"
-        },
-        {
-          "puuid": "282ff453-956b-5de8-9bb3-9a05e865435c",
-          "name": "bøuuhh#RANK1"
-        },
-        {
-          "puuid": "8839f07c-3a1d-501b-b92e-b3ec4e8c9dcd",
-          "name": "AIMTRUCK#NAYB"
-        },
-        {
-          "puuid": "6ae9f4c0-d257-5ef6-bbf8-3d2c8fed2c94",
-          "name": "pracc acc#NayT"
-        },
-        {
-          "puuid": "af6edbb4-399a-5e83-8418-f8d0395e8fa9",
-          "name": "jf1#8888"
-        }
-      ],
-      "matches_played": 6
-    },
-    {
-      "id": "107c9833-06d1-4fb3-b318-4942668386b1",
-      "name": "Special Grade",
-      "tag": "特",
-      "conference": "EU_FRANCE",
-      "division": 21,
-      "affinity": "eu",
-      "region": "eu",
-      "losses": 4,
-      "wins": 4,
-      "score": 400,
-      "ranking": 14,
-      "ranked": true,
-      "customization": {
-        "icon": "356bfa9f-4744-3c0b-f7a1-88a3234b17c3",
-        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/356bfa9f-4744-3c0b-f7a1-88a3234b17c3?primary=ece8e1&secondary=730a0a&tertiary=ece8e1",
-        "primary": "#ece8e1",
-        "secondary": "#730a0a",
-        "tertiary": "#ece8e1"
-      },
-      "updated_at": "2026-09-19T09:16:59.613Z",
-      "roster_resolved": [
-        {
-          "puuid": "36ac1afe-b2c3-59da-9fe4-8e9863dc7d64",
-          "name": "Jacadi#adi"
-        },
-        {
-          "puuid": "31c707a2-f5eb-56e0-9c3d-277b85761202",
-          "name": "Yuki Aim#baki"
-        },
-        {
-          "puuid": "19b4569e-4600-5426-bab9-4003ca7710ae",
-          "name": "Voiture roulante#EUW"
-        },
-        {
-          "puuid": "bb9fb83a-8167-5eb6-9d94-a73eed8486f5",
-          "name": "Akuma1#111"
-        },
-        {
-          "puuid": "f0619313-84d4-5901-a531-7b27dfd194fb",
-          "name": "donk666#EZWIN"
-        },
-        {
-          "puuid": "1f3f2104-ff19-548e-b82d-ee3d366a190f",
-          "name": "aykerss#kerss"
-        }
-      ],
-      "matches_played": 8
-    },
-    {
-      "id": "a3ef924d-3bd8-4d2d-aed6-1ab3312f922f",
-      "name": "9Corp",
-      "tag": "9C",
-      "conference": "EU_FRANCE",
-      "division": 21,
-      "affinity": "eu",
-      "region": "eu",
-      "losses": 4,
-      "wins": 4,
-      "score": 400,
-      "ranking": 15,
-      "ranked": true,
-      "customization": {
-        "icon": "b68d847b-4a45-0e3f-2183-8b802a75103d",
-        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/b68d847b-4a45-0e3f-2183-8b802a75103d?primary=f4d433&secondary=5732bf&tertiary=ece8e1",
-        "primary": "#f4d433",
-        "secondary": "#5732bf",
-        "tertiary": "#ece8e1"
-      },
-      "updated_at": "2026-09-19T09:16:59.612Z",
-      "roster_resolved": [
-        {
-          "puuid": "eef4b1b3-7157-5ba9-b42f-cef33c9018df",
-          "name": "RoMaaaaaan#4132"
-        },
-        {
-          "puuid": "625c8c7f-c18a-5509-95c9-60a130ea4687",
-          "name": "Blue Eyes White#TOZ"
-        },
-        {
-          "puuid": "5c71d2db-b389-5ee5-adad-dddaba0cb54e",
-          "name": "TiGuilD#KCWIN"
-        },
-        {
-          "puuid": "93956115-210b-5c50-b6e6-a4cf03dab078",
-          "name": "balling#ilyu"
-        },
-        {
-          "puuid": "a0606461-f4a3-50dd-91c1-f9a5ab48805c",
-          "name": "Justin#REV"
-        },
-        {
-          "puuid": "3d19b2e5-5a9d-51ac-8920-aa460b4d09f3",
-          "name": "Atomik#3108"
-        }
-      ],
-      "matches_played": 8
-    },
-    {
       "id": "bf0ea4e2-c87e-4b92-8232-b798022051e0",
       "name": "ORIGIN PURPLE",
       "tag": "OG",
@@ -1166,7 +1118,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#865ea5"
       },
-      "updated_at": "2026-09-19T09:16:59.649Z",
+      "updated_at": "2026-09-19T18:26:01.944Z",
       "roster_resolved": [
         {
           "puuid": "097de7f1-f78c-553f-847a-2065e7c91487",
@@ -1215,7 +1167,7 @@
         "secondary": "#297dbb",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.619Z",
+      "updated_at": "2026-09-19T18:26:02.019Z",
       "roster_resolved": [
         {
           "puuid": "c98a1e8d-603b-5095-8e5f-3ab5d0525ecc",
@@ -1264,7 +1216,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.664Z",
+      "updated_at": "2026-09-19T18:26:01.951Z",
       "roster_resolved": [
         {
           "puuid": "13b1640c-3dc5-5ef4-a76d-827ba0200dfe",
@@ -1317,7 +1269,7 @@
         "secondary": "#d353be",
         "tertiary": "#ff98ef"
       },
-      "updated_at": "2026-09-19T09:16:59.66Z",
+      "updated_at": "2026-09-19T18:26:01.963Z",
       "roster_resolved": [
         {
           "puuid": "0c83d631-7061-56f0-9db7-ce495ec39172",
@@ -1362,7 +1314,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.616Z",
+      "updated_at": "2026-09-19T18:26:01.938Z",
       "roster_resolved": [
         {
           "puuid": "6079c9e4-3efb-57f2-bcf9-ef9e03962053",
@@ -1411,7 +1363,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.601Z",
+      "updated_at": "2026-09-19T18:26:01.983Z",
       "roster_resolved": [
         {
           "puuid": "040862ea-723d-5085-b6f7-deac85058c78",
@@ -1460,7 +1412,7 @@
         "secondary": "#d353be",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.591Z",
+      "updated_at": "2026-09-19T18:26:02Z",
       "roster_resolved": [
         {
           "puuid": "1c74ef9e-afe0-589a-ae74-382b337b4c9c",
@@ -1509,7 +1461,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ffb7c4"
       },
-      "updated_at": "2026-09-19T09:16:59.634Z",
+      "updated_at": "2026-09-19T18:26:01.935Z",
       "roster_resolved": [
         {
           "puuid": "6535b1f6-6450-569a-9751-71a843a77e50",
@@ -1562,7 +1514,7 @@
         "secondary": "#730a0a",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.61Z",
+      "updated_at": "2026-09-19T18:26:01.97Z",
       "roster_resolved": [
         {
           "puuid": "464ab272-54ec-59f8-877f-5bc7b39ca62d",
@@ -1615,7 +1567,7 @@
         "secondary": "#d095ff",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.637Z",
+      "updated_at": "2026-09-19T18:26:02.011Z",
       "roster_resolved": [
         {
           "puuid": "490b6610-0fed-55d3-9271-d280a5b6799f",
@@ -1668,7 +1620,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#113c63"
       },
-      "updated_at": "2026-09-19T09:16:59.605Z",
+      "updated_at": "2026-09-19T18:26:02.013Z",
       "roster_resolved": [
         {
           "puuid": "cb5fe6b9-9926-52d1-a2e6-4e877722b679",
@@ -1717,7 +1669,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.633Z",
+      "updated_at": "2026-09-19T18:26:02.002Z",
       "roster_resolved": [
         {
           "puuid": "15f9027c-99c0-55f9-a141-697089fe4f8a",
@@ -1762,7 +1714,7 @@
         "secondary": "#f4d433",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.659Z",
+      "updated_at": "2026-09-19T18:26:01.992Z",
       "roster_resolved": [
         {
           "puuid": "d24b2c5c-c8e1-5589-9a9a-2fe458be9497",
@@ -1807,7 +1759,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.595Z",
+      "updated_at": "2026-09-19T18:26:01.96Z",
       "roster_resolved": [
         {
           "puuid": "6f24b115-74ba-5689-9a32-f790686340b9",
@@ -1860,7 +1812,7 @@
         "secondary": "#f4d433",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-19T09:16:59.609Z",
+      "updated_at": "2026-09-19T18:26:01.986Z",
       "roster_resolved": [
         {
           "puuid": "63fbc629-6f6f-5fa7-93f5-abb1081aae0b",
@@ -1909,7 +1861,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#7d7c7f"
       },
-      "updated_at": "2026-09-19T09:16:59.631Z",
+      "updated_at": "2026-09-19T18:26:01.952Z",
       "roster_resolved": [
         {
           "puuid": "eec7390d-91ec-5117-8450-2183e3763494",
@@ -1954,7 +1906,7 @@
         "secondary": "#02a676",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.603Z",
+      "updated_at": "2026-09-19T18:26:02.01Z",
       "roster_resolved": [
         {
           "puuid": "e2794edc-228b-501f-aef0-6e112b5f1df7",
@@ -1999,7 +1951,7 @@
         "secondary": "#573a6e",
         "tertiary": "#d353be"
       },
-      "updated_at": "2026-09-19T09:16:59.666Z",
+      "updated_at": "2026-09-19T18:26:01.946Z",
       "roster_resolved": [
         {
           "puuid": "352a7de9-3061-5a3c-a4ba-2c81608150ec",
@@ -2052,7 +2004,7 @@
         "secondary": "#113c63",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-19T09:16:59.592Z",
+      "updated_at": "2026-09-19T18:26:02.022Z",
       "roster_resolved": [
         {
           "puuid": "7696b391-22c2-5656-bc63-9b358de81dc5",
@@ -2105,7 +2057,7 @@
         "secondary": "#ffb7c4",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.588Z",
+      "updated_at": "2026-09-19T18:26:02.021Z",
       "roster_resolved": [
         {
           "puuid": "1b8ea58f-5cb2-5ba5-8081-b841cb2c2ace",
@@ -2133,7 +2085,7 @@
         },
         {
           "puuid": "639d4685-f8ae-5f27-938c-7ca54114d829",
-          "name": "ocean eyes#bille"
+          "name": "lost#soulx"
         }
       ],
       "matches_played": 6
@@ -2158,7 +2110,7 @@
         "secondary": "#ff8730",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.624Z",
+      "updated_at": "2026-09-19T18:26:01.949Z",
       "roster_resolved": [
         {
           "puuid": "d5fcaa8d-259c-5777-9f2a-84496ed5cc42",
@@ -2207,7 +2159,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#730a0a"
       },
-      "updated_at": "2026-09-19T09:16:59.593Z",
+      "updated_at": "2026-09-19T18:26:01.961Z",
       "roster_resolved": [
         {
           "puuid": "be7a4378-8a3b-5a58-93f2-2c112c63baec",
@@ -2256,7 +2208,7 @@
         "secondary": "#f24141",
         "tertiary": "#7d7c7f"
       },
-      "updated_at": "2026-09-19T09:16:59.653Z",
+      "updated_at": "2026-09-19T18:26:01.984Z",
       "roster_resolved": [
         {
           "puuid": "9d7ec26d-822a-5e1c-b7a4-60f216ad499f",
@@ -2305,7 +2257,7 @@
         "secondary": "#f4d433",
         "tertiary": "#f24141"
       },
-      "updated_at": "2026-09-19T09:16:59.627Z",
+      "updated_at": "2026-09-19T18:26:02.018Z",
       "roster_resolved": [
         {
           "puuid": "7b4643c3-314f-5ed0-9bdd-15c417efa2c6",
@@ -2354,7 +2306,7 @@
         "secondary": "#113c63",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.656Z",
+      "updated_at": "2026-09-19T18:26:02.008Z",
       "roster_resolved": [
         {
           "puuid": "1471edf6-b2bf-5d09-9782-bd2d906e7329",
@@ -2403,7 +2355,7 @@
         "secondary": "#bcbabf",
         "tertiary": "#730a0a"
       },
-      "updated_at": "2026-09-19T09:16:59.622Z",
+      "updated_at": "2026-09-19T18:26:01.979Z",
       "roster_resolved": [
         {
           "puuid": "35a454bc-e046-59fc-87ff-0f31448ef054",
@@ -2448,7 +2400,7 @@
         "secondary": "#f4d433",
         "tertiary": "#f4d433"
       },
-      "updated_at": "2026-09-19T09:16:59.646Z",
+      "updated_at": "2026-09-19T18:26:02.017Z",
       "roster_resolved": [
         {
           "puuid": "27c98b15-d3fb-5647-ac2b-97e6866298ac",
@@ -2493,7 +2445,7 @@
         "secondary": "#ff8730",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.625Z",
+      "updated_at": "2026-09-19T18:26:02.006Z",
       "roster_resolved": [
         {
           "puuid": "cd0eaeee-857e-5d34-8d91-849a0b78d30f",
@@ -2542,7 +2494,7 @@
         "secondary": "#f24141",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.64Z",
+      "updated_at": "2026-09-19T18:26:01.968Z",
       "roster_resolved": [
         {
           "puuid": "405d3237-005e-543a-b394-0177b532efba",
@@ -2591,7 +2543,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-19T09:16:59.647Z",
+      "updated_at": "2026-09-19T18:26:02.018Z",
       "roster_resolved": [
         {
           "puuid": "c05a7eb2-a053-5cdf-8b04-bbe690f3b980",
@@ -2640,7 +2592,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#5732bf"
       },
-      "updated_at": "2026-09-19T09:16:59.632Z",
+      "updated_at": "2026-09-19T18:26:01.997Z",
       "roster_resolved": [
         {
           "puuid": "61ab8a89-cd07-529f-a0de-e4331338b919",
@@ -2693,7 +2645,7 @@
         "secondary": "#c9fffc",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.618Z",
+      "updated_at": "2026-09-19T18:26:01.966Z",
       "roster_resolved": [
         {
           "puuid": "afbbc3a4-5f25-52de-9e08-8c12d23cdbc3",
@@ -2742,7 +2694,7 @@
         "secondary": "#5732bf",
         "tertiary": "#5732bf"
       },
-      "updated_at": "2026-09-19T09:16:59.667Z",
+      "updated_at": "2026-09-19T18:26:01.999Z",
       "roster_resolved": [
         {
           "puuid": "9f5b8bed-d79b-570e-8be5-eaf8611bb15c",
@@ -2791,7 +2743,7 @@
         "secondary": "#297dbb",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-19T09:16:59.661Z",
+      "updated_at": "2026-09-19T18:26:01.943Z",
       "roster_resolved": [
         {
           "puuid": "d7f5ff55-7b41-52ed-93c3-fc9e72c4aa5f",
@@ -2836,7 +2788,7 @@
         "secondary": "#730a0a",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.665Z",
+      "updated_at": "2026-09-19T18:26:02.014Z",
       "roster_resolved": [
         {
           "puuid": "117672e0-90bc-5e58-a462-3c767cbb85cc",
@@ -2889,7 +2841,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#573a6e"
       },
-      "updated_at": "2026-09-19T09:16:59.639Z",
+      "updated_at": "2026-09-19T18:26:01.971Z",
       "roster_resolved": [
         {
           "puuid": "8174c5d6-41e4-503b-8cc2-a5323e3b655f",
@@ -2938,7 +2890,7 @@
         "secondary": "#f4d433",
         "tertiary": "#113c63"
       },
-      "updated_at": "2026-09-19T09:16:59.662Z",
+      "updated_at": "2026-09-19T18:26:01.98Z",
       "roster_resolved": [
         {
           "puuid": "5c856529-1585-5460-a6bd-18e5b2c3ecc2",
@@ -2991,7 +2943,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-19T09:16:59.602Z",
+      "updated_at": "2026-09-19T18:26:02.009Z",
       "roster_resolved": [
         {
           "puuid": "b850c7c8-1781-5ee2-8ad1-eaa2ae4f27e7",
@@ -3036,7 +2988,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#7d7c7f"
       },
-      "updated_at": "2026-09-19T09:16:59.611Z",
+      "updated_at": "2026-09-19T18:26:01.974Z",
       "roster_resolved": [
         {
           "puuid": "8d5718a7-f0ce-5460-b102-0dc0ab172a0c",
@@ -3085,7 +3037,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.663Z",
+      "updated_at": "2026-09-19T18:26:01.989Z",
       "roster_resolved": [
         {
           "puuid": "ddc9187a-b81f-546b-879b-5c219c73cfa4",
@@ -3138,7 +3090,7 @@
         "secondary": "#d095ff",
         "tertiary": "#ff98ef"
       },
-      "updated_at": "2026-09-19T09:16:59.621Z",
+      "updated_at": "2026-09-19T18:26:01.969Z",
       "roster_resolved": [
         {
           "puuid": "6f2557cf-6df4-5f2c-a69b-0195e62ae391",
@@ -3187,7 +3139,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.615Z",
+      "updated_at": "2026-09-19T18:26:02.023Z",
       "roster_resolved": [
         {
           "puuid": "4410f0a4-032e-59ec-8fdb-3dcddb7ab103",
@@ -3232,7 +3184,7 @@
         "secondary": "#730a0a",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.658Z",
+      "updated_at": "2026-09-19T18:26:01.937Z",
       "roster_resolved": [
         {
           "puuid": "26f15b5b-c770-5e90-93d8-b554b9ed56e5",
@@ -3281,7 +3233,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#ffb7c4"
       },
-      "updated_at": "2026-09-19T09:16:59.599Z",
+      "updated_at": "2026-09-19T18:26:01.941Z",
       "roster_resolved": [
         {
           "puuid": "15c08cf5-75f4-57eb-a1a2-06f0aa0ff31d",
@@ -3326,7 +3278,7 @@
         "secondary": "#f4d433",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.604Z",
+      "updated_at": "2026-09-19T18:26:01.971Z",
       "roster_resolved": [
         {
           "puuid": "b948b8d4-b0d5-51a9-be56-1890c5fcde68",
@@ -3375,7 +3327,7 @@
         "secondary": "#113c63",
         "tertiary": "#c9fffc"
       },
-      "updated_at": "2026-09-19T09:16:59.607Z",
+      "updated_at": "2026-09-19T18:26:01.93Z",
       "roster_resolved": [
         {
           "puuid": "7059f198-7926-5f0f-ba81-76079a0578a9",
@@ -3428,7 +3380,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#a338f7"
       },
-      "updated_at": "2026-09-19T09:16:59.626Z",
+      "updated_at": "2026-09-19T18:26:02.007Z",
       "roster_resolved": [
         {
           "puuid": "e487e262-ed5b-5086-94fc-2a57beb38a61",
@@ -3481,7 +3433,7 @@
         "secondary": "#f4d433",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.603Z",
+      "updated_at": "2026-09-19T18:26:01.995Z",
       "roster_resolved": [
         {
           "puuid": "dc52f069-b0d7-5a8a-bda6-609b031db817",
@@ -3530,7 +3482,7 @@
         "secondary": "#7d7c7f",
         "tertiary": "#a338f7"
       },
-      "updated_at": "2026-09-19T09:16:59.606Z",
+      "updated_at": "2026-09-19T18:26:02.025Z",
       "roster_resolved": [
         {
           "puuid": "4009280f-bab1-587a-bf0b-e1ce1d8adcd5",
@@ -3583,7 +3535,7 @@
         "secondary": "#730a0a",
         "tertiary": "#ff8730"
       },
-      "updated_at": "2026-09-19T09:16:59.628Z",
+      "updated_at": "2026-09-19T18:26:01.948Z",
       "roster_resolved": [
         {
           "puuid": "74b8d598-2e88-5ea5-9dcc-9e61a0b2346a",
@@ -3632,7 +3584,7 @@
         "secondary": "#f4d433",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-19T09:16:59.642Z",
+      "updated_at": "2026-09-19T18:26:01.972Z",
       "roster_resolved": [
         {
           "puuid": "dde31c50-f712-58f5-8d91-84fc3df6c0ef",
@@ -3681,7 +3633,7 @@
         "secondary": "#a338f7",
         "tertiary": "#5732bf"
       },
-      "updated_at": "2026-09-19T09:16:59.655Z",
+      "updated_at": "2026-09-19T18:26:01.973Z",
       "roster_resolved": [
         {
           "puuid": "90d6841f-3fd0-520a-900e-c1a4f04d00ed",
@@ -3730,7 +3682,7 @@
         "secondary": "#bcbabf",
         "tertiary": "#113c63"
       },
-      "updated_at": "2026-09-19T09:16:59.657Z",
+      "updated_at": "2026-09-19T18:26:01.998Z",
       "roster_resolved": [
         {
           "puuid": "b9852420-6f8c-54ff-b347-be70f74c2f64",
@@ -3783,7 +3735,7 @@
         "secondary": "#297dbb",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-19T09:16:59.63Z",
+      "updated_at": "2026-09-19T18:26:01.934Z",
       "roster_resolved": [
         {
           "puuid": "9ea9d900-f4f3-5f4d-8fef-aeb009606148",
@@ -3828,7 +3780,7 @@
         "secondary": "#3f3e40",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.665Z",
+      "updated_at": "2026-09-19T18:26:01.94Z",
       "roster_resolved": [
         {
           "puuid": "4585e559-390f-5cc0-b8b1-c09167aee537",
@@ -3877,7 +3829,7 @@
         "secondary": "#ece8e1",
         "tertiary": "#ece8e1"
       },
-      "updated_at": "2026-09-19T09:16:59.652Z",
+      "updated_at": "2026-09-19T18:26:01.958Z",
       "roster_resolved": [
         {
           "puuid": "95015b54-99af-55a3-b62c-574236e9917e",
@@ -3930,7 +3882,7 @@
         "secondary": "#f4d433",
         "tertiary": "#297dbb"
       },
-      "updated_at": "2026-09-19T09:16:59.643Z",
+      "updated_at": "2026-09-19T18:26:02.024Z",
       "roster_resolved": [
         {
           "puuid": "c584d1a3-b027-55d8-a0ab-42f21d61f29f",
@@ -3975,7 +3927,7 @@
         "secondary": "#f4d433",
         "tertiary": "#3f3e40"
       },
-      "updated_at": "2026-09-19T09:16:59.635Z",
+      "updated_at": "2026-09-19T18:26:01.967Z",
       "roster_resolved": [
         {
           "puuid": "49c2ff29-cb45-5e31-b1b0-d1b3720f861f",
@@ -4606,6 +4558,28 @@
       "rating_estimate": 1.38
     },
     {
+      "puuid": "6c301f79-a648-5cbc-bc8f-a13f6d5e6e87",
+      "name": "JL flazzerrrr#iqq",
+      "team": "BDG SUPREME #BDG",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Omen",
+        "Astra"
+      ],
+      "kills": 28,
+      "deaths": 15,
+      "assists": 19,
+      "kd": 1.87,
+      "acs": 204.1,
+      "adr": 113.8,
+      "hs_pct": 21.4,
+      "kast_pct": 83.8,
+      "fk_fd": "3/1",
+      "clutches_won": 0,
+      "rating_estimate": 1.37
+    },
+    {
       "puuid": "986c008c-b31f-5468-b4ad-3d28643b5721",
       "name": "RedroX#16yo",
       "team": "Vrai Jamal 9 #JML",
@@ -4626,28 +4600,6 @@
       "kast_pct": 78.5,
       "fk_fd": "23/8",
       "clutches_won": 2,
-      "rating_estimate": 1.37
-    },
-    {
-      "puuid": "6c301f79-a648-5cbc-bc8f-a13f6d5e6e87",
-      "name": "JL flazzerrrr#iqq",
-      "team": "BDG SUPREME #BDG",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Omen",
-        "Astra"
-      ],
-      "kills": 28,
-      "deaths": 15,
-      "assists": 19,
-      "kd": 1.87,
-      "acs": 204.1,
-      "adr": 113.8,
-      "hs_pct": 21.4,
-      "kast_pct": 83.8,
-      "fk_fd": "3/1",
-      "clutches_won": 0,
       "rating_estimate": 1.37
     },
     {
@@ -4872,6 +4824,28 @@
       "rating_estimate": 1.31
     },
     {
+      "puuid": "a05f3a91-29ce-5980-84f7-1def849bd6a1",
+      "name": "something fan x0#SCD",
+      "team": "BDG SUPREME #BDG",
+      "division": 21,
+      "matches": 3,
+      "agents": [
+        "Neon",
+        "Sova"
+      ],
+      "kills": 59,
+      "deaths": 43,
+      "assists": 16,
+      "kd": 1.37,
+      "acs": 274.9,
+      "adr": 183.3,
+      "hs_pct": 34.9,
+      "kast_pct": 70.3,
+      "fk_fd": "13/4",
+      "clutches_won": 2,
+      "rating_estimate": 1.3
+    },
+    {
       "puuid": "14354d69-5300-5497-82aa-d10e04f6d0c7",
       "name": "benripeur#demon",
       "team": "Guy3Maupazgar #G3M",
@@ -4892,28 +4866,6 @@
       "kast_pct": 73.1,
       "fk_fd": "28/24",
       "clutches_won": 3,
-      "rating_estimate": 1.3
-    },
-    {
-      "puuid": "a05f3a91-29ce-5980-84f7-1def849bd6a1",
-      "name": "something fan x0#SCD",
-      "team": "BDG SUPREME #BDG",
-      "division": 21,
-      "matches": 3,
-      "agents": [
-        "Neon",
-        "Sova"
-      ],
-      "kills": 59,
-      "deaths": 43,
-      "assists": 16,
-      "kd": 1.37,
-      "acs": 274.9,
-      "adr": 183.3,
-      "hs_pct": 34.9,
-      "kast_pct": 70.3,
-      "fk_fd": "13/4",
-      "clutches_won": 2,
       "rating_estimate": 1.3
     },
     {
@@ -5395,27 +5347,6 @@
       "rating_estimate": 1.23
     },
     {
-      "puuid": "f1e50db3-5019-5e88-9c1a-3a4b6718b54f",
-      "name": "Trayardinho#plniv",
-      "team": "Vrai Jamal 9 #JML",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Fade"
-      ],
-      "kills": 30,
-      "deaths": 24,
-      "assists": 13,
-      "kd": 1.25,
-      "acs": 256.4,
-      "adr": 160.5,
-      "hs_pct": 24.8,
-      "kast_pct": 88.9,
-      "fk_fd": "7/0",
-      "clutches_won": 1,
-      "rating_estimate": 1.22
-    },
-    {
       "puuid": "dcafd486-7bfe-57cd-87f5-229bcb5d2fe4",
       "name": "I miss Him ツ#SAHUR",
       "team": "TheOnePiece #ONE",
@@ -5433,29 +5364,6 @@
       "hs_pct": 45.8,
       "kast_pct": 85.7,
       "fk_fd": "4/2",
-      "clutches_won": 0,
-      "rating_estimate": 1.22
-    },
-    {
-      "puuid": "edaa9358-8b52-559d-947b-c9e31c6e3ebd",
-      "name": "leyu#1212",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 8,
-      "agents": [
-        "Cypher",
-        "Vyse",
-        "Chamber"
-      ],
-      "kills": 134,
-      "deaths": 93,
-      "assists": 24,
-      "kd": 1.44,
-      "acs": 226.2,
-      "adr": 146.0,
-      "hs_pct": 40.1,
-      "kast_pct": 71.2,
-      "fk_fd": "17/9",
       "clutches_won": 0,
       "rating_estimate": 1.22
     },
@@ -5482,6 +5390,50 @@
       "rating_estimate": 1.22
     },
     {
+      "puuid": "f1e50db3-5019-5e88-9c1a-3a4b6718b54f",
+      "name": "Trayardinho#plniv",
+      "team": "Vrai Jamal 9 #JML",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Fade"
+      ],
+      "kills": 30,
+      "deaths": 24,
+      "assists": 13,
+      "kd": 1.25,
+      "acs": 256.4,
+      "adr": 160.5,
+      "hs_pct": 24.8,
+      "kast_pct": 88.9,
+      "fk_fd": "7/0",
+      "clutches_won": 1,
+      "rating_estimate": 1.22
+    },
+    {
+      "puuid": "edaa9358-8b52-559d-947b-c9e31c6e3ebd",
+      "name": "leyu#1212",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 8,
+      "agents": [
+        "Cypher",
+        "Vyse",
+        "Chamber"
+      ],
+      "kills": 134,
+      "deaths": 93,
+      "assists": 24,
+      "kd": 1.44,
+      "acs": 226.2,
+      "adr": 146.0,
+      "hs_pct": 40.1,
+      "kast_pct": 71.2,
+      "fk_fd": "17/9",
+      "clutches_won": 0,
+      "rating_estimate": 1.22
+    },
+    {
       "puuid": "6f6de39b-82ba-51d2-93c2-1b2b1d6997b2",
       "name": "onyxz#ste",
       "team": "TRIFORCE ES #TF",
@@ -5505,28 +5457,6 @@
       "rating_estimate": 1.22
     },
     {
-      "puuid": "7573f3e2-73b9-5076-800b-a2daa3ca786b",
-      "name": "DRACARYS#GWER",
-      "team": "Sandoria #TSK",
-      "division": 21,
-      "matches": 6,
-      "agents": [
-        "Phoenix",
-        "Waylay"
-      ],
-      "kills": 107,
-      "deaths": 89,
-      "assists": 35,
-      "kd": 1.2,
-      "acs": 266.1,
-      "adr": 179.6,
-      "hs_pct": 28.9,
-      "kast_pct": 71.5,
-      "fk_fd": "19/17",
-      "clutches_won": 1,
-      "rating_estimate": 1.21
-    },
-    {
       "puuid": "2eb95f9e-38e5-5b58-902a-861f57bed0d1",
       "name": "MECHANICS ABUSER#Chloe",
       "team": "Guy3Maupazgar #G3M",
@@ -5546,6 +5476,28 @@
       "kast_pct": 77.3,
       "fk_fd": "14/9",
       "clutches_won": 0,
+      "rating_estimate": 1.21
+    },
+    {
+      "puuid": "7573f3e2-73b9-5076-800b-a2daa3ca786b",
+      "name": "DRACARYS#GWER",
+      "team": "Sandoria #TSK",
+      "division": 21,
+      "matches": 6,
+      "agents": [
+        "Phoenix",
+        "Waylay"
+      ],
+      "kills": 107,
+      "deaths": 89,
+      "assists": 35,
+      "kd": 1.2,
+      "acs": 266.1,
+      "adr": 179.6,
+      "hs_pct": 28.9,
+      "kast_pct": 71.5,
+      "fk_fd": "19/17",
+      "clutches_won": 1,
       "rating_estimate": 1.21
     },
     {
@@ -5722,6 +5674,48 @@
       "rating_estimate": 1.2
     },
     {
+      "puuid": "e6e60305-62ba-5b4a-bf86-b04c0c445596",
+      "name": "pot2paf prime#wooli",
+      "team": "BDG SUPREME #BDG",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Sova"
+      ],
+      "kills": 27,
+      "deaths": 22,
+      "assists": 12,
+      "kd": 1.23,
+      "acs": 219.7,
+      "adr": 149.7,
+      "hs_pct": 29.3,
+      "kast_pct": 84.2,
+      "fk_fd": "4/2",
+      "clutches_won": 0,
+      "rating_estimate": 1.19
+    },
+    {
+      "puuid": "3d19b2e5-5a9d-51ac-8920-aa460b4d09f3",
+      "name": "Atomik#3108",
+      "team": "9Corp #9C",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Omen"
+      ],
+      "kills": 45,
+      "deaths": 35,
+      "assists": 13,
+      "kd": 1.29,
+      "acs": 251.9,
+      "adr": 156.9,
+      "hs_pct": 27.6,
+      "kast_pct": 81.6,
+      "fk_fd": "6/4",
+      "clutches_won": 2,
+      "rating_estimate": 1.19
+    },
+    {
       "puuid": "f55a1704-6391-52ac-bcb6-10a6898a2744",
       "name": "Emgo#DeadL",
       "team": "EASY WIN #EASY",
@@ -5762,48 +5756,6 @@
       "kast_pct": 74.0,
       "fk_fd": "14/12",
       "clutches_won": 0,
-      "rating_estimate": 1.19
-    },
-    {
-      "puuid": "e6e60305-62ba-5b4a-bf86-b04c0c445596",
-      "name": "pot2paf prime#wooli",
-      "team": "BDG SUPREME #BDG",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Sova"
-      ],
-      "kills": 27,
-      "deaths": 22,
-      "assists": 12,
-      "kd": 1.23,
-      "acs": 219.7,
-      "adr": 149.7,
-      "hs_pct": 29.3,
-      "kast_pct": 84.2,
-      "fk_fd": "4/2",
-      "clutches_won": 0,
-      "rating_estimate": 1.19
-    },
-    {
-      "puuid": "3d19b2e5-5a9d-51ac-8920-aa460b4d09f3",
-      "name": "Atomik#3108",
-      "team": "9Corp #9C",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Omen"
-      ],
-      "kills": 45,
-      "deaths": 35,
-      "assists": 13,
-      "kd": 1.29,
-      "acs": 251.9,
-      "adr": 156.9,
-      "hs_pct": 27.6,
-      "kast_pct": 81.6,
-      "fk_fd": "6/4",
-      "clutches_won": 2,
       "rating_estimate": 1.19
     },
     {
@@ -6003,28 +5955,6 @@
       "rating_estimate": 1.18
     },
     {
-      "puuid": "44f9003d-133f-5570-a457-1e302cd2e6a2",
-      "name": "alvin#bzez",
-      "team": "PROTOCOL DAHLIA #DHL",
-      "division": 21,
-      "matches": 8,
-      "agents": [
-        "Sova",
-        "Fade"
-      ],
-      "kills": 108,
-      "deaths": 85,
-      "assists": 46,
-      "kd": 1.27,
-      "acs": 194.5,
-      "adr": 132.9,
-      "hs_pct": 21.9,
-      "kast_pct": 82.9,
-      "fk_fd": "6/3",
-      "clutches_won": 2,
-      "rating_estimate": 1.17
-    },
-    {
       "puuid": "3df7b165-a075-59f8-989d-94c4473d44ef",
       "name": "ez1#AZR",
       "team": "AZRising #AZR",
@@ -6044,6 +5974,51 @@
       "hs_pct": 26.9,
       "kast_pct": 77.4,
       "fk_fd": "17/7",
+      "clutches_won": 2,
+      "rating_estimate": 1.17
+    },
+    {
+      "puuid": "0f59caa2-ecef-57e1-a7ae-70007dd76006",
+      "name": "No Tilt Era#XDXD",
+      "team": "BDG SUPREME #BDG",
+      "division": 21,
+      "matches": 6,
+      "agents": [
+        "Omen",
+        "Fade",
+        "Jett"
+      ],
+      "kills": 106,
+      "deaths": 85,
+      "assists": 29,
+      "kd": 1.25,
+      "acs": 244.4,
+      "adr": 159.1,
+      "hs_pct": 30.1,
+      "kast_pct": 74.8,
+      "fk_fd": "14/19",
+      "clutches_won": 0,
+      "rating_estimate": 1.17
+    },
+    {
+      "puuid": "44f9003d-133f-5570-a457-1e302cd2e6a2",
+      "name": "alvin#bzez",
+      "team": "PROTOCOL DAHLIA #DHL",
+      "division": 21,
+      "matches": 8,
+      "agents": [
+        "Sova",
+        "Fade"
+      ],
+      "kills": 108,
+      "deaths": 85,
+      "assists": 46,
+      "kd": 1.27,
+      "acs": 194.5,
+      "adr": 132.9,
+      "hs_pct": 21.9,
+      "kast_pct": 82.9,
+      "fk_fd": "6/3",
       "clutches_won": 2,
       "rating_estimate": 1.17
     },
@@ -6112,29 +6087,6 @@
       "hs_pct": 36.4,
       "kast_pct": 80.2,
       "fk_fd": "6/5",
-      "clutches_won": 0,
-      "rating_estimate": 1.17
-    },
-    {
-      "puuid": "0f59caa2-ecef-57e1-a7ae-70007dd76006",
-      "name": "No Tilt Era#XDXD",
-      "team": "BDG SUPREME #BDG",
-      "division": 21,
-      "matches": 6,
-      "agents": [
-        "Omen",
-        "Fade",
-        "Jett"
-      ],
-      "kills": 106,
-      "deaths": 85,
-      "assists": 29,
-      "kd": 1.25,
-      "acs": 244.4,
-      "adr": 159.1,
-      "hs_pct": 30.1,
-      "kast_pct": 74.8,
-      "fk_fd": "14/19",
       "clutches_won": 0,
       "rating_estimate": 1.17
     },
@@ -6290,6 +6242,29 @@
       "rating_estimate": 1.16
     },
     {
+      "puuid": "19b4569e-4600-5426-bab9-4003ca7710ae",
+      "name": "Voiture roulante#EUW",
+      "team": "Special Grade #特",
+      "division": 21,
+      "matches": 8,
+      "agents": [
+        "Vyse",
+        "Cypher",
+        "Viper"
+      ],
+      "kills": 148,
+      "deaths": 122,
+      "assists": 36,
+      "kd": 1.21,
+      "acs": 235.2,
+      "adr": 158.9,
+      "hs_pct": 35.0,
+      "kast_pct": 71.7,
+      "fk_fd": "22/17",
+      "clutches_won": 2,
+      "rating_estimate": 1.15
+    },
+    {
       "puuid": "b6e84dd6-3c94-5f23-ad38-b60e8d020dff",
       "name": "H1mSe#1Tap",
       "team": "EASY WIN #EASY",
@@ -6332,29 +6307,6 @@
       "kast_pct": 78.1,
       "fk_fd": "14/14",
       "clutches_won": 1,
-      "rating_estimate": 1.15
-    },
-    {
-      "puuid": "19b4569e-4600-5426-bab9-4003ca7710ae",
-      "name": "Voiture roulante#EUW",
-      "team": "Special Grade #特",
-      "division": 21,
-      "matches": 8,
-      "agents": [
-        "Vyse",
-        "Cypher",
-        "Viper"
-      ],
-      "kills": 148,
-      "deaths": 122,
-      "assists": 36,
-      "kd": 1.21,
-      "acs": 235.2,
-      "adr": 158.9,
-      "hs_pct": 35.0,
-      "kast_pct": 71.7,
-      "fk_fd": "22/17",
-      "clutches_won": 2,
       "rating_estimate": 1.15
     },
     {
@@ -6489,6 +6441,28 @@
       "rating_estimate": 1.15
     },
     {
+      "puuid": "3c099dee-875c-56cc-9f83-ebd57abe5701",
+      "name": "Evoks#2287",
+      "team": "Guy3Maupazgar #G3M",
+      "division": 21,
+      "matches": 7,
+      "agents": [
+        "Fade",
+        "Sova"
+      ],
+      "kills": 109,
+      "deaths": 91,
+      "assists": 47,
+      "kd": 1.2,
+      "acs": 210.8,
+      "adr": 140.3,
+      "hs_pct": 33.0,
+      "kast_pct": 77.6,
+      "fk_fd": "12/11",
+      "clutches_won": 0,
+      "rating_estimate": 1.14
+    },
+    {
       "puuid": "bc4686b7-638e-50c1-a2eb-7b304f5eda77",
       "name": "773#進化283",
       "team": "PROTOCOL OMEGA #PRTL",
@@ -6576,28 +6550,6 @@
       "hs_pct": 27.4,
       "kast_pct": 77.3,
       "fk_fd": "11/13",
-      "clutches_won": 0,
-      "rating_estimate": 1.14
-    },
-    {
-      "puuid": "3c099dee-875c-56cc-9f83-ebd57abe5701",
-      "name": "Evoks#2287",
-      "team": "Guy3Maupazgar #G3M",
-      "division": 21,
-      "matches": 7,
-      "agents": [
-        "Fade",
-        "Sova"
-      ],
-      "kills": 109,
-      "deaths": 91,
-      "assists": 47,
-      "kd": 1.2,
-      "acs": 210.8,
-      "adr": 140.3,
-      "hs_pct": 33.0,
-      "kast_pct": 77.6,
-      "fk_fd": "12/11",
       "clutches_won": 0,
       "rating_estimate": 1.14
     },
@@ -7019,28 +6971,6 @@
       "rating_estimate": 1.12
     },
     {
-      "puuid": "95facc8d-fdbc-5fdb-8d6b-eec828c9e22e",
-      "name": "0Tim#Lmo",
-      "team": "Out of Fame #OOF",
-      "division": 21,
-      "matches": 8,
-      "agents": [
-        "Sova",
-        "Skye"
-      ],
-      "kills": 122,
-      "deaths": 109,
-      "assists": 58,
-      "kd": 1.12,
-      "acs": 218.4,
-      "adr": 143.1,
-      "hs_pct": 30.0,
-      "kast_pct": 77.8,
-      "fk_fd": "14/9",
-      "clutches_won": 3,
-      "rating_estimate": 1.11
-    },
-    {
       "puuid": "007afbe6-5138-54a3-9e54-7da76f0ec477",
       "name": "RqGa#0301",
       "team": "TheOnePiece #ONE",
@@ -7060,6 +6990,28 @@
       "hs_pct": 20.2,
       "kast_pct": 76.9,
       "fk_fd": "13/6",
+      "clutches_won": 3,
+      "rating_estimate": 1.11
+    },
+    {
+      "puuid": "95facc8d-fdbc-5fdb-8d6b-eec828c9e22e",
+      "name": "0Tim#Lmo",
+      "team": "Out of Fame #OOF",
+      "division": 21,
+      "matches": 8,
+      "agents": [
+        "Sova",
+        "Skye"
+      ],
+      "kills": 122,
+      "deaths": 109,
+      "assists": 58,
+      "kd": 1.12,
+      "acs": 218.4,
+      "adr": 143.1,
+      "hs_pct": 30.0,
+      "kast_pct": 77.8,
+      "fk_fd": "14/9",
       "clutches_won": 3,
       "rating_estimate": 1.11
     },
@@ -7804,27 +7756,6 @@
       "rating_estimate": 1.07
     },
     {
-      "puuid": "0bc06193-6721-50ec-bcc3-014ce79624e6",
-      "name": "FlameNco#0303",
-      "team": "PROTOCOL DAHLIA #DHL",
-      "division": 21,
-      "matches": 8,
-      "agents": [
-        "Cypher"
-      ],
-      "kills": 108,
-      "deaths": 94,
-      "assists": 32,
-      "kd": 1.15,
-      "acs": 182.3,
-      "adr": 122.9,
-      "hs_pct": 33.3,
-      "kast_pct": 79.1,
-      "fk_fd": "9/9",
-      "clutches_won": 0,
-      "rating_estimate": 1.06
-    },
-    {
       "puuid": "ddde8501-bbea-5198-bcc1-1243aed9ad59",
       "name": "ΛＴΛＲΛＸＩΞ#Spicy",
       "team": "CasseurDeLatte #CDL",
@@ -7868,6 +7799,27 @@
       "kast_pct": 69.3,
       "fk_fd": "9/17",
       "clutches_won": 2,
+      "rating_estimate": 1.06
+    },
+    {
+      "puuid": "0bc06193-6721-50ec-bcc3-014ce79624e6",
+      "name": "FlameNco#0303",
+      "team": "PROTOCOL DAHLIA #DHL",
+      "division": 21,
+      "matches": 8,
+      "agents": [
+        "Cypher"
+      ],
+      "kills": 108,
+      "deaths": 94,
+      "assists": 32,
+      "kd": 1.15,
+      "acs": 182.3,
+      "adr": 122.9,
+      "hs_pct": 33.3,
+      "kast_pct": 79.1,
+      "fk_fd": "9/9",
+      "clutches_won": 0,
       "rating_estimate": 1.06
     },
     {
@@ -8136,29 +8088,6 @@
       "rating_estimate": 1.05
     },
     {
-      "puuid": "74e0db54-dc98-5991-95a6-ecdb2520428d",
-      "name": "Tigrouss#1805",
-      "team": "PROTOCOL DAHLIA #DHL",
-      "division": 21,
-      "matches": 8,
-      "agents": [
-        "Omen",
-        "Neon",
-        "Astra"
-      ],
-      "kills": 103,
-      "deaths": 103,
-      "assists": 68,
-      "kd": 1.0,
-      "acs": 183.2,
-      "adr": 126.2,
-      "hs_pct": 25.7,
-      "kast_pct": 80.4,
-      "fk_fd": "10/19",
-      "clutches_won": 1,
-      "rating_estimate": 1.04
-    },
-    {
       "puuid": "7e192603-b5c9-5840-8a7f-876fe72449c7",
       "name": "Ayoub#16yo",
       "team": "AZRising #AZR",
@@ -8202,6 +8131,29 @@
       "kast_pct": 67.8,
       "fk_fd": "16/19",
       "clutches_won": 0,
+      "rating_estimate": 1.04
+    },
+    {
+      "puuid": "74e0db54-dc98-5991-95a6-ecdb2520428d",
+      "name": "Tigrouss#1805",
+      "team": "PROTOCOL DAHLIA #DHL",
+      "division": 21,
+      "matches": 8,
+      "agents": [
+        "Omen",
+        "Neon",
+        "Astra"
+      ],
+      "kills": 103,
+      "deaths": 103,
+      "assists": 68,
+      "kd": 1.0,
+      "acs": 183.2,
+      "adr": 126.2,
+      "hs_pct": 25.7,
+      "kast_pct": 80.4,
+      "fk_fd": "10/19",
+      "clutches_won": 1,
       "rating_estimate": 1.04
     },
     {
@@ -8769,27 +8721,6 @@
       "rating_estimate": 1.03
     },
     {
-      "puuid": "80a8cef6-9ad3-5638-991f-4bca7053f803",
-      "name": "Thanos#Sh1nt",
-      "team": "Out of Fame #OOF",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Cypher"
-      ],
-      "kills": 28,
-      "deaths": 25,
-      "assists": 10,
-      "kd": 1.12,
-      "acs": 175.7,
-      "adr": 109.1,
-      "hs_pct": 33.3,
-      "kast_pct": 73.8,
-      "fk_fd": "2/3",
-      "clutches_won": 0,
-      "rating_estimate": 1.02
-    },
-    {
       "puuid": "20c7a29e-5515-550f-8cfc-edc74cbe009a",
       "name": "Azgarito#tbag",
       "team": "Guy3Maupazgar #G3M",
@@ -8831,6 +8762,27 @@
       "hs_pct": 27.7,
       "kast_pct": 76.9,
       "fk_fd": "11/9",
+      "clutches_won": 0,
+      "rating_estimate": 1.02
+    },
+    {
+      "puuid": "80a8cef6-9ad3-5638-991f-4bca7053f803",
+      "name": "Thanos#Sh1nt",
+      "team": "Out of Fame #OOF",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Cypher"
+      ],
+      "kills": 28,
+      "deaths": 25,
+      "assists": 10,
+      "kd": 1.12,
+      "acs": 175.7,
+      "adr": 109.1,
+      "hs_pct": 33.3,
+      "kast_pct": 73.8,
+      "fk_fd": "2/3",
       "clutches_won": 0,
       "rating_estimate": 1.02
     },
@@ -9404,27 +9356,6 @@
       "rating_estimate": 0.97
     },
     {
-      "puuid": "97a7b9b9-50c8-592d-af94-15c321079b08",
-      "name": "Toysk#1037",
-      "team": "Out of Fame #OOF",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Viper"
-      ],
-      "kills": 22,
-      "deaths": 23,
-      "assists": 8,
-      "kd": 0.96,
-      "acs": 179.1,
-      "adr": 123.9,
-      "hs_pct": 29.0,
-      "kast_pct": 72.2,
-      "fk_fd": "4/4",
-      "clutches_won": 1,
-      "rating_estimate": 0.97
-    },
-    {
       "puuid": "4158cb01-10dd-57d3-9766-2381d4c78b0d",
       "name": "maelontop#champ",
       "team": "Banana Split #BS",
@@ -9444,6 +9375,27 @@
       "hs_pct": 39.0,
       "kast_pct": 65.9,
       "fk_fd": "10/8",
+      "clutches_won": 1,
+      "rating_estimate": 0.97
+    },
+    {
+      "puuid": "97a7b9b9-50c8-592d-af94-15c321079b08",
+      "name": "Toysk#1037",
+      "team": "Out of Fame #OOF",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Viper"
+      ],
+      "kills": 22,
+      "deaths": 23,
+      "assists": 8,
+      "kd": 0.96,
+      "acs": 179.1,
+      "adr": 123.9,
+      "hs_pct": 29.0,
+      "kast_pct": 72.2,
+      "fk_fd": "4/4",
       "clutches_won": 1,
       "rating_estimate": 0.97
     },
@@ -9823,6 +9775,27 @@
       "rating_estimate": 0.96
     },
     {
+      "puuid": "b6f2427f-4a94-5c6d-97c3-8e8731ea6db2",
+      "name": "islo#aimRZ",
+      "team": "AZRising #AZR",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Neon"
+      ],
+      "kills": 34,
+      "deaths": 34,
+      "assists": 7,
+      "kd": 1.0,
+      "acs": 257.3,
+      "adr": 152.8,
+      "hs_pct": 26.9,
+      "kast_pct": 71.1,
+      "fk_fd": "12/8",
+      "clutches_won": 0,
+      "rating_estimate": 0.95
+    },
+    {
       "puuid": "afbbc3a4-5f25-52de-9e08-8c12d23cdbc3",
       "name": "Medea#lie",
       "team": "Vrai Jamal 9 #JML",
@@ -9842,27 +9815,6 @@
       "hs_pct": 20.9,
       "kast_pct": 78.6,
       "fk_fd": "10/4",
-      "clutches_won": 0,
-      "rating_estimate": 0.95
-    },
-    {
-      "puuid": "b6f2427f-4a94-5c6d-97c3-8e8731ea6db2",
-      "name": "islo#aimRZ",
-      "team": "AZRising #AZR",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Neon"
-      ],
-      "kills": 34,
-      "deaths": 34,
-      "assists": 7,
-      "kd": 1.0,
-      "acs": 257.3,
-      "adr": 152.8,
-      "hs_pct": 26.9,
-      "kast_pct": 71.1,
-      "fk_fd": "12/8",
       "clutches_won": 0,
       "rating_estimate": 0.95
     },
@@ -10066,29 +10018,6 @@
       "rating_estimate": 0.95
     },
     {
-      "puuid": "58fc164f-a5f7-5376-82ae-1a9f74218373",
-      "name": "Hermes 丧#ALONE",
-      "team": "Brezelit #BZL",
-      "division": 21,
-      "matches": 6,
-      "agents": [
-        "Sova",
-        "Harbor",
-        "Fade"
-      ],
-      "kills": 71,
-      "deaths": 74,
-      "assists": 30,
-      "kd": 0.96,
-      "acs": 169.9,
-      "adr": 110.1,
-      "hs_pct": 27.3,
-      "kast_pct": 74.6,
-      "fk_fd": "9/10",
-      "clutches_won": 0,
-      "rating_estimate": 0.94
-    },
-    {
       "puuid": "08184806-bb2e-5347-8900-e8a5c04b1807",
       "name": "rhyzot#Naton",
       "team": "SEG WHITE #SEGW",
@@ -10108,6 +10037,29 @@
       "hs_pct": 31.4,
       "kast_pct": 71.1,
       "fk_fd": "9/14",
+      "clutches_won": 0,
+      "rating_estimate": 0.94
+    },
+    {
+      "puuid": "58fc164f-a5f7-5376-82ae-1a9f74218373",
+      "name": "Hermes 丧#ALONE",
+      "team": "Brezelit #BZL",
+      "division": 21,
+      "matches": 6,
+      "agents": [
+        "Sova",
+        "Harbor",
+        "Fade"
+      ],
+      "kills": 71,
+      "deaths": 74,
+      "assists": 30,
+      "kd": 0.96,
+      "acs": 169.9,
+      "adr": 110.1,
+      "hs_pct": 27.3,
+      "kast_pct": 74.6,
+      "fk_fd": "9/10",
       "clutches_won": 0,
       "rating_estimate": 0.94
     },
@@ -10873,50 +10825,6 @@
       "rating_estimate": 0.91
     },
     {
-      "puuid": "dcdc667e-6294-5fe3-a34d-896952d7e67e",
-      "name": "proudiboy#BOAT",
-      "team": "PROTOCOL OMEGA #PRTL",
-      "division": 21,
-      "matches": 1,
-      "agents": [
-        "Cypher"
-      ],
-      "kills": 12,
-      "deaths": 15,
-      "assists": 7,
-      "kd": 0.8,
-      "acs": 158.5,
-      "adr": 116.6,
-      "hs_pct": 36.1,
-      "kast_pct": 73.9,
-      "fk_fd": "1/1",
-      "clutches_won": 0,
-      "rating_estimate": 0.9
-    },
-    {
-      "puuid": "8b4354c2-63ae-5156-add2-d4004afc906f",
-      "name": "Zombiewood#SNL",
-      "team": "Sandoria #TSK",
-      "division": 21,
-      "matches": 8,
-      "agents": [
-        "Omen",
-        "Harbor",
-        "Astra"
-      ],
-      "kills": 100,
-      "deaths": 123,
-      "assists": 91,
-      "kd": 0.81,
-      "acs": 181.8,
-      "adr": 112.6,
-      "hs_pct": 23.0,
-      "kast_pct": 78.4,
-      "fk_fd": "12/17",
-      "clutches_won": 0,
-      "rating_estimate": 0.9
-    },
-    {
       "puuid": "31c707a2-f5eb-56e0-9c3d-277b85761202",
       "name": "Yuki Aim#baki",
       "team": "Special Grade #特",
@@ -10957,6 +10865,50 @@
       "hs_pct": 20.5,
       "kast_pct": 72.4,
       "fk_fd": "5/12",
+      "clutches_won": 0,
+      "rating_estimate": 0.9
+    },
+    {
+      "puuid": "dcdc667e-6294-5fe3-a34d-896952d7e67e",
+      "name": "proudiboy#BOAT",
+      "team": "PROTOCOL OMEGA #PRTL",
+      "division": 21,
+      "matches": 1,
+      "agents": [
+        "Cypher"
+      ],
+      "kills": 12,
+      "deaths": 15,
+      "assists": 7,
+      "kd": 0.8,
+      "acs": 158.5,
+      "adr": 116.6,
+      "hs_pct": 36.1,
+      "kast_pct": 73.9,
+      "fk_fd": "1/1",
+      "clutches_won": 0,
+      "rating_estimate": 0.9
+    },
+    {
+      "puuid": "8b4354c2-63ae-5156-add2-d4004afc906f",
+      "name": "Zombiewood#SNL",
+      "team": "Sandoria #TSK",
+      "division": 21,
+      "matches": 8,
+      "agents": [
+        "Omen",
+        "Harbor",
+        "Astra"
+      ],
+      "kills": 100,
+      "deaths": 123,
+      "assists": 91,
+      "kd": 0.81,
+      "acs": 181.8,
+      "adr": 112.6,
+      "hs_pct": 23.0,
+      "kast_pct": 78.4,
+      "fk_fd": "12/17",
       "clutches_won": 0,
       "rating_estimate": 0.9
     },
@@ -11071,51 +11023,6 @@
       "rating_estimate": 0.9
     },
     {
-      "puuid": "f6d7d882-812c-5c27-975f-704cd1fded06",
-      "name": "Bachira#SEZEN",
-      "team": "PROTOCOL OMEGA #PRTL",
-      "division": 21,
-      "matches": 8,
-      "agents": [
-        "Sova",
-        "Fade"
-      ],
-      "kills": 104,
-      "deaths": 119,
-      "assists": 43,
-      "kd": 0.87,
-      "acs": 169.2,
-      "adr": 112.2,
-      "hs_pct": 27.8,
-      "kast_pct": 69.9,
-      "fk_fd": "10/17",
-      "clutches_won": 1,
-      "rating_estimate": 0.89
-    },
-    {
-      "puuid": "43464c5e-de4f-568d-9804-a4aea538a80e",
-      "name": "VT Enzoone#PRX",
-      "team": "Corvo Esport #CVO",
-      "division": 21,
-      "matches": 7,
-      "agents": [
-        "Cypher",
-        "Vyse",
-        "Viper"
-      ],
-      "kills": 85,
-      "deaths": 95,
-      "assists": 28,
-      "kd": 0.89,
-      "acs": 158.8,
-      "adr": 106.5,
-      "hs_pct": 33.0,
-      "kast_pct": 68.7,
-      "fk_fd": "10/11",
-      "clutches_won": 1,
-      "rating_estimate": 0.89
-    },
-    {
       "puuid": "5cf29916-b572-58db-b85a-917643388b52",
       "name": "sneax#luv",
       "team": "BDG SUPREME #BDG",
@@ -11159,6 +11066,51 @@
       "kast_pct": 66.7,
       "fk_fd": "5/10",
       "clutches_won": 0,
+      "rating_estimate": 0.89
+    },
+    {
+      "puuid": "f6d7d882-812c-5c27-975f-704cd1fded06",
+      "name": "Bachira#SEZEN",
+      "team": "PROTOCOL OMEGA #PRTL",
+      "division": 21,
+      "matches": 8,
+      "agents": [
+        "Sova",
+        "Fade"
+      ],
+      "kills": 104,
+      "deaths": 119,
+      "assists": 43,
+      "kd": 0.87,
+      "acs": 169.2,
+      "adr": 112.2,
+      "hs_pct": 27.8,
+      "kast_pct": 69.9,
+      "fk_fd": "10/17",
+      "clutches_won": 1,
+      "rating_estimate": 0.89
+    },
+    {
+      "puuid": "43464c5e-de4f-568d-9804-a4aea538a80e",
+      "name": "VT Enzoone#PRX",
+      "team": "Corvo Esport #CVO",
+      "division": 21,
+      "matches": 7,
+      "agents": [
+        "Cypher",
+        "Vyse",
+        "Viper"
+      ],
+      "kills": 85,
+      "deaths": 95,
+      "assists": 28,
+      "kd": 0.89,
+      "acs": 158.8,
+      "adr": 106.5,
+      "hs_pct": 33.0,
+      "kast_pct": 68.7,
+      "fk_fd": "10/11",
+      "clutches_won": 1,
       "rating_estimate": 0.89
     },
     {
@@ -11715,28 +11667,6 @@
       "rating_estimate": 0.86
     },
     {
-      "puuid": "ad016064-3192-5976-9e7d-56a6c15e4963",
-      "name": "Venec#LoveU",
-      "team": "Sandoria #TSK",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Astra",
-        "Harbor"
-      ],
-      "kills": 22,
-      "deaths": 26,
-      "assists": 8,
-      "kd": 0.85,
-      "acs": 190.8,
-      "adr": 123.7,
-      "hs_pct": 16.0,
-      "kast_pct": 66.7,
-      "fk_fd": "1/3",
-      "clutches_won": 0,
-      "rating_estimate": 0.85
-    },
-    {
       "puuid": "9d322342-fe9f-5d51-9f1c-5b9e36c881d2",
       "name": "Lyzoxx#jsp",
       "team": "ECN Juno #ECN",
@@ -11777,6 +11707,28 @@
       "hs_pct": 37.5,
       "kast_pct": 67.9,
       "fk_fd": "2/2",
+      "clutches_won": 0,
+      "rating_estimate": 0.85
+    },
+    {
+      "puuid": "ad016064-3192-5976-9e7d-56a6c15e4963",
+      "name": "Venec#LoveU",
+      "team": "Sandoria #TSK",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Astra",
+        "Harbor"
+      ],
+      "kills": 22,
+      "deaths": 26,
+      "assists": 8,
+      "kd": 0.85,
+      "acs": 190.8,
+      "adr": 123.7,
+      "hs_pct": 16.0,
+      "kast_pct": 66.7,
+      "fk_fd": "1/3",
       "clutches_won": 0,
       "rating_estimate": 0.85
     },
@@ -12518,27 +12470,6 @@
       "rating_estimate": 0.78
     },
     {
-      "puuid": "84efd60d-6cee-550b-b804-8ee0d6d50948",
-      "name": "Nyoibo#芥 川",
-      "team": "GPTANCE #GPT",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Fade"
-      ],
-      "kills": 21,
-      "deaths": 29,
-      "assists": 6,
-      "kd": 0.72,
-      "acs": 156.6,
-      "adr": 113.8,
-      "hs_pct": 32.3,
-      "kast_pct": 57.5,
-      "fk_fd": "3/0",
-      "clutches_won": 0,
-      "rating_estimate": 0.78
-    },
-    {
       "puuid": "36ac1afe-b2c3-59da-9fe4-8e9863dc7d64",
       "name": "Jacadi#adi",
       "team": "Special Grade #特",
@@ -12557,6 +12488,27 @@
       "hs_pct": 31.1,
       "kast_pct": 69.4,
       "fk_fd": "15/21",
+      "clutches_won": 0,
+      "rating_estimate": 0.78
+    },
+    {
+      "puuid": "84efd60d-6cee-550b-b804-8ee0d6d50948",
+      "name": "Nyoibo#芥 川",
+      "team": "GPTANCE #GPT",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Fade"
+      ],
+      "kills": 21,
+      "deaths": 29,
+      "assists": 6,
+      "kd": 0.72,
+      "acs": 156.6,
+      "adr": 113.8,
+      "hs_pct": 32.3,
+      "kast_pct": 57.5,
+      "fk_fd": "3/0",
       "clutches_won": 0,
       "rating_estimate": 0.78
     },
@@ -14879,27 +14831,6 @@
       "rating_estimate": 1.49
     },
     {
-      "puuid": "74e0db54-dc98-5991-95a6-ecdb2520428d",
-      "name": "Tigrouss#1805",
-      "team": "PROTOCOL DAHLIA #DHL",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Omen"
-      ],
-      "kills": 26,
-      "deaths": 15,
-      "assists": 16,
-      "kd": 1.73,
-      "acs": 219.9,
-      "adr": 153.1,
-      "hs_pct": 19.8,
-      "kast_pct": 87.1,
-      "fk_fd": "3/6",
-      "clutches_won": 0,
-      "rating_estimate": 1.44
-    },
-    {
       "puuid": "5720fff9-cc10-566b-b873-36a43d075aa8",
       "name": "Skyz#8359",
       "team": "AZRising #AZR",
@@ -14917,6 +14848,27 @@
       "hs_pct": 37.0,
       "kast_pct": 84.2,
       "fk_fd": "3/1",
+      "clutches_won": 0,
+      "rating_estimate": 1.44
+    },
+    {
+      "puuid": "74e0db54-dc98-5991-95a6-ecdb2520428d",
+      "name": "Tigrouss#1805",
+      "team": "PROTOCOL DAHLIA #DHL",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Omen"
+      ],
+      "kills": 26,
+      "deaths": 15,
+      "assists": 16,
+      "kd": 1.73,
+      "acs": 219.9,
+      "adr": 153.1,
+      "hs_pct": 19.8,
+      "kast_pct": 87.1,
+      "fk_fd": "3/6",
       "clutches_won": 0,
       "rating_estimate": 1.44
     },
@@ -14984,27 +14936,6 @@
       "rating_estimate": 1.38
     },
     {
-      "puuid": "0bc06193-6721-50ec-bcc3-014ce79624e6",
-      "name": "FlameNco#0303",
-      "team": "PROTOCOL DAHLIA #DHL",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Cypher"
-      ],
-      "kills": 26,
-      "deaths": 14,
-      "assists": 8,
-      "kd": 1.86,
-      "acs": 207.1,
-      "adr": 140.0,
-      "hs_pct": 35.9,
-      "kast_pct": 83.9,
-      "fk_fd": "1/1",
-      "clutches_won": 0,
-      "rating_estimate": 1.37
-    },
-    {
       "puuid": "f0619313-84d4-5901-a531-7b27dfd194fb",
       "name": "donk666#EZWIN",
       "team": "Special Grade #特",
@@ -15022,6 +14953,27 @@
       "hs_pct": 18.2,
       "kast_pct": 78.7,
       "fk_fd": "9/6",
+      "clutches_won": 0,
+      "rating_estimate": 1.37
+    },
+    {
+      "puuid": "0bc06193-6721-50ec-bcc3-014ce79624e6",
+      "name": "FlameNco#0303",
+      "team": "PROTOCOL DAHLIA #DHL",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Cypher"
+      ],
+      "kills": 26,
+      "deaths": 14,
+      "assists": 8,
+      "kd": 1.86,
+      "acs": 207.1,
+      "adr": 140.0,
+      "hs_pct": 35.9,
+      "kast_pct": 83.9,
+      "fk_fd": "1/1",
       "clutches_won": 0,
       "rating_estimate": 1.37
     },
@@ -15216,28 +15168,6 @@
       "rating_estimate": 1.31
     },
     {
-      "puuid": "39de89ad-ff40-5040-aec1-b96b67e40a93",
-      "name": "Nevorce#006",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Vyse",
-        "Jett"
-      ],
-      "kills": 44,
-      "deaths": 29,
-      "assists": 4,
-      "kd": 1.52,
-      "acs": 274.3,
-      "adr": 167.8,
-      "hs_pct": 28.2,
-      "kast_pct": 77.3,
-      "fk_fd": "8/7",
-      "clutches_won": 0,
-      "rating_estimate": 1.29
-    },
-    {
       "puuid": "c91c2dc3-6cbf-5463-91da-c3116e996a0c",
       "name": "z0wex#6621",
       "team": "TheOnePiece #ONE",
@@ -15256,6 +15186,28 @@
       "hs_pct": 38.5,
       "kast_pct": 78.8,
       "fk_fd": "1/6",
+      "clutches_won": 0,
+      "rating_estimate": 1.29
+    },
+    {
+      "puuid": "39de89ad-ff40-5040-aec1-b96b67e40a93",
+      "name": "Nevorce#006",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Vyse",
+        "Jett"
+      ],
+      "kills": 44,
+      "deaths": 29,
+      "assists": 4,
+      "kd": 1.52,
+      "acs": 274.3,
+      "adr": 167.8,
+      "hs_pct": 28.2,
+      "kast_pct": 77.3,
+      "fk_fd": "8/7",
       "clutches_won": 0,
       "rating_estimate": 1.29
     },
@@ -15747,27 +15699,6 @@
       "rating_estimate": 1.16
     },
     {
-      "puuid": "b3aad6ce-0883-57d0-82f7-68cf4bae1450",
-      "name": "Tamba#EZGG",
-      "team": "Out of Fame #OOF",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Omen"
-      ],
-      "kills": 34,
-      "deaths": 30,
-      "assists": 16,
-      "kd": 1.13,
-      "acs": 229.8,
-      "adr": 158.3,
-      "hs_pct": 20.4,
-      "kast_pct": 72.1,
-      "fk_fd": "2/4",
-      "clutches_won": 1,
-      "rating_estimate": 1.15
-    },
-    {
       "puuid": "3c099dee-875c-56cc-9f83-ebd57abe5701",
       "name": "Evoks#2287",
       "team": "Guy3Maupazgar #G3M",
@@ -15786,6 +15717,27 @@
       "kast_pct": 76.3,
       "fk_fd": "0/3",
       "clutches_won": 0,
+      "rating_estimate": 1.15
+    },
+    {
+      "puuid": "b3aad6ce-0883-57d0-82f7-68cf4bae1450",
+      "name": "Tamba#EZGG",
+      "team": "Out of Fame #OOF",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Omen"
+      ],
+      "kills": 34,
+      "deaths": 30,
+      "assists": 16,
+      "kd": 1.13,
+      "acs": 229.8,
+      "adr": 158.3,
+      "hs_pct": 20.4,
+      "kast_pct": 72.1,
+      "fk_fd": "2/4",
+      "clutches_won": 1,
       "rating_estimate": 1.15
     },
     {
@@ -16085,27 +16037,6 @@
       "rating_estimate": 1.08
     },
     {
-      "puuid": "149fae8e-02b1-56c8-bcd1-5f60b323e93c",
-      "name": "ValKiTue#EUW",
-      "team": "Sandoria #TSK",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Fade"
-      ],
-      "kills": 31,
-      "deaths": 28,
-      "assists": 12,
-      "kd": 1.11,
-      "acs": 214.3,
-      "adr": 138.3,
-      "hs_pct": 28.2,
-      "kast_pct": 77.5,
-      "fk_fd": "4/3",
-      "clutches_won": 1,
-      "rating_estimate": 1.07
-    },
-    {
       "puuid": "93956115-210b-5c50-b6e6-a4cf03dab078",
       "name": "balling#ilyu",
       "team": "9Corp #9C",
@@ -16124,6 +16055,27 @@
       "kast_pct": 77.6,
       "fk_fd": "2/4",
       "clutches_won": 0,
+      "rating_estimate": 1.07
+    },
+    {
+      "puuid": "149fae8e-02b1-56c8-bcd1-5f60b323e93c",
+      "name": "ValKiTue#EUW",
+      "team": "Sandoria #TSK",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Fade"
+      ],
+      "kills": 31,
+      "deaths": 28,
+      "assists": 12,
+      "kd": 1.11,
+      "acs": 214.3,
+      "adr": 138.3,
+      "hs_pct": 28.2,
+      "kast_pct": 77.5,
+      "fk_fd": "4/3",
+      "clutches_won": 1,
       "rating_estimate": 1.07
     },
     {
@@ -16400,27 +16352,6 @@
       "rating_estimate": 1.03
     },
     {
-      "puuid": "ca959157-03d4-5a68-b68c-c14cef920d3e",
-      "name": "Rifflexx#MAIN",
-      "team": "Out of Fame #OOF",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Viper"
-      ],
-      "kills": 34,
-      "deaths": 33,
-      "assists": 11,
-      "kd": 1.03,
-      "acs": 225.7,
-      "adr": 146.0,
-      "hs_pct": 32.2,
-      "kast_pct": 72.1,
-      "fk_fd": "6/5",
-      "clutches_won": 0,
-      "rating_estimate": 1.02
-    },
-    {
       "puuid": "282ff453-956b-5de8-9bb3-9a05e865435c",
       "name": "bøuuhh#RANK1",
       "team": "Banana Split #BS",
@@ -16438,6 +16369,27 @@
       "hs_pct": 34.1,
       "kast_pct": 71.4,
       "fk_fd": "6/4",
+      "clutches_won": 0,
+      "rating_estimate": 1.02
+    },
+    {
+      "puuid": "ca959157-03d4-5a68-b68c-c14cef920d3e",
+      "name": "Rifflexx#MAIN",
+      "team": "Out of Fame #OOF",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Viper"
+      ],
+      "kills": 34,
+      "deaths": 33,
+      "assists": 11,
+      "kd": 1.03,
+      "acs": 225.7,
+      "adr": 146.0,
+      "hs_pct": 32.2,
+      "kast_pct": 72.1,
+      "fk_fd": "6/5",
       "clutches_won": 0,
       "rating_estimate": 1.02
     },
@@ -16569,28 +16521,6 @@
       "rating_estimate": 1.0
     },
     {
-      "puuid": "0c91fca7-5342-596b-bcc4-b5b904e68639",
-      "name": "zylithan#1Tap",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Omen",
-        "Clove"
-      ],
-      "kills": 33,
-      "deaths": 34,
-      "assists": 18,
-      "kd": 0.97,
-      "acs": 209.3,
-      "adr": 135.2,
-      "hs_pct": 42.1,
-      "kast_pct": 79.5,
-      "fk_fd": "1/1",
-      "clutches_won": 0,
-      "rating_estimate": 0.99
-    },
-    {
       "puuid": "007afbe6-5138-54a3-9e54-7da76f0ec477",
       "name": "RqGa#0301",
       "team": "TheOnePiece #ONE",
@@ -16629,6 +16559,28 @@
       "hs_pct": 19.8,
       "kast_pct": 68.4,
       "fk_fd": "2/2",
+      "clutches_won": 0,
+      "rating_estimate": 0.99
+    },
+    {
+      "puuid": "0c91fca7-5342-596b-bcc4-b5b904e68639",
+      "name": "zylithan#1Tap",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Omen",
+        "Clove"
+      ],
+      "kills": 33,
+      "deaths": 34,
+      "assists": 18,
+      "kd": 0.97,
+      "acs": 209.3,
+      "adr": 135.2,
+      "hs_pct": 42.1,
+      "kast_pct": 79.5,
+      "fk_fd": "1/1",
       "clutches_won": 0,
       "rating_estimate": 0.99
     },
@@ -16823,6 +16775,48 @@
       "rating_estimate": 0.96
     },
     {
+      "puuid": "b6f2427f-4a94-5c6d-97c3-8e8731ea6db2",
+      "name": "islo#aimRZ",
+      "team": "AZRising #AZR",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Neon"
+      ],
+      "kills": 34,
+      "deaths": 34,
+      "assists": 7,
+      "kd": 1.0,
+      "acs": 257.3,
+      "adr": 152.8,
+      "hs_pct": 26.9,
+      "kast_pct": 71.1,
+      "fk_fd": "12/8",
+      "clutches_won": 0,
+      "rating_estimate": 0.95
+    },
+    {
+      "puuid": "36ac1afe-b2c3-59da-9fe4-8e9863dc7d64",
+      "name": "Jacadi#adi",
+      "team": "Special Grade #特",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Astra"
+      ],
+      "kills": 30,
+      "deaths": 33,
+      "assists": 17,
+      "kd": 0.91,
+      "acs": 183.3,
+      "adr": 120.4,
+      "hs_pct": 32.5,
+      "kast_pct": 78.7,
+      "fk_fd": "5/2",
+      "clutches_won": 0,
+      "rating_estimate": 0.95
+    },
+    {
       "puuid": "da790c8e-7ec6-544d-bee6-3aa45c2430e8",
       "name": "S00ug#099",
       "team": "Vrai Jamal 9 #JML",
@@ -16842,27 +16836,6 @@
       "kast_pct": 71.8,
       "fk_fd": "4/1",
       "clutches_won": 1,
-      "rating_estimate": 0.95
-    },
-    {
-      "puuid": "b6f2427f-4a94-5c6d-97c3-8e8731ea6db2",
-      "name": "islo#aimRZ",
-      "team": "AZRising #AZR",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Neon"
-      ],
-      "kills": 34,
-      "deaths": 34,
-      "assists": 7,
-      "kd": 1.0,
-      "acs": 257.3,
-      "adr": 152.8,
-      "hs_pct": 26.9,
-      "kast_pct": 71.1,
-      "fk_fd": "12/8",
-      "clutches_won": 0,
       "rating_estimate": 0.95
     },
     {
@@ -16904,27 +16877,6 @@
       "hs_pct": 33.0,
       "kast_pct": 77.5,
       "fk_fd": "4/5",
-      "clutches_won": 0,
-      "rating_estimate": 0.95
-    },
-    {
-      "puuid": "36ac1afe-b2c3-59da-9fe4-8e9863dc7d64",
-      "name": "Jacadi#adi",
-      "team": "Special Grade #特",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Astra"
-      ],
-      "kills": 30,
-      "deaths": 33,
-      "assists": 17,
-      "kd": 0.91,
-      "acs": 183.3,
-      "adr": 120.4,
-      "hs_pct": 32.5,
-      "kast_pct": 78.7,
-      "fk_fd": "5/2",
       "clutches_won": 0,
       "rating_estimate": 0.95
     },
@@ -17035,27 +16987,6 @@
       "rating_estimate": 0.93
     },
     {
-      "puuid": "e8a26ff0-5ce8-55f0-a695-c4a6d0211b6b",
-      "name": "SKeltM#HAAAA",
-      "team": "Vrai Jamal 9 #JML",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Omen"
-      ],
-      "kills": 26,
-      "deaths": 31,
-      "assists": 20,
-      "kd": 0.84,
-      "acs": 189.3,
-      "adr": 125.9,
-      "hs_pct": 20.0,
-      "kast_pct": 76.9,
-      "fk_fd": "1/4",
-      "clutches_won": 0,
-      "rating_estimate": 0.92
-    },
-    {
       "puuid": "625c8c7f-c18a-5509-95c9-60a130ea4687",
       "name": "Blue Eyes White#TOZ",
       "team": "9Corp #9C",
@@ -17074,6 +17005,27 @@
       "kast_pct": 73.5,
       "fk_fd": "10/8",
       "clutches_won": 1,
+      "rating_estimate": 0.92
+    },
+    {
+      "puuid": "e8a26ff0-5ce8-55f0-a695-c4a6d0211b6b",
+      "name": "SKeltM#HAAAA",
+      "team": "Vrai Jamal 9 #JML",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Omen"
+      ],
+      "kills": 26,
+      "deaths": 31,
+      "assists": 20,
+      "kd": 0.84,
+      "acs": 189.3,
+      "adr": 125.9,
+      "hs_pct": 20.0,
+      "kast_pct": 76.9,
+      "fk_fd": "1/4",
+      "clutches_won": 0,
       "rating_estimate": 0.92
     },
     {
@@ -17119,27 +17071,6 @@
       "rating_estimate": 0.92
     },
     {
-      "puuid": "3b3a8328-fb85-50a5-ba6d-fbdaab8c3a62",
-      "name": "Spryci#TTV",
-      "team": "Sandoria #TSK",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Waylay"
-      ],
-      "kills": 29,
-      "deaths": 31,
-      "assists": 9,
-      "kd": 0.94,
-      "acs": 200.1,
-      "adr": 125.7,
-      "hs_pct": 31.1,
-      "kast_pct": 67.5,
-      "fk_fd": "5/3",
-      "clutches_won": 0,
-      "rating_estimate": 0.91
-    },
-    {
       "puuid": "eef4b1b3-7157-5ba9-b42f-cef33c9018df",
       "name": "RoMaaaaaan#4132",
       "team": "9Corp #9C",
@@ -17158,6 +17089,27 @@
       "kast_pct": 75.5,
       "fk_fd": "6/2",
       "clutches_won": 1,
+      "rating_estimate": 0.91
+    },
+    {
+      "puuid": "3b3a8328-fb85-50a5-ba6d-fbdaab8c3a62",
+      "name": "Spryci#TTV",
+      "team": "Sandoria #TSK",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Waylay"
+      ],
+      "kills": 29,
+      "deaths": 31,
+      "assists": 9,
+      "kd": 0.94,
+      "acs": 200.1,
+      "adr": 125.7,
+      "hs_pct": 31.1,
+      "kast_pct": 67.5,
+      "fk_fd": "5/3",
+      "clutches_won": 0,
       "rating_estimate": 0.91
     },
     {
@@ -17395,28 +17347,6 @@
       "rating_estimate": 0.87
     },
     {
-      "puuid": "51c6f3f9-5b75-5a6c-9163-671bd6a74704",
-      "name": "killian#7X1",
-      "team": "Vrai Jamal 9 #JML",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Fade",
-        "Yoru"
-      ],
-      "kills": 24,
-      "deaths": 29,
-      "assists": 12,
-      "kd": 0.83,
-      "acs": 182.5,
-      "adr": 115.2,
-      "hs_pct": 10.5,
-      "kast_pct": 69.2,
-      "fk_fd": "8/3",
-      "clutches_won": 0,
-      "rating_estimate": 0.86
-    },
-    {
       "puuid": "9f863176-58a2-5597-9093-7df3eca27971",
       "name": "милый izk#ken",
       "team": "BDG SUPREME #BDG",
@@ -17456,6 +17386,28 @@
       "hs_pct": 27.3,
       "kast_pct": 71.4,
       "fk_fd": "3/3",
+      "clutches_won": 0,
+      "rating_estimate": 0.86
+    },
+    {
+      "puuid": "51c6f3f9-5b75-5a6c-9163-671bd6a74704",
+      "name": "killian#7X1",
+      "team": "Vrai Jamal 9 #JML",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Fade",
+        "Yoru"
+      ],
+      "kills": 24,
+      "deaths": 29,
+      "assists": 12,
+      "kd": 0.83,
+      "acs": 182.5,
+      "adr": 115.2,
+      "hs_pct": 10.5,
+      "kast_pct": 69.2,
+      "fk_fd": "8/3",
       "clutches_won": 0,
       "rating_estimate": 0.86
     },
@@ -18371,28 +18323,6 @@
       "rating_estimate": 0.69
     },
     {
-      "puuid": "319cf740-1195-5e7e-895d-4e483534d91e",
-      "name": "MAYMUN#KAM1",
-      "team": "EASY WIN #EASY",
-      "division": 21,
-      "matches": 2,
-      "agents": [
-        "Fade",
-        "Skye"
-      ],
-      "kills": 18,
-      "deaths": 31,
-      "assists": 10,
-      "kd": 0.58,
-      "acs": 107.7,
-      "adr": 84.8,
-      "hs_pct": 20.6,
-      "kast_pct": 59.1,
-      "fk_fd": "0/2",
-      "clutches_won": 0,
-      "rating_estimate": 0.67
-    },
-    {
       "puuid": "5cf29916-b572-58db-b85a-917643388b52",
       "name": "sneax#luv",
       "team": "BDG SUPREME #BDG",
@@ -18412,6 +18342,28 @@
       "kast_pct": 65.0,
       "fk_fd": "1/3",
       "clutches_won": 1,
+      "rating_estimate": 0.67
+    },
+    {
+      "puuid": "319cf740-1195-5e7e-895d-4e483534d91e",
+      "name": "MAYMUN#KAM1",
+      "team": "EASY WIN #EASY",
+      "division": 21,
+      "matches": 2,
+      "agents": [
+        "Fade",
+        "Skye"
+      ],
+      "kills": 18,
+      "deaths": 31,
+      "assists": 10,
+      "kd": 0.58,
+      "acs": 107.7,
+      "adr": 84.8,
+      "hs_pct": 20.6,
+      "kast_pct": 59.1,
+      "fk_fd": "0/2",
+      "clutches_won": 0,
       "rating_estimate": 0.67
     },
     {
